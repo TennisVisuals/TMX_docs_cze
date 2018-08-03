@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" Publishing Live Scores">
+<title>How Publishing Works | CourtHive Documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-black.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> CourtHive Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="How Publishing Works">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">CourtHive TMX 1.0</li>
+  
+  
+  
+  <li>
+      <a href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a href="index.html">Vision</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_overview.html">Features</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_demos.html">Demonstration Videos</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_support.html">Support</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Installation</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_setup.html">Setup</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_idiom.html">Language Selection</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_configuration.html">Configuration Keys</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_versions.html">Versions</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Fundamentals</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_fundamentals.html">Context Menus</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_searchbox.html">Using the Search Box</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_data.html">Local and Remote Data</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_reset.html">Resetting TMX</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Player Database</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_players_managing.html">Managing Players</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_players_rankings.html">Player Rankings</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_players_example.html">Example Dataset</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Tournament Calendar</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_tournaments_navigation.html">Navigating the Calendar</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournaments_management.html">Managing Tournaments</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Editing Tournaments</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_tournament_overview.html">Getting Started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_information.html">Tournament Information</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_players.html">Players</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_courts.html">Courts</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_management.html">Events</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_draws.html">Draws</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_scoring.html">Scoring</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_matches.html">Matches</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_schedule.html">Schedule</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_points.html">Points</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Publishing</a>
+      <ul>
+          
+          
+          
+          <li class="active"><a href="tmx_publishing_overview.html">How It Works</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_courthive_live.html">CourtHive/Live</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">How Publishing Works</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+
+    
+
+  <h2 id="published-content">Published Content</h2>
+
+<p>There are three types of information that can be published from <a href="https://courthive.com/tmx">CourtHive/TMX</a> to <a href="https://courthive.com/live">CourtHive/Live</a>:</p>
+<ul>
+  <li>Tournament Details (Name, Dates)</li>
+  <li>Tournament Schedules / Order of Play (OOP)</li>
+  <li>Tournament Events</li>
+</ul>
+
+<h2 id="requirements-for-publishing">Requirements for Publishing</h2>
+
+<p>Publishing is only available once an <a href="tmx_configuration.html">Organization Key</a> has been entered.  Once a valid configuration key has been entered, publishing icons will appear on Tournament Information Tabs when in <strong>Editing Mode.</strong></p>
+
+<p>It is only possible to edit and publish a tournament if the CourtHive/TMX client is configured for the same Organization to which the tournament belongs.</p>
+
+<h2 id="browser-identities">Browser Identities</h2>
+
+<p>Each browser (Chrome, Opera, Firefox, Safari) on every computer receives a Universal Unique Identifier (UUID).  Additionally, if you log into Chrome using different Google Accounts, then each browser account <strong>on the same computer</strong> has its own UUID.</p>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> An Authorization Key must be entered in the same browser identity which will be used to publish a tournament. Entering an Authorization Key in Firefox will not authorize a Chrome browser for a given tournament; and entering an Authorization Key while logged in as one user will not authorize other user accounts in the same browser.</div>
+
+<p>The CourtHive Cloud Server (CCS) checks the UUID of clients when determining whether a tournament can be published as “Official” or “Unofficial”.  The CCS only allows <strong>one</strong> client at a time to be authorized to publish/unpublish a tournament.</p>
+
+<p>See: <a href="tmx_publishing_overview.html#authorization-keys">Authorization Keys</a>.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Tournaments which have been published unofficially can be viewed on CourtHive/Live by appending “?test” to the URL for the Organization.</div>
+
+<h2 id="publishing-icons">Publishing Icons</h2>
+
+<p>When publishing icons are visible, their color indicates whether something has been published, and if published, whether something is up-to-date or out-of-date.</p>
+
+<figure><img class="docimage" src="images/ch_events_list_publishing.png" alt="Publish State" /><figcaption>Publish State</figcaption></figure>
+
+<p>Clicking on a <strong>Publishing Icon</strong> initiates publishing.  An icon will not change color until the CourtHive Cloud Server has acknowledged that the published item has been received.<br />
+<br /></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Color</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="./images/ch_publishing_unpublished.png" alt="Publish" /></td>
+      <td>Unpublished</td>
+    </tr>
+    <tr>
+      <td><img src="./images/ch_publishing_published.png" alt="Publish" /></td>
+      <td>Published, Up-to-date</td>
+    </tr>
+    <tr>
+      <td><img src="./images/ch_publishing_outofdate.png" alt="Publish" /></td>
+      <td>Published, Out-of-date</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In the <strong>Events List</strong> clicking on a publishing icon acts like a toggle between publish/unpublish.</p>
+
+<p>In the Tournament, Draws, and Schedule Tabs, click on an icon to <strong>Publish</strong> and <a href="tmx_fundamentals.html">Context Click</a> to <strong>“Unpublished”</strong>.</p>
+
+<h3 id="unpublishing-all-tournament-events">Unpublishing ALL Tournament Events</h3>
+
+<p><a href="tmx_fundamentals.html">Context Clicking</a> the <strong>Publishing Icon</strong> in the header of the <strong>Event List</strong> in the <strong>Events Tab</strong> will unpublish all tournament events.</p>
+
+<h3 id="unpublishing-a-tournament">Unpublishing A Tournament</h3>
+
+<p><a href="tmx_fundamentals.html">Context Clicking</a> the publish icon on the <strong>Tournaments Tab</strong> will completely remove a tournament from <a href="https://courthive.com/live">CourtHive/Live</a>.</p>
+
+<h2 id="authorization-keys">Authorization Keys</h2>
+<p>If you are part of an organization which has approved the use of CourtHive, tournaments can be officially published only after an authorization key has been entered.</p>
+
+<p>Authorization Keys are <strong>single use</strong>, meaning that once they have been entered they cannot be reused.  Only one browser on one computer may be authorized to officially publish tournaments.</p>
+
+<figure><img class="docimage" src="images/ch_home_green.png" alt="Authorized" /><figcaption>Authorized</figcaption></figure>
+
+<p>If a tournament is not included in your calendar, the authorization key will add the tournament.</p>
+
+<p><a href="tmx_fundamentals.html">“Context Click”</a> on the Home Icon to see the authorization message.</p>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Click on an authorization message to go directly to a tournament.</div>
+
+<h2 id="example-scenarios">Example Scenarios</h2>
+
+<p>Each browser has a unique identity, and entering a single-use authorization key gives the server that browser’s unique identifier, so only that specific browser can publish “officially”.</p>
+
+<p>The browser into which an authorization key is entered must already be configured for the SAME ORGANIZATION which created the tournament.</p>
+
+<p>The only difference between an Organization <strong>Admin</strong> key and a <strong>Referee</strong> key is that someone with an <strong>Admin</strong> key can generate Tournament Authorization Keys.</p>
+
+<p>In order to generate an authorization key, an admin obviously has to have the tournament in their calendar… it has to be on the admin computer.  If the referee doesn’t have the tournament in their calendar, the tournament will be added to their calendar automatically (from the server) when they enter the authorization key.</p>
+
+<p>Every Referee who has an Organization Key can create and publish their own tournaments “Unofficially”.  (Different versions of the same tournament can be published “unofficially” and “officially”).</p>
+
+<p>Any referee with an organization key can also “PULL” (cloud fetch) an official version of a tournament from the server, but only if the entire tournament has been “PUSHED” to the server (Up Arrow on the Tournaments Tab).</p>
+
+<p>If a referee creates their own tournament which is not in the admin calendar, then how can the admin generate an authorization key for that tournament?  The only way is for the referee to EXPORT the tournament locally, SEND the tournament to the <strong>Admin</strong> (via email/message) and have the <strong>Admin</strong> drag/drop import the tournament into their local calendar so that they will have the tournament ID in their system…</p>
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                  <img src="images/ch_logo.png" alt="CourtHive"/><br />
+               &copy;2018 CourtHive. All rights reserved. <br />
+ Site last generated: Jun 6, 2018 <br />
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-65756694-3','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>

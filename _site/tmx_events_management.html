@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" tournament event management">
+<title>Tournament Events | CourtHive Documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-black.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> CourtHive Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="Tournament Events">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">CourtHive TMX 1.0</li>
+  
+  
+  
+  <li>
+      <a href="#">Overview</a>
+      <ul>
+          
+          
+          
+          <li><a href="index.html">Vision</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_overview.html">Features</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_demos.html">Demonstration Videos</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_support.html">Support</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Installation</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_setup.html">Setup</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_idiom.html">Language Selection</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_configuration.html">Configuration Keys</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_versions.html">Versions</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Fundamentals</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_fundamentals.html">Context Menus</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_searchbox.html">Using the Search Box</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_data.html">Local and Remote Data</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_reset.html">Resetting TMX</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Player Database</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_players_managing.html">Managing Players</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_players_rankings.html">Player Rankings</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_players_example.html">Example Dataset</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Tournament Calendar</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_tournaments_navigation.html">Navigating the Calendar</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournaments_management.html">Managing Tournaments</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Editing Tournaments</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_tournament_overview.html">Getting Started</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_information.html">Tournament Information</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_players.html">Players</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_courts.html">Courts</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="tmx_events_management.html">Events</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_draws.html">Draws</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_scoring.html">Scoring</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_matches.html">Matches</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_schedule.html">Schedule</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_points.html">Points</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Publishing</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_publishing_overview.html">How It Works</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_courthive_live.html">CourtHive/Live</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">Tournament Events</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+
+    
+
+  <h2 id="adding-and-deleting-events">Adding and Deleting Events</h2>
+
+<figure><img class="docimage" src="images/ch_events_add.png" alt="Add New Event" /><figcaption>Add New Tournament Event</figcaption></figure>
+
+<p>The <strong>Gender Selector</strong> makes assumptions when new events are being added:</p>
+<ul>
+  <li>default to Male if only male players have been signed-in</li>
+  <li>default to Female if only female players have been signed-in</li>
+  <li>default to Female if a Male Singles event already exists, or vice-versa</li>
+</ul>
+
+<figure><img class="docimage" src="images/ch_events_unsaved.png" alt="Save New Event" /><figcaption>Save New Tournament Event</figcaption></figure>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> For each new event <strong>eligible</strong> players are filtered according to the event configuration</div>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Events must be saved before Draws can be created and Matches scheduled</div>
+
+<p>Events which have been saved appear in the <strong>Event List</strong> and the <strong>Save</strong> button is replaced by a <strong>Delete Button</strong>.</p>
+
+<figure><img class="docimage" src="images/ch_events_saved.png" alt="Saved Events" /><figcaption>Saved Events</figcaption></figure>
+
+<h2 id="approving-players">Approving Players</h2>
+
+<p>Elibible players are shown with <strong>Rank Order</strong> (#).</p>
+
+<figure><img class="docimage" src="images/ch_events_approving.png" alt="Approving Players" /><figcaption>Approving Players</figcaption></figure>
+
+<p>All eligible players can be approved by clicking <strong>+</strong> in the upper right corner of the eligible players section.</p>
+
+<p>All approved players can be removed by clicking <strong>-</strong> in the upper right corner of the approved players section.</p>
+
+<p>Player can be added individually by clicking their names or by using the search box, which in this context is restricted to players eligible for the current event.</p>
+
+<figure><img class="docimage" src="images/ch_events_approve_search.png" alt="Search Approve" /><figcaption>Search Approve</figcaption></figure>
+
+<p>Players can be approved as a <strong>Wildcard</strong> by <a href="tms_fundamentals.html">Context Clicking</a> on their name.</p>
+
+<figure><img class="docimage" src="images/ch_events_wildcard.png" alt="Approve Wildcard" /><figcaption>Approve Wildcard</figcaption></figure>
+
+<p>Once approved, players are sorted by last name and player rank order is replaced by seeding position, if applicable, or method of entry (Q, WC, LL).</p>
+
+<figure><img class="docimage" src="images/ch_events_approved_seeding.png" alt="Approve Wildcard" /><figcaption>Approve Wildcard</figcaption></figure>
+
+<h2 id="event-list">Event List</h2>
+
+<p>The <strong>Event List</strong> dipslays information about each event in a compact form.</p>
+
+<p>Clicking on an event opens or closes the <strong>Event Details</strong> dialogue, where it is possible to edit an event.</p>
+
+<figure><img class="docimage" src="images/ch_events_list.png" alt="Events List" /><figcaption>Events List</figcaption></figure>
+
+<p>Information displayed about each event includes Draw Size, Number of Approved Players, Total Number of Matches, Number of Scheduled Matches, Event Rank, Indoor/Outdoor, Surface, whether a Draw has been created, and whether an event has been published.</p>
+
+<h2 id="scoring-format">Scoring Format</h2>
+
+<p>The scoring format is used for all matches within an event.  If the scoring format is changed after an event has begun, then the score format is changed for all matches which have not yet been scored.</p>
+
+<figure><img class="docimage" src="images/ch_events_scoring_default.png" alt="Default Scoring" /><figcaption>Default Scoring</figcaption></figure>
+
+<h2 id="automated-draws">Automated Draws</h2>
+
+<p>In the <strong>Event Detail</strong> dialogue for each event is a button for enabling/disabling automatic draw generation.</p>
+
+<div style="display: flex; flex-wrap: wrap;">
+   <div style="padding-right: 1em;"><figure><img class="docimage" src="images/ch_events_auto_play.png" alt="Play" /><figcaption>Play</figcaption></figure>
+</div>
+   <figure><img class="docimage" src="images/ch_events_auto_pause.png" alt="Pause" /><figcaption>Pause</figcaption></figure>
+
+</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> Automated Draws can be disabled by <a href="tmx_configuration.html">Organization Keys</a> when they are not officially endorsed</div>
+
+<h2 id="linking-events">Linking Events</h2>
+
+<p>Events may be linked together if they have the same Gender Setting and are complementary <strong>Draw Types</strong>.</p>
+
+<p>If a Male <strong>Elimination Event</strong> exits when adding a Male <strong>Qualification Event</strong>, or vice-versa, the option to link events appears in the bottom left corner of the <strong>Event Detail</strong> dialogue.</p>
+
+<p>For a <strong>Qualification Event</strong> there is also a selector to define the number of players who will advance to a main draw event.</p>
+
+<figure><img class="docimage" src="images/ch_events_qualification.png" alt="Qualification Event" /><figcaption>Adding a Qualification Event</figcaption></figure>
+
+<p>When a <strong>Qualification Event</strong> is linked to an <strong>Elimination Event</strong> then the players already in the <strong>Elimination Event</strong> disappear from the eligible players list.</p>
+
+<figure><img class="docimage" src="images/ch_events_linked_qualification.png" alt="Linked Event" /><figcaption>Linked Qualification Event</figcaption></figure>
+
+<p>After players are approved and the number of qualifiers has been selected (<strong>four</strong> in this example), the <strong>Event List</strong> updates the Draw Size, Number of players, and Number of Matches for the linked <strong>Elimination Event</strong>.</p>
+
+<figure><img class="docimage" src="images/ch_events_linked_qualifiers.png" alt="Linked Qualifiers" /><figcaption>Linked Qualifiers</figcaption></figure>
+
+<p>Players who qualify automatically appear as <strong>Approved</strong> players in the linked <strong>Elimination Event</strong>.</p>
+
+<figure><img class="docimage" src="images/ch_events_players_qualified.png" alt="Qualifiers" /><figcaption>Qualified Players</figcaption></figure>
+
+<h2 id="lucky-losers">Lucky Losers</h2>
+
+<p><strong>Lucky Losers</strong> may be added to the <strong>Approved</strong> players list by <a href="tmx_fundamentals.html">Context Clicking</a> on the <strong>Eligible</strong> heading and selecting them from the list of players that is presented.</p>
+
+<figure><img class="docimage" src="images/ch_events_lucky_losers.png" alt="Lucky Losers" /><figcaption>Lucky Losers</figcaption></figure>
+
+<h2 id="doubles-teams">Doubles Teams</h2>
+
+<p>The creation of <strong>Doubles Events</strong> is almost identical to <strong>Singles Events</strong>, except that for <strong>Doubles Events</strong> doubles teams must be constructed before they can be approved.</p>
+
+<p><strong>Doubles Teams</strong> are constructed simply by selecting team members <em>in order</em>.</p>
+
+<figure><img class="docimage" src="images/ch_events_doubles_teams.png" alt="Doubles Teams" /><figcaption>Doubles Teams</figcaption></figure>
+
+<h3 id="combined-rankings">Combined Rankings</h3>
+
+<p>The default configuration is for CourtHive/TMX to order teams by <em>combined rankings</em>, which means that singles rankings of team members are combined.  This option can be modified by <a href="tmx_configuration.html">Organization Keys</a> as some organizations calculate doubles rankings independently.</p>
+
+<p>Teams which have identical combined rankings are highlighted in <strong>yellow</strong>.</p>
+
+<p><a href="tmx_fundamentals.html">Context Clicking</a> on a doubles teams presents options which include assigning a “Subrank”.</p>
+
+<figure><img class="docimage" src="images/ch_events_doubles_options.png" alt="Doubles Options" /><figcaption>Doubles Options</figcaption></figure>
+
+<p>“Subranking” enables teams to be differentiated for the purposes of <strong>seeding</strong>.</p>
+
+<figure><img class="docimage" src="images/ch_events_doubles_subrank.png" alt="Doubles Subrank" /><figcaption>Doubles Subrank</figcaption></figure>
+
+<h3 id="approving-teams">Approving Teams</h3>
+
+<p>Doubles Teams can be approved <em>individually</em> (including as a Wildcard) by <a href="tmx_fundamentals.html">Context Clicking</a>.</p>
+
+<p>Teams can also be approved <em>in bulk</em> by clicking on the <strong>+</strong> in the upper right corner of the “Teams” section.</p>
+
+<figure><img class="docimage" src="images/ch_events_doubles_approving.png" alt="Approving Teams" /><figcaption>Approving Teams</figcaption></figure>
+
+<h3 id="removing-teams">Removing Teams</h3>
+
+<p>Clicking on individual players in the “Eligible” section builds teams.</p>
+
+<p>Clicking on Teams removes them from the “Approved” section, or returns individual players to the “Eligible” section.</p>
+
+<h2 id="round-robin-events">Round Robin Events</h2>
+
+<p>Round Robins can either be stand-alone or linked to <strong>Elimination Events</strong>.</p>
+<ul>
+  <li>The number of <strong>brackets</strong> is calculated automatically from the <strong>Bracket Size</strong></li>
+  <li>The sizes available in the <strong>Bracket Size</strong> selector are configured by <a href="tmx_configuration.html">Organization Keys</a></li>
+  <li>The <strong>Qualifiers</strong> selector only when a Round Robin is linked to another event</li>
+  <li>The option to link to another event only appears when appropriate events exist</li>
+</ul>
+
+<figure><img class="docimage" src="images/ch_events_round_robin.png" alt="Round Robin" /><figcaption>Round Robin Settings</figcaption></figure>
+
+<h3 id="qualifiers">Qualifiers</h3>
+
+<p>Qualifiers in each bracket are ordered by the ratio of matches, sets, games and points won.</p>
+
+<p>Please see the documentation on <a href="tmx_tournament_draws.html#win-ratios"><strong>Win Ratios</strong></a> for an in-depth explanation.</p>
+
+<figure><img class="docimage" src="images/ch_draws_rr_order.png" alt="Rank Order" /><figcaption>Calculated Rank Order</figcaption></figure>
+
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Round Robin Events default to <strong>one</strong> qualifier per bracket; this setting can <strong>only</strong> be changed in the Round Robin <strong>Event Detail</strong> dialogue.</div>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> Second (and third) qualifiers from each bracket are calculated <strong>after</strong> all brackets are complete.</div>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If the selected number of qualifiers is not a multiple of the number of brackets, additional qualifiers from each ordered group (1st, 2nd, 3rd, etc. from each bracket) are qualified first by ranking and then by win ratio.</div>
+
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                  <img src="images/ch_logo.png" alt="CourtHive"/><br />
+               &copy;2018 CourtHive. All rights reserved. <br />
+ Site last generated: Jun 6, 2018 <br />
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-65756694-3','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>

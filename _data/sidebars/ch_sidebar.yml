@@ -1,0 +1,150 @@
+entries:
+- title: sidebar
+  product: CourtHive TMX
+  version: 1.0
+  folders:
+
+  - title: Overview
+    output: web
+    folderitems:
+
+    - title: Vision
+      url: /index.html
+      output: web
+      type: homepage
+
+    - title: Features
+      url: /tmx_overview.html
+      output: web
+
+    - title: Demonstration Videos
+      url: /tmx_demos.html
+      output: web
+
+    - title: Support
+      url: /tmx_support.html
+      output: web
+
+  - title: Installation
+    output: web
+    folderitems:
+
+    - title: Setup
+      url: /tmx_setup.html
+      output: web
+
+    - title: Language Selection
+      url: /tmx_idiom.html
+      output: web
+
+    - title: Configuration Keys
+      url: /tmx_configuration.html
+      output: web
+
+    - title: Versions
+      url: /tmx_versions.html
+      output: web
+
+  - title: Fundamentals
+    output: web
+    folderitems:
+
+    - title: Context Menus
+      url: /tmx_fundamentals.html
+      output: web
+
+    - title: Using the Search Box
+      url: /tmx_searchbox.html
+      output: web
+
+    - title: Local and Remote Data
+      url: /tmx_data.html
+      output: web
+
+    - title: Resetting TMX
+      url: /tmx_reset.html
+      output: web
+
+  - title: Player Database
+    output: web
+    folderitems:
+
+    - title: Managing Players
+      url: /tmx_players_managing.html
+      output: web
+
+    - title: Player Rankings
+      url: /tmx_players_rankings.html
+      output: web
+
+    - title: Example Dataset
+      url: /tmx_players_example.html
+      output: web
+
+  - title: Tournament Calendar
+    output: web
+
+    folderitems:
+    - title: Navigating the Calendar
+      url: /tmx_tournaments_navigation.html
+      output: web
+
+    - title: Managing Tournaments
+      url: /tmx_tournaments_management.html
+      output: web
+
+  - title: Editing Tournaments
+    output: web
+
+    folderitems:
+    - title: Getting Started
+      url: /tmx_tournament_overview.html
+      output: web
+
+    - title: Tournament Information
+      url: /tmx_tournament_information.html
+      output: web
+
+    - title: Players
+      url: /tmx_tournament_players.html
+      output: web
+
+    - title: Courts
+      url: /tmx_tournament_courts.html
+      output: web
+
+    - title: Events
+      url: /tmx_events_management.html
+      output: web
+
+    - title: Draws
+      url: /tmx_tournament_draws.html
+      output: web
+
+    - title: Scoring
+      url: /tmx_tournament_scoring.html
+      output: web
+
+    - title: Matches
+      url: /tmx_tournament_matches.html
+      output: web
+
+    - title: Schedule
+      url: /tmx_tournament_schedule.html
+      output: web
+
+    - title: Points
+      url: /tmx_tournament_points.html
+      output: web
+
+  - title: Publishing
+    output: web
+
+    folderitems:
+    - title: How It Works
+      url: /tmx_publishing_overview.html
+      output: web
+
+    - title: CourtHive/Live
+      url: /tmx_courthive_live.html
+      output: web

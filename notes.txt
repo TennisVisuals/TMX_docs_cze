@@ -1,0 +1,2 @@
+history
+bundle exec jekyll serve
