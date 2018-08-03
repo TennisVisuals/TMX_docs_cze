@@ -1,23 +1,23 @@
 ---
-title: CourtHive/TMX Support
+title: Podpora CourtHive / TMX
 keywords: Support
 sidebar: ch_sidebar
 permalink: tmx_support.html
 toc: false
 ---
 
-CourtHive/TMX is a collaborative development effort.  Currently we are working directly with referees from National Federations.  If you are a serious user you are welcome to join the team!
+CourtHive / TMX je kolaborativní vývoj založený na dobrovolnosti. V současné době pracujeme přímo s rozhodčími národních federací. Pokud jste vážným uživatelem, můžete se připojit k týmu!
 
-## Bespoke Development
-Bespoke development services are available if you wish to prioritize features that are currently planned, have features added that are not currently contemplated, or if you require help in setting up a CourtHive server of your own.
+## Zakázkový vývoj
+Vývojové služby na zakázku jsou k dispozici, pokud si přejete upřednostňovat funkce, které jsou v současné době plánovány, mají přidané funkce, které nejsou v současné době plánovány, nebo pokud potřebujete pomoc při vytváření vlastního serveru CourtHive.
 
 ## Email
-Feel free to contact us via email:
-* Information Requests: <info@courthive.com>
-* Suggestions: <suggestions@courthive.com>
-* Bug Reports: <bugs@courthive.com>
+Neváhejte nás kontaktovat e-mailem:
+* Žádosti o informace: <info@courthive.com>
+* Návrhy: <suggestions@courthive.com>
+* Zprávy o chybách: <bugs@courthive.com>
 
-## Issue Tracking
-At present Trello is being used to track bugs and enhancement requests:
-* [Bugs](https://trello.com/b/eR3fzCuR/bugs)
-* [Enhancements](https://trello.com/b/WyJw0266/enhancements)
+## Sledování problémů
+V současné době se používá Trello ke sledování chyb a požadavků na vylepšení:
+* [Chyby](https://trello.com/b/eR3fzCuR/bugs)
+* [Vylepšení](https://trello.com/b/WyJw0266/enhancements)

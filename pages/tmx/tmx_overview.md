@@ -5,20 +5,20 @@ sidebar: ch_sidebar
 permalink: tmx_overview.html
 toc: false
 ---
-CourtHive TMX is a cross-platform, browser-based Tournament Management system which runs in Chrome, Firefox and Opera, even when there is no internet connection.
+CourtHive TMX je multiplatformní systém pro správu a řízení tenisových turnajů, který běží v prohlížečích Chrome, Firefox a Opera, i když není k dispozici připojení k internetu.
 
-{% include image.html file="ch_home.png" alt="CourtHive Desktop" caption="CourtHive is designed to be elegant, uncluttered, and to provide a context-sensitive workflow" %}
-## TMX features include:
+{% include image.html file="ch_home.png" alt="CourtHive Desktop" caption="CourtHive je navržen tak, aby byl elegantní, přehledný a poskytoval kontextově citlivé ovládání" %}
+## Funkce TMX zahrnují:
 
-* __Configuration Keys:__ Customizable logos, draw formats, seeding parameters, point tables
-* __Authorization Keys:__ Official and Unofficial publishing of tournament data to CourtHive/Live
-* __Automatic or Manual Event Creation:__ Round Robin, Qualification, Elimination and Consolation
-* __Linked Events:__ Events can be linked such that players progress automatically from one event to the next
-* __Dynamic Draws:__ Draws and player data automatically resize to fit the available screen real estate
+* __Konfigurační klíče:__ Přizpůsobitelné loga, formáty hracích plánů, parametry nasazení hráčů, tabulky bodů
+* __Autorizační klíče:__ Oficiální a neoficiální publikování turnajových dat na CourtHive / Live
+* __Automatické nebo ruční vytváření soutěží:__ Round Robin, Kvalifikace, Eliminace, Útěcha
+* __Propojené soutěže:__ Soutěže mohou být propojeny tak, aby hráči postupovali automaticky z jedné akce na druhou
+* __Dynamické hrací plány:__ Hrací plány a hráčská data se automaticky změní tak, aby se vešly na obrazovku Chyť / Pusť a automatické plánování rozpisu utkání s viditelnými varováními o konfliktech
 * __Drag/Drop and Automatic Scheduling__ with visible conflict warnings
-* __Instant Publishing:__ Schedules and Draws are available online immediately once created
-* __Mobile Referee:__ Match Scoring, Scheduling and penalty assignment with mobile support
-* __PDF Printing:__ Sign-in Sheets, Draws, and Schedules
-* __Rank Lists:__ Generates Rank Lists for user-definable player categories
-* __Data Import:__ Synchronize with remote data sources or Drag/Drop import of data files
-* __Data Export:__ Tournament Calendars, Players, Matches, and Points in JSON or CSV/Excel formats
+* __Okamžité publikování:__ Hrací plány a rozpisy utkání jsou k dispozici okamžitě po vytvoření
+* __Mobilní rozhodčí:__ Zadávání výsledků utkání, časového rozpisů utkání a udílení trestů s podporou pro mobilní zařízení
+* __Tisk PDF:__ seznamy přihlášených hráčů, hrací plány a rozpisy utkání
+* __Žebříčky:__ generuje žebříčky pro uživatelsky definované kategorie hráčů
+* __Import dat:__ synchronizuje se vzdálenými datovými zdroji nebo importuje datové soubory
+* __Export dat:__ kalendář turnajů, hráči, utkání a body ve formátech JSON nebo CSV / Excel

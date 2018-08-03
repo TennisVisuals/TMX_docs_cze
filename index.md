@@ -8,28 +8,28 @@ toc: false
 
 ## Open Source Tennis
 
-CourtHive is an Open Source / Open Data initiative to develop applications for Tennis which are affordable, accessible, and which promote the emergence of standards for the representation of data related to tennis.
+CourtHive je Open Source / Open Data iniciativa pro vývoj tenisových aplikací, které jsou  dostupné, volně přístupné a které podporují vznik norem pro reprezentaci dat týkajících se tenisu.
 
-CourtHive hosts a number of applications.  At present these include:
-* [CourtHive/TMX](https://courthive.com/tmx) - a Tournament Management application specifically for tennis
-* [CourtHive/Live](https://courthive.com/Live) - a client for viewing tournament schedules, draws and live scores
-* [CourtHive/Mobile](https://courthive.com/mobile) - a mobile application for tracking tennis matches
-* CourtHive Scores - a private client app to share with friends/family who want to view point-by-point detail of matches which are being broadcast live
+Na CourtHive serveru hostuje řadu aplikací. V současné době jde o:
+* [CourtHive/TMX](https://courthive.com/tmx) - aplikace pro řízení turnajů speciálně pro tenis
+* [CourtHive/Live](https://courthive.com/Live) - veřejná aplikace pro prohlížení rozpisů turnajových utkání, hracích plánů a aktuálních výsledků
+* [CourtHive/Mobile](https://courthive.com/mobile) - mobilní aplikace pro sledování a statistické vyhodnocování tenisových zápasů
+* CourtHive Scores - soukromá aplikace, kterou můžete sdílet průběh zápasů s přáteli / rodinou, kteří chtějí sledovat detailní body živě vysílaných zápasů
 
-Significant portions of CourtHive projects are now or *__will soon__* be available on GitHub [TennisVisuals](https://github.com/TennisVisuals){:target="_ blank"} and [CourtHive](https://github.com/CourtHive){:target="_ blank"}.
+Významné části projektů CourtHive jsou nyní nebo brzy budou k dispozici na stránkách GitHub  [TennisVisuals](https://github.com/TennisVisuals){:target="_ blank"} a [CourtHive](https://github.com/CourtHive){:target="_ blank"}.
 
-## Tournament Management
+## Řízení turnajů
 
-[CourtHive/TMX](https://courthive.com/tmx) is an open platform for Tennis Tournament Management; it is implemented as a [Progressive Web App](https://en.wikipedia.org/wiki/Progressive_Web_Apps){:target="_ blank"} and runs in Chrome, Firefox and Opera, even when there is no internet connection.
+[CourtHive/TMX](https://courthive.com/tmx) je otevřená platforma pro řízení tenisových turnajů; implementuje se jako [progresivní webová aplikace](https://en.wikipedia.org/wiki/Progressive_Web_Apps){:target="_ blank"} a běží v prohlížečích Chrome, Firefox a Opera, i když není k dispozici připojení k internetu.
 
-TMX is designed to work standalone or to integrate with existing player registration and ranking systems.
+TMX je navržen tak, aby fungoval samostatně nebo se integroval s existujícími systémy registrace hráčů, turnajů a žebříčků.
 
-## Eyes On Court
+##Oči na dvorci
 
-Part of the vision of the CourtHive ecosystem is that anyone who is present at a tennis event can contribute in some way to enhancing the tournament experience.  
+Součástí vize ekosystému CourtHive je, že každý, kdo je přítomen na tenisové události, může nějakým způsobem přispět k posílení zážitku z turnaje.
 
-[CourtHive/Mobile](https://courthive.com/mobile) was an early experiment in live broadcasting of a single tennis match that will be greatly expanded in the future as it is integrated with the [CourtHive/TMX](https://courthive.com/tmx) and [CourtHive/Live](https://courthive.com/Live).
+[CourtHive/Mobile](https://courthive.com/mobile) byl první experiment s živým vysílání jednoho tenisového utkání, který bude v budoucnu výrazně rozšířen, protože je integrován s [CourtHive/TMX](https://courthive.com/tmx) a [CourtHive/Live](https://courthive.com/Live).
 
-__Crowdsourced scoring__ (with geofencing) can enable more efficient scheduling.
+Zapojení veřejnosti, tzv. crowdsourced scoring (s geofencing) může umožnit efektivnější plánování jednotlivých utkání.
 
-The __Mobile Referee__ capabilities of [CourtHive/TMX](https://courthive.com/tmx) are also intended to allow tournament managers and referees to spend less time in their offices and more time court side.
+Funkce CourtHive / TMX pro mobilní rozhodčí mají také umožnit ředitelům a vrchním rozhodčím na turnajích, aby trávili méně času ve svých kancelářích a více času na dvorcích.

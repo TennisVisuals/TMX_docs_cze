@@ -1,40 +1,40 @@
 ---
-title: CourtHive/TMX Setup
+title: Instalace CourtHive / TMX
 keywords: Installation, Setup
 sidebar: ch_sidebar
 permalink: tmx_setup.html
 toc: false
 ---
-## Configure Your Browser
+## Nakonfigurujte prohlížeč
 
-CourtHive/TMX is implemented as a [Progressive Web App](https://en.wikipedia.org/wiki/Progressive_Web_Apps){:target="_ blank"}, which means that after it is opened in your browser for the first time, it can be launched even when the internet is disconnected... provided that your browser supports [Service Workers](https://caniuse.com/#feat=serviceworkers).  
+CourtHive / TMX je implementována jako [progresivní webová aplikace](https://en.wikipedia.org/wiki/Progressive_Web_Apps){:target="_ blank"}, což znamená, že po prvním otevření ve vašem prohlížeči může být spuštěna i po odpojení internetu ... za předpokladu, že Váš prohlížeč podporuje [Service Workers](https://caniuse.com/#feat=serviceworkers).  
 
-{% include tip.html content="Create a bookmark to [CourtHive.com/tmx](https://CourtHive.com/tmx) to launch the application when you are offline." %}
+{% include tip.html content="Vytvořte záložku pro [CourtHive.com/tmx](https://CourtHive.com/tmx), abyste spustili aplikaci, když jste offline." %}
 
-Some browsers, such as Firefox, disable Service Workers when cookies are disabled.  To use all of the features of CourtHive/TMX you should allow cookies (even thought CourtHive/TMX doesn't make use of cookies).
+SNěkteré prohlížeče, jako například Firefox, zakážou Service Workers pokud nejsou povoleny soubory cookies. Chcete-li používat všechny funkce CourtHive / TMX, měli byste povolit soubory cookies (i když CourtHive / TMX nevyužívá cookies).
 
-{% include important.html content="For full offline support, allow cookies for Courthive.com" %}
+{% include important.html content="Pro plnou offline podporu povolte cookies pro Courthive.com" %}
 
-## Check Your Default Settings
+## Zkontrolujte výchozí nastavení
 
-From the Home Screen, click on the settings icon to configure your preferences.  If you have been given a [Configuration Key](tmx_configuration.html) some settings may have been configured for you and may be unavailable (such as Organization Logos).
+Na domovské obrazovce klikněte na ikonu nastavení a nakonfigurujte své předvolby. Pokud jste obdrželi [konfigurační klíč](tmx_configuration.html), mohly být některé konfigurace pro vás nakonfigurovány a nemusí být dostupné (například Loga organizace).
 
 {% include image.html file="ch_settings_icon.png" alt="Settings" caption="Settings" %}
 
-| Tab | Setting Name | Explanation |
+| Záložka | Název nastavení | Vysvětlení |
 |-------|--------|---------|
-| Org | Logos | Upload logos for use on PDF Sign-in Sheets, Schedules, and Draws |
-| General | Week Starts Monday | Set first week day to Monday instead of Sunday |
-| Search | Last Name, First Name | Reverse the default order when typing names |
-| Search | Diacritics | Search using Diacritics (accents above/below characters) |
-| Draws | Compressed Draw Formats | Whether to allow 12, 24, 48 draw sizes |
-| Draws | Automatic Bye Placement | De-select if you want to place Byes manually |
-| Draws | Fixed Bye Order | Do not place byes strictly by seeding |
-| Draws | LL from All Qualifying Rounds | Include losers from all rounds on LL sign up sheet |
-| Draws | Court Details | Display scheduled court in draw |
-| Draws | Matches Before Count | Display # of prior matches  in draw |
-| Publishing | Require Confirmation | Do not publish without confirmation |
-| Publishing | Publish when score entered | Immediate publishing |
-| Printing | Save PDFs | Save immediately instead of opening in a new tab |
-| Schedule | Scores in draw order| As opposed to Winner Score first |
-| Schedule | Schedule Completed Matches | Show completed matches in search |
+| Org | Loga | Nahrajte loga pro použití v PDF seznamech přihlášených hráčů, hracích plánech a rozpisech utkání |
+| Obecné nastavení | Týden začíná v pondělí | Nastaví první týdenní den od pondělí místo neděle |
+| Vyhledávání | Příjmení, jméno | Při zadávání jmen se vrací výchozí pořadí |
+| Vyhledávání | Diakritika | Hledání pomocí diakritiky (znaky nad nebo pod) |
+| Hrací plány | Compressed Draw Formats | Whether to allow 12, 24, 48 draw sizes |
+| Hrací plány | Automatic Bye Placement | De-select if you want to place Byes manually |
+| Hrací plány | Fixed Bye Order | Do not place byes strictly by seeding |
+| Hrací plány | LL from All Qualifying Rounds | Include losers from all rounds on LL sign up sheet |
+| Hrací plány | Court Details | Display scheduled court in draw |
+| Hrací plány | Matches Before Count | Display # of prior matches  in draw |
+| Zveřejňování | Vyžádovat potvrzení zveřejnění  | Ke zveřejnění nedojde bez potvrzení |
+| Zveřejňování | Zveřejnit hned jak je skóre zapsáno | Okamžité zveřejnění |
+| Tisk | Uložit PDFs | Uložit okamžitě namísto otevření na nové záložce |
+| Rozpis utkání | Výsledky utkání v pořadí dle hracího plánu | Pokud zatrženo tak skóre z pohledu vítěze |
+| Rozpis utkání | Skončená utkání vyhledávat v rozpisu | Zobrazí skončené zápasy ve vyhledávání |

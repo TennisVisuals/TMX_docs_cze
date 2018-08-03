@@ -1,19 +1,19 @@
 ---
-title: Language Selection
-keywords: Installation, Language Selection
+title: Výběr jazyka
+keywords: Installation, Výběr jazyka
 sidebar: ch_sidebar
 permalink: tmx_idiom.html
 toc: false
 ---
 
-The language selector is located immediately to the right of the Home Icon.  After a language has been selected the icon is no longer visible unless the mouse is hovering over it.
+Volba jazyka klientského rozhraní je umístěna bezprostředně napravo od ikony Domů. Po zvolení jazyka se ikona již nezobrazuje, pokud se nad ní neposune kurzor.
 
-{% include image.html file="ch_idiom.png" alt="Idioms" caption="Selected Language" %}
+{% include image.html file="ch_idiom.png" alt="Idioms" caption="Vybraný jazyk" %}
 
-Clicking the language selector presents a list of available languages (the most widely used language for each country).
+Kliknutím na vlajku / volbu jazyka se zobrazí seznam dostupných jazyků (nejčastěji používaný jazyk pro každou zemi).
 
-{% include image.html file="ch_idioms.png" alt="Idioms" caption="Select Language" %}
+{% include image.html file="ch_idioms.png" alt="Idioms" caption="Zvolte jazyk" %}
 
-CourtHive/TMX language mappings are managed as Google Sheets.  New Languages can be added instantly.  A native speaker is given access to the Google Sheet for each language and can choose appropriate translations for words and phrases in the context of Tournament Management.
+Mapování jazyků CourtHive / TMX je spravováno jako tabulky Google. Nové jazyky lze přidávat okamžitě. Rodilému mluvčímu je umožněn přístup k listu Google pro každý jazyk kde si může zvolit vhodné překlady slov a frází.
 
-To add a language mapping to CourtHive/TMX please contact <support@courthive.com>.
+Chcete-li přidat mapování jazyka do služby CourtHive / TMX, kontaktujte prosím <support@courthive.com>.

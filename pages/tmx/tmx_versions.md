@@ -1,38 +1,38 @@
 ---
-title: Versions
-keywords: Versions
+title: Verze
+keywords: Verze
 sidebar: ch_sidebar
 permalink: tmx_versions.html
 toc: true
 ---
-## Release cycle
-* CourtHive/TMX is in continuous development with frequent releases.  
-* The current "stable" version can always be found at [https://CourtHive.com/tmx](https://CourtHive.com/tmx).  
-* If your organization hosts a version of CourtHive/TMX, the release cycle may be defined by the organization.
+## Cyklus uvolňování nových verzí
+* CourtHive / TMX je v neustálém vývoji s častým vydáváním nových verzí.  
+* Aktuální "stabilní" verze je vždy k dispozici na adrese [https://CourtHive.com/tmx](https://CourtHive.com/tmx).  
+* Pokud organizace hostuje verzi služby CourtHive / TMX, může tato organizace definovat cyklus uvolňování nových verzí.
 
-## Understanding the Version Number
-The version number follows this pattern:  _Major.minor.added.changed.fixed_
+## Vysvětlení čísla verze
+Číslo verze následuje tento vzor:  _Major.minor.added.changed.fixed_
 
-* Every time a __minor__ release is made, _changed_ and _fixed_ are reset to zero.
-* Every time a __major__ release is made, _added_, _changed_, and _fixed_ are reset to zero.
-* There will be only 9 minor releases within each major release.
+* Pokaždé, když dojde k __menšímu__ uvolnění nové verze, změní se a fixuje se na nulu.
+* Pokaždé, když dojde k __rozsáhlému__ uvolnění nové verze, přidání, změna a oprava se vynulují.
+* V každé hlavní verzi bude pouze 9 malých vydání nových verzí.
 
-## Updating to the latest version
-If your browser supports [Service Workers](https://caniuse.com/#feat=serviceworkers), then a version of CourtHive/TMX is cached locally.  The Home icon turns __yellow__ to indicate that a new version is available.  
+## Aktualizace na nejnovější verzi
+Pokud váš prohlížeč podporuje [Service Workers](https://caniuse.com/#feat=serviceworkers), pak je verze aplikace CourtHive / TMX uložena v lokální mezipaměti. Ikona Domů svítí žlutě, což znamená, že je k dispozici nová verze.  
 
-{% include image.html file="ch_home_yellow.png" alt="Update" caption="Update Message" %}
+{% include image.html file="ch_home_yellow.png" alt="Update" caption="Zpráva o aktualizaci" %}
 
-[Context Click](tmx_fundamentals.html) on the Home icon to see the update message. When a new version is available, the Service Worker begins updating your cache after you refresh your browser.
+[Kontext kliknutím](tmx_fundamentals.html) na ikonu Domů zobrazíte aktualizační zprávu. Je-li k dispozici nová verze, Service Workers po aktualizaci začne aktualizovat lokální mezipaměť.
 
-{% include image.html file="ch_new_version.png" alt="Update" caption="Update Available" %}
+{% include image.html file="ch_new_version.png" alt="Update" caption="Aktualizace k dispozici" %}
 
-{% include important.html content="At present you will need to wait a minute or so then refresh your browser a second time to insure that the latest version is loaded; hopefully by the 1.0 release all of this will take place smoothly in the background." %}
+{% include important.html content="V současné době budete muset chvíli počkat a potom obnovit prohlížeč podruhé, abyste se ujistili, že je načtena nejnovější verze. Doufáme, že v 1.0 vydání to vše bude probíhat hladce na pozadí." %}
 
-{% include note.html content="If your browser __does not__ support Service Workers then refreshing your browser will always load the current version, but you will not be able to load CourtHive/TMX when you are not connected to the internet." %}
+{% include note.html content="Pokud váš prohlížeč nepodporuje Service Workers, obnovení prohlížeče vždy načte aktuální verzi, ale nebudete moci načíst CourtHive / TMX, pokud nejste připojeni k internetu." %}
 
-{% include tip.html content="Context Click on the Home Icon at any time to check your version." %}
+{% include tip.html content="Kontext kliknutím na ikonu Domů můžete kdykoli zkontrolovat aktuální verzi." %}
 
-## Old and New Versions
-* The __last__ version of CourHive/TMX are available on: [https://CourtHive.com/tmx-](https://CourtHive.com/tmx-)
-* The __next__ release candidate is available on [https://CourtHive.com/tmx+](https://CourtHive.com/tmx+)
-* __Bleeding edge__ releases and urgent bug fixes are available on [https://CourtHive.com/tmx++](https://CourtHive.com/tmx++)
+## Staré a nové verze
+* Poslední verze CourHive / TMX je k dispozici na adrese: [https://CourtHive.com/tmx-](https://CourtHive.com/tmx-)
+* Další kandidát na vydání nové verze je k dispozici na adrese: [https://CourtHive.com/tmx+](https://CourtHive.com/tmx+)
+* Naléhavé opravy chyb naleznete na adrese: [https://CourtHive.com/tmx++](https://CourtHive.com/tmx++)
