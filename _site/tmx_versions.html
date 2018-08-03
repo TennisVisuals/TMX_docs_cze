@@ -5,8 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
-<meta name="keywords" content=" Versions">
-<title>Versions | CourtHive Documentation</title>
+<meta name="keywords" content=" Verze">
+<title>Verze | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -41,7 +41,7 @@
 <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 
-<link rel="alternate" type="application/rss+xml" title="documentation-theme-jekyll" href="http://localhost:4000/feed.xml">
+<link rel="alternate" type="application/rss+xml" title="TMX_docs_cze" href="http://localhost:4000/feed.xml">
 
     <script>
         $(document).ready(function() {
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Versions">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Verze">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Versions</h1>
+   <h1 class="post-title-main">Verze</h1>
 </div>
 
 
@@ -489,42 +489,42 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="release-cycle">Release cycle</h2>
+  <h2 id="cyklus-uvolňování-nových-verzí">Cyklus uvolňování nových verzí</h2>
 <ul>
-  <li>CourtHive/TMX is in continuous development with frequent releases.</li>
-  <li>The current “stable” version can always be found at <a href="https://CourtHive.com/tmx">https://CourtHive.com/tmx</a>.</li>
-  <li>If your organization hosts a version of CourtHive/TMX, the release cycle may be defined by the organization.</li>
+  <li>CourtHive / TMX je v neustálém vývoji s častým vydáváním nových verzí.</li>
+  <li>Aktuální “stabilní” verze je vždy k dispozici na adrese <a href="https://CourtHive.com/tmx">https://CourtHive.com/tmx</a>.</li>
+  <li>Pokud organizace hostuje verzi služby CourtHive / TMX, může tato organizace definovat cyklus uvolňování nových verzí.</li>
 </ul>
 
-<h2 id="understanding-the-version-number">Understanding the Version Number</h2>
-<p>The version number follows this pattern:  <em>Major.minor.added.changed.fixed</em></p>
+<h2 id="vysvětlení-čísla-verze">Vysvětlení čísla verze</h2>
+<p>Číslo verze následuje tento vzor:  <em>Major.minor.added.changed.fixed</em></p>
 
 <ul>
-  <li>Every time a <strong>minor</strong> release is made, <em>changed</em> and <em>fixed</em> are reset to zero.</li>
-  <li>Every time a <strong>major</strong> release is made, <em>added</em>, <em>changed</em>, and <em>fixed</em> are reset to zero.</li>
-  <li>There will be only 9 minor releases within each major release.</li>
+  <li>Pokaždé, když dojde k <strong>menšímu</strong> uvolnění nové verze, změní se a fixuje se na nulu.</li>
+  <li>Pokaždé, když dojde k <strong>rozsáhlému</strong> uvolnění nové verze, přidání, změna a oprava se vynulují.</li>
+  <li>V každé hlavní verzi bude pouze 9 malých vydání nových verzí.</li>
 </ul>
 
-<h2 id="updating-to-the-latest-version">Updating to the latest version</h2>
-<p>If your browser supports <a href="https://caniuse.com/#feat=serviceworkers">Service Workers</a>, then a version of CourtHive/TMX is cached locally.  The Home icon turns <strong>yellow</strong> to indicate that a new version is available.</p>
+<h2 id="aktualizace-na-nejnovější-verzi">Aktualizace na nejnovější verzi</h2>
+<p>Pokud váš prohlížeč podporuje <a href="https://caniuse.com/#feat=serviceworkers">Service Workers</a>, pak je verze aplikace CourtHive / TMX uložena v lokální mezipaměti. Ikona Domů svítí žlutě, což znamená, že je k dispozici nová verze.</p>
 
-<figure><img class="docimage" src="images/ch_home_yellow.png" alt="Update" /><figcaption>Update Message</figcaption></figure>
+<figure><img class="docimage" src="images/ch_home_yellow.png" alt="Update" /><figcaption>Zpráva o aktualizaci</figcaption></figure>
 
-<p><a href="tmx_fundamentals.html">Context Click</a> on the Home icon to see the update message. When a new version is available, the Service Worker begins updating your cache after you refresh your browser.</p>
+<p><a href="tmx_fundamentals.html">Kontext kliknutím</a> na ikonu Domů zobrazíte aktualizační zprávu. Je-li k dispozici nová verze, Service Workers po aktualizaci začne aktualizovat lokální mezipaměť.</p>
 
-<figure><img class="docimage" src="images/ch_new_version.png" alt="Update" /><figcaption>Update Available</figcaption></figure>
+<figure><img class="docimage" src="images/ch_new_version.png" alt="Update" /><figcaption>Aktualizace k dispozici</figcaption></figure>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Important:</b> At present you will need to wait a minute or so then refresh your browser a second time to insure that the latest version is loaded; hopefully by the 1.0 release all of this will take place smoothly in the background.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> V současné době budete muset chvíli počkat a potom obnovit prohlížeč podruhé, abyste se ujistili, že je načtena nejnovější verze. Doufáme, že v 1.0 vydání to vše bude probíhat hladce na pozadí.</div>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Note:</b> If your browser <strong>does not</strong> support Service Workers then refreshing your browser will always load the current version, but you will not be able to load CourtHive/TMX when you are not connected to the internet.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Pokud váš prohlížeč nepodporuje Service Workers, obnovení prohlížeče vždy načte aktuální verzi, ale nebudete moci načíst CourtHive / TMX, pokud nejste připojeni k internetu.</div>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Context Click on the Home Icon at any time to check your version.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Kontext kliknutím na ikonu Domů můžete kdykoli zkontrolovat aktuální verzi.</div>
 
-<h2 id="old-and-new-versions">Old and New Versions</h2>
+<h2 id="staré-a-nové-verze">Staré a nové verze</h2>
 <ul>
-  <li>The <strong>last</strong> version of CourHive/TMX are available on: <a href="https://CourtHive.com/tmx-">https://CourtHive.com/tmx-</a></li>
-  <li>The <strong>next</strong> release candidate is available on <a href="https://CourtHive.com/tmx+">https://CourtHive.com/tmx+</a></li>
-  <li><strong>Bleeding edge</strong> releases and urgent bug fixes are available on <a href="https://CourtHive.com/tmx++">https://CourtHive.com/tmx++</a></li>
+  <li>Poslední verze CourHive / TMX je k dispozici na adrese: <a href="https://CourtHive.com/tmx-">https://CourtHive.com/tmx-</a></li>
+  <li>Další kandidát na vydání nové verze je k dispozici na adrese: <a href="https://CourtHive.com/tmx+">https://CourtHive.com/tmx+</a></li>
+  <li>Naléhavé opravy chyb naleznete na adrese: <a href="https://CourtHive.com/tmx++">https://CourtHive.com/tmx++</a></li>
 </ul>
 
 
@@ -544,7 +544,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Jun 6, 2018 <br />
+ Site last generated: Aug 3, 2018 <br />
                 </div>
             </div>
 </footer>

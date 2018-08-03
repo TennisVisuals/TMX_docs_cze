@@ -76,7 +76,7 @@
 
 
 {
-"title": "Configuration Keys",
+"title": "Konfigurační klíče",
 "tags": "",
 "keywords": "Installation, Setup",
 "url": "tmx_configuration.html",
@@ -131,7 +131,7 @@
 
 
 {
-"title": "Demonstration Videos",
+"title": "Demonstrační videa",
 "tags": "",
 "keywords": "tournament demonstration videos",
 "url": "tmx_demos.html",
@@ -164,9 +164,9 @@
 
 
 {
-"title": "Language Selection",
+"title": "Výběr jazyka",
 "tags": "",
-"keywords": "Installation, Language Selection",
+"keywords": "Installation, Výběr jazyka",
 "url": "tmx_idiom.html",
 "summary": ""
 }
@@ -274,7 +274,7 @@
 
 
 {
-"title": "CourtHive/TMX Setup",
+"title": "Instalace CourtHive / TMX",
 "tags": "",
 "keywords": "Installation, Setup",
 "url": "tmx_setup.html",
@@ -285,7 +285,7 @@
 
 
 {
-"title": "CourtHive/TMX Support",
+"title": "Podpora CourtHive / TMX",
 "tags": "",
 "keywords": "Support",
 "url": "tmx_support.html",
@@ -417,9 +417,9 @@
 
 
 {
-"title": "Versions",
+"title": "Verze",
 "tags": "",
-"keywords": "Versions",
+"keywords": "Verze",
 "url": "tmx_versions.html",
 "summary": ""
 }
