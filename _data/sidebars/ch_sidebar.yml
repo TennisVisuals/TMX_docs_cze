@@ -4,144 +4,144 @@ entries:
   version: 1.0
   folders:
 
-  - title: Overview
+  - title: Přehled
     output: web
     folderitems:
 
-    - title: Vision
+    - title: Vize
       url: /index.html
       output: web
       type: homepage
 
-    - title: Features
+    - title: Funkce
       url: /tmx_overview.html
       output: web
 
-    - title: Demonstration Videos
+    - title: Demonstrační videa
       url: /tmx_demos.html
       output: web
 
-    - title: Support
+    - title: Podpora
       url: /tmx_support.html
       output: web
 
-  - title: Installation
+  - title: Instalace
     output: web
     folderitems:
 
-    - title: Setup
+    - title: Nastavení
       url: /tmx_setup.html
       output: web
 
-    - title: Language Selection
+    - title: Výběr jazyka
       url: /tmx_idiom.html
       output: web
 
-    - title: Configuration Keys
+    - title: Konfigurační klíče
       url: /tmx_configuration.html
       output: web
 
-    - title: Versions
+    - title: Verze
       url: /tmx_versions.html
       output: web
 
-  - title: Fundamentals
+  - title: Základy
     output: web
     folderitems:
 
-    - title: Context Menus
+    - title: Kontextové menu
       url: /tmx_fundamentals.html
       output: web
 
-    - title: Using the Search Box
+    - title: Používání vyhledávacího pole
       url: /tmx_searchbox.html
       output: web
 
-    - title: Local and Remote Data
+    - title: Lokální a vzdálená data
       url: /tmx_data.html
       output: web
 
-    - title: Resetting TMX
+    - title: Resetování TMX
       url: /tmx_reset.html
       output: web
 
-  - title: Player Database
+  - title: Databáze hráčů
     output: web
     folderitems:
 
-    - title: Managing Players
+    - title: Správa databáze hráčů
       url: /tmx_players_managing.html
       output: web
 
-    - title: Player Rankings
+    - title: Žebříčky hráčů
       url: /tmx_players_rankings.html
       output: web
 
-    - title: Example Dataset
+    - title: Příklad datového souboru s hráči
       url: /tmx_players_example.html
       output: web
 
-  - title: Tournament Calendar
+  - title: Kalendář turnajů
     output: web
 
     folderitems:
-    - title: Navigating the Calendar
+    - title: Navigace kalendářem
       url: /tmx_tournaments_navigation.html
       output: web
 
-    - title: Managing Tournaments
+    - title: Správa turnajů
       url: /tmx_tournaments_management.html
       output: web
 
-  - title: Editing Tournaments
+  - title: Editace turnajů
     output: web
 
     folderitems:
-    - title: Getting Started
+    - title: Začínáme s turnajem
       url: /tmx_tournament_overview.html
       output: web
 
-    - title: Tournament Information
+    - title: Informace o turnaji
       url: /tmx_tournament_information.html
       output: web
 
-    - title: Players
+    - title: Hráči
       url: /tmx_tournament_players.html
       output: web
 
-    - title: Courts
+    - title: Kurty
       url: /tmx_tournament_courts.html
       output: web
 
-    - title: Events
+    - title: Soutěže
       url: /tmx_events_management.html
       output: web
 
-    - title: Draws
+    - title: Hrací plány
       url: /tmx_tournament_draws.html
       output: web
 
-    - title: Scoring
+    - title: Výsledky
       url: /tmx_tournament_scoring.html
       output: web
 
-    - title: Matches
+    - title: Seznam utkání
       url: /tmx_tournament_matches.html
       output: web
 
-    - title: Schedule
+    - title: Rozpisy utkání
       url: /tmx_tournament_schedule.html
       output: web
 
-    - title: Points
+    - title: Body
       url: /tmx_tournament_points.html
       output: web
 
-  - title: Publishing
+  - title: Zveřejňování
     output: web
 
     folderitems:
-    - title: How It Works
+    - title: Jak zveřejňování funguje
       url: /tmx_publishing_overview.html
       output: web
 
