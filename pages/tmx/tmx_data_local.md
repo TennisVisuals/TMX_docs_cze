@@ -1,5 +1,5 @@
 ---
-title: Importing and Exporting Local Data
+title: Import a export lokálních dat
 keywords: tmx data export
 sidebar: ch_sidebar
 permalink: tmx_data_local.html

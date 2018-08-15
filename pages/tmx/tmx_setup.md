@@ -1,40 +1,49 @@
 ---
-title: Instalace CourtHive / TMX
+title: Instalace CourtHive/TMX
 keywords: Installation, Setup
 sidebar: ch_sidebar
 permalink: tmx_setup.html
 toc: false
 ---
-## Nakonfigurujte prohlížeč
+## Konfigurace prohlížeče
 
-CourtHive / TMX je implementována jako [progresivní webová aplikace](https://en.wikipedia.org/wiki/Progressive_Web_Apps){:target="_ blank"}, což znamená, že po prvním otevření ve vašem prohlížeči může být spuštěna i po odpojení internetu ... za předpokladu, že Váš prohlížeč podporuje [Service Workers](https://caniuse.com/#feat=serviceworkers).  
+CourtHive/TMX je implementován jako [progresivní webová aplikace](https://en.wikipedia.org/wiki/Progressive_Web_Apps), což znamená, že po prvním otevření ve Vašem prohlížeči může být spuštěna i po odpojení internetu, za předpokladu, že Váš prohlížeč podporuje [Service Workers](https://caniuse.com/#feat=serviceworkers).  
 
-{% include tip.html content="Vytvořte záložku pro [CourtHive.com/tmx](https://CourtHive.com/tmx), abyste spustili aplikaci, když jste offline." %}
+{% include tip.html content="Vytvořte záložku pro [CourtHive.com/TMX](https://CourtHive.com/tmx), abyste mohli spustit aplikaci, když jste offline." %}
 
-SNěkteré prohlížeče, jako například Firefox, zakážou Service Workers pokud nejsou povoleny soubory cookies. Chcete-li používat všechny funkce CourtHive / TMX, měli byste povolit soubory cookies (i když CourtHive / TMX nevyužívá cookies).
+Některé prohlížeče, jako například Firefox, zakážou Service Workers, pokud nejsou povoleny soubory cookies. Chcete-li používat všechny funkce CourtHive/TMX, měli byste povolit soubory cookies (i když CourtHive/TMX nevyužívá cookies).
 
 {% include important.html content="Pro plnou offline podporu povolte cookies pro Courthive.com" %}
 
-## Zkontrolujte výchozí nastavení
+## Kontrola výchozího nastavení
 
-Na domovské obrazovce klikněte na ikonu nastavení a nakonfigurujte své předvolby. Pokud jste obdrželi [konfigurační klíč](tmx_configuration.html), mohly být některé konfigurace pro vás nakonfigurovány a nemusí být dostupné (například Loga organizace).
+Na domovské stránce klikněte na ikonu Nastavení a nakonfigurujte své předvolby. Pokud jste obdrželi [Konfigurační klíč](tmx_configuration.html), mohla být některá nastavení už nakonfigurována a nemusí být dostupná (například Loga organizace).
 
-{% include image.html file="ch_settings_icon.png" alt="Settings" caption="Settings" %}
+{% include image.html file="ch_settings_icon.png" alt="Nastavení" caption="Nastavení" %}
 
 | Záložka | Název nastavení | Vysvětlení |
 |-------|--------|---------|
 | Org | Loga | Nahrajte loga pro použití v PDF seznamech přihlášených hráčů, hracích plánech a rozpisech utkání |
 | Obecné nastavení | Týden začíná v pondělí | Nastaví první týdenní den od pondělí místo neděle |
+| Obecné nastavení | Odkazy na dokumentaci | Zobrazí v příslušných záložkách odkazy na dokumentaci |
 | Vyhledávání | Příjmení, jméno | Při zadávání jmen se vrací výchozí pořadí |
 | Vyhledávání | Diakritika | Hledání pomocí diakritiky (znaky nad nebo pod) |
-| Hrací plány | Compressed Draw Formats | Whether to allow 12, 24, 48 draw sizes |
-| Hrací plány | Automatic Bye Placement | De-select if you want to place Byes manually |
-| Hrací plány | Fixed Bye Order | Do not place byes strictly by seeding |
-| Hrací plány | LL from All Qualifying Rounds | Include losers from all rounds on LL sign up sheet |
-| Hrací plány | Court Details | Display scheduled court in draw |
-| Hrací plány | Matches Before Count | Display # of prior matches  in draw |
-| Zveřejňování | Vyžádovat potvrzení zveřejnění  | Ke zveřejnění nedojde bez potvrzení |
+| Hrací plány | Komprimovaný formát hracího plánu | Zda-li povolit komprimované hrací pole pro 12, 24 a 48 hráčů |
+| Hrací plány | Automatické přidělení volných kol (byes) | Neoznačovat pokud mají být vybrána umístění volných kol (byes) manuálně |
+| Hrací plány | Fixní distribuce volných kol (byes) | Volná kola fixně na řádky místo podle nasazení hráčů |
+| Hrací plány | Automaticky separovat hráče podle zemí | Při automatickém losování jsou hráči ze stejných zemí odděleni |
+| Hrací plány | Automaticky separovat hráče podle klubů | Při automatickém losování jsou hráči ze stejných klubů odděleni |
+| Hrací plány | Lucky Losers ze všech kvalifikačních kol | Zahrnout Lucky Losers ze všech kol na seznam dostupných Lucky Losers |
+| Hrací plány | Kvalifikaci navázat na soutěž útěchy | Poražení z kvalifikace se mohou zúčastnit soutěže útěchy |
+| Hrací plány | Hráči v soutěži útěchy ze všech kol hlavní soutěže | Všichni poražení ze všech kol hlavní soutěže se mohou zúčastnit soutěže útěchy |
+| Hrací plány | Nasazovat hráče v soutěži útěchy | V soutěži útěchy nasazovat hráče podle žebříčku |
+| Hrací plány | Zobrazit vlajky zemí | Zobrazí vlajku země u každého hráče v hracím plánu |
+| Hrací plány | Číslo kurtu a pořadí utkání viditelné v hracím plánu | Zobrazí číslo kurtu a pořadí utkání na kurtu v hracím plánu |
+| Hrací plány | Počet předchozích utkání na dvorci | Zobrazí počet předchozích utkání na kurtu v hracím plánu |
+| Hrací plány | Zobrazit datum utkání v eliminačním hracím plánu | Zobrazí i datum utkání v eliminačním hracím plánu |
+| Zveřejňování | Vyžadovat potvrzení zveřejnění  | Ke zveřejnění nedojde bez potvrzení |
 | Zveřejňování | Zveřejnit hned jak je skóre zapsáno | Okamžité zveřejnění |
-| Tisk | Uložit PDFs | Uložit okamžitě namísto otevření na nové záložce |
-| Rozpis utkání | Výsledky utkání v pořadí dle hracího plánu | Pokud zatrženo tak skóre z pohledu vítěze |
-| Rozpis utkání | Skončená utkání vyhledávat v rozpisu | Zobrazí skončené zápasy ve vyhledávání |
+| Zveřejňování | Zveřejnit hrací plán živě v průběhu losování | Živě v průběhu losování ukazovat zaplňování pozic na hracím plánu |
+| Tisk | Uložit PDFs | Uložit okamžitě do vybrané složky namísto otevření na nové záložce prohlížeče |
+| Rozpis utkání | Výsledky utkání zobrazit vždy z pohledu vítěze | Pokud zatrženo tak je skóre vždy zobrazeno z pohledu vítěze bez ohledu na to který hráč je uveden v rozpisu utkání jako první |
+| Rozpis utkání | Ukončená utkání vyhledávat v rozpisu | Zobrazí ukončené zápasy ve vyhledávání |

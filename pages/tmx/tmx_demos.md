@@ -6,11 +6,11 @@ permalink: tmx_demos.html
 toc: false
 ---
 
-Záznamy o použití aplikace CourtHive / TMX jsou součástí celé dokumentace.  
+Videa zobrazující způsob používání aplikace CourtHive/TMX jsou součástí celé dokumentace.  
 
 Zde jsou některé úvodní příklady:
 
-## Základní úvod
+## Základní příklad
 
 Demonstruje jazyk nastavení a načte příkladovou databázi hráčů ATP / WTA
 

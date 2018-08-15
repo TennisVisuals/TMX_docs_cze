@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" Scoring Matches">
-<title>Scoring Matches | CourtHive Documentation</title>
+<title>Zadávání výsledků | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Scoring Matches">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Zadávání výsledků">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Scoring Matches</h1>
+   <h1 class="post-title-main">Zadávání výsledků</h1>
 </div>
 
 
@@ -489,92 +489,92 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>Once draws have been completed they become available for scoring.</p>
+  <p>Jakmile je hrací plán vytvořen tak je možno zadávat výsledky jednotlivých utkání.</p>
 
-<p>Scores can be entered directly into Draws and Brackets, on the <a href="tmx_tournament_matches.html">Matches Tab</a>, or in the <a href="tmx_tournament_schedule.html">Schedule</a>.</p>
+<p>Výsledky mohou být zadávány přímo do hracích plánů a skupin, v záložce <a href="tmx_tournament_matches.html">Seznam utkání</a> nebo v <a href="tmx_tournament_schedule.html">Rozpisu utkání</a>.</p>
 
-<h2 id="elimination-draws">Elimination Draws</h2>
+<h2 id="eliminační-hrací-plány">Eliminační hrací plány</h2>
 
-<p>When Elimination Draws are complete, the matches which may be scored are highlighed.</p>
+<p>Po vytvoření eliminačního hracího plánu jsou utkání, u kterých může být zadán výsledek, zvýrazněna.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_elimination_positions.png" alt="Highlighed Matches" /><figcaption>Highlighed Matches</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_elimination_positions.png" alt="Zvýrazněná utkání" /><figcaption>Zvýrazněná utkání</figcaption></figure>
 
-<h2 id="round-robin-brackets">Round Robin Brackets</h2>
+<h2 id="skupinové-hrací-plány">Skupinové hrací plány</h2>
 
-<p>Positions which may be scored are highlighed in blue when the mouse hovers over them.</p>
+<p>Pozice, kam můžou být zadány výsledky jsou zvýrazněny <em>modře</em> pokud se nad nimi pohybuje kurzorem.</p>
 
-<p>Positions which are invalid for scoring because of <strong>Byes</strong> are colored light yellow.</p>
+<p>Pozice, kam výsledek nemůže být zadán kvůli volnému kolu (Byes), jsou zbarveny světle žlutě.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_rr_positions.png" alt="Highlighed Matches" /><figcaption>Highlighed Matches</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_rr_positions.png" alt="Zvýrazněná utkání" /><figcaption>Zvýrazněná utkání</figcaption></figure>
 
-<h2 id="score-entry">Score Entry</h2>
+<h2 id="zápis-výsledku">Zápis výsledku</h2>
 
-<p>The method of score entry is the same for all events.</p>
+<p>Metoda zápisu výsledku je stejná pro všechny soutěže.</p>
 
-<p>Active selectors are <strong>white</strong> and are used to enter the number of games won by each player.</p>
+<p>Activní buňky výběru skóre jsou <strong>bílé</strong> a slouží k zápisu počtu her ke každému hráči.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_entry.png" alt="Score Entry" /><figcaption>Score Entry</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_entry.png" alt="Zápis výsledku" /><figcaption>Zápis výsledku</figcaption></figure>
 
-<h3 id="scoring-format">Scoring Format</h3>
-<p>To change scoring for an single match, click the icon in the upper right hand corner to toggle <strong>Scoring Configuration</strong>.</p>
+<h3 id="formát-skóre">Formát skóre</h3>
+<p>Ke změně formátu výsledku pro jednotlivá utkání je třeba kliknout na ikonu v pravém horním rohu okna pro zadávání výsledků a změnit <strong>formát skóre</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_configuration.png" alt="Scoring Configuration" /><figcaption>Scoring Configuration</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_configuration.png" alt="Formát skóre" /><figcaption>Formát skóre</figcaption></figure>
 
-<h3 id="auto-completion">Auto Completion</h3>
+<h3 id="automatické-dokončování">Automatické dokončování</h3>
 
-<p>Only a single value needs to be provided for each set, the lower number of <strong>Games Won</strong>.</p>
+<p>Pro každý set je třeba zadat pouze jednu hodnotu, a to nižší počet her u hráče který set prohrál.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_games.png" alt="Scoring Games" /><figcaption>Scoring Games</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_games.png" alt="Zadávání počtu her" /><figcaption>Zadávání počtu her</figcaption></figure>
 
-<p>The complementary value is calculated automatically and scoring advances to the next set, if the match is incomplete.</p>
+<p>Systém automaticky doplní druhý počet her které vyhrál druhý hráč a skóre se automaticky posune k zadání dalšího setu pokud není zápis výsledku ukončen.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_first_set.png" alt="First Set Score" /><figcaption>First Set Complete</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_first_set.png" alt="Skóre 1.setu" /><figcaption>Skóre 1.setu</figcaption></figure>
 
-<h3 id="modifying-set-scores">Modifying Set Scores</h3>
+<h3 id="změna-skóre-v-setu">Změna skóre v setu</h3>
 
-<p>If the score for a set needs to be modified, clicking on either of the players’ scores takes the focus back to that set.</p>
+<p>Pokud je třeba změnit výsledek v setu, kliknutí na skóre v setu u příslušného hráče znovu zobrazí okno pro výběr hodnoty / počtu her v tomto setu.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_edit_first_set.png" alt="Modify Set Score" /><figcaption>Modify Set Score</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_edit_first_set.png" alt="Změna skóre v setu" /><figcaption>Změna skóre v setu</figcaption></figure>
 
-<h3 id="incomplete-matches-retirements-walkovers-and-defaults">Incomplete Matches, Retirements, Walkovers and Defaults</h3>
+<h3 id="nedokončená-utkání-vzdání-skreče-postup-bez-boje-a-diskvalifikace">Nedokončená utkání, vzdání, skreče, postup bez boje a diskvalifikace</h3>
 
-<p>Clicking on the green <strong>dash</strong> “-“ to the right of the set scores presents options for completing the match scoring by Retirement, Walkover, or Default, as well as the option to mark a match as Interrupted or “Live”.</p>
+<p>Kliknutí na zelenou <strong>pomlčku</strong> “-“ vpravo zobrazí volby pro zápis výsledku nedokončeného utkání jako je skreč, vzdání (Retirement), postup bez boje (Walkover) nebo diskvalifikace (Default), tak jako volbu označit utkání jako <strong>přerušené (Interrupted)</strong> nebo <strong>živé (Live)</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_options.png" alt="Scoring Options" /><figcaption>Scoring Options</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_options.png" alt="Volby skóre" /><figcaption>Volby skóre</figcaption></figure>
 
-<h3 id="accepting-match-scores">Accepting Match Scores</h3>
+<h3 id="akceptace-výsledku-utkání">Akceptace výsledku utkání</h3>
 
-<p>When scoring is complete the <strong>“Accept”</strong> button sumbmits the score.</p>
+<p>Až je zápis výsledku ukončen, tak se kliknutím na tlačítko <strong>“Akceptovat”</strong> výsledek uloží.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_live.png" alt="Accept Scoring" /><figcaption>Accept Scoring</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_live.png" alt="Akceptace skóre" /><figcaption>Akceptace skóre</figcaption></figure>
 
-<h3 id="editing-match-scores">Editing Match Scores</h3>
+<h3 id="editace-výsledku">Editace výsledku</h3>
 
-<p>Match scores may be edited by clicking on <strong>existing scores</strong>.</p>
+<p>Výsledek utkání může být editován kliknutím na <strong>existující skóre</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_incomplete.png" alt="Edit Score" /><figcaption>Edit Score</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_incomplete.png" alt="Editace skóre" /><figcaption>Editace skóre</figcaption></figure>
 
-<p>When a match has been completed, scoring for subsequent matches is enabled.</p>
+<p>Jakmile je výsledek utkání zadán, tak je umožněn zápis skóre pro následující utkání (pokud jsou oba hráči známi).</p>
 
-<figure><img class="docimage" src="images/ch_scoring_complete.png" alt="Scoring Complete" /><figcaption>Scoring Complete</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_complete.png" alt="Skóre dokončeno" /><figcaption>Skóre dokončeno</figcaption></figure>
 
-<h3 id="removing-matches">Removing Matches</h3>
+<h3 id="odstranění-utkání">Odstranění utkání</h3>
 
-<p>Match results can be removed from a Draw or Bracket by <a href="tmx_fundamentals.html">Context Clicking</a>.</p>
+<p>Výsledek utkání může být odstraněn z hracího plánu pomocí <a href="tmx_fundamentals.html">kontextového  kliknutí</a>.</p>
 
-<p>Match results are also removed when scoring is <em>cleared</em> in the scoring dialogue.</p>
+<p>Výsledek utkání je také odstraněn když je skóre <em>vyčištěno</em> v okně pro zadávání výsledků.</p>
 
-<figure><img class="docimage" src="images/ch_scoring_remove.png" alt="Remove Match" /><figcaption>Remove Match</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_remove.png" alt="Odstranit utkání" /><figcaption>Odstranit utkání</figcaption></figure>
 
-<h3 id="tiebreak-scores">Tiebreak Scores</h3>
+<h3 id="výsledek-tie-breaku">Výsledek tie-breaku</h3>
 
-<p>Entry of tiebreak scores is similar to entering set scores except that an entry field is used instead of a selector.</p>
+<p>Zápis výsledku tie-breaku je podobný jako zadání výsledku v setu jen s tím rozdílem, že do vstupního pole musí být manuálně zadán výsledek tie-breaku místo výběru hodnoty (stačí zadat nižší počet bodů u hráče který tie-break prohrál).</p>
 
-<figure><img class="docimage" src="images/ch_scoring_tiebreak.png" alt="Tiebreak Score" /><figcaption>Tiebreak Score</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_tiebreak.png" alt="Skóre tie-breaku" /><figcaption>Skóre tie-breaku</figcaption></figure>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Since entry fields are used for tiebreak scores the <strong>Enter/Return</strong> key <em>must</em> be pressed to complete scoring.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Jelikož jsou použita vstupní pole pro zadání výsledku tie-breaku, tak stisk klávesy <strong>Enter/Return</strong> <em>je nutný</em> k dokončení zápisu skóre.</div>
 
-<figure><img class="docimage" src="images/ch_scoring_winner.png" alt="Match Winner" /><figcaption>Match Winner</figcaption></figure>
+<figure><img class="docimage" src="images/ch_scoring_winner.png" alt="Vítěz utkání" /><figcaption>Vítěz utkání</figcaption></figure>
 
 
 
@@ -594,7 +594,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

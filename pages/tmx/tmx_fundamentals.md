@@ -1,28 +1,28 @@
 ---
-title: Context Menus
+title: Kontextové menu
 keywords: fundamentals mouse keyboard
 sidebar: ch_sidebar
 permalink: tmx_fundamentals.html
 toc: false
 ---
-## CourtHive/TMX makes extensive use of "Context" menus
+## CourtHive/TMX využívá extenzivně "Kontextové" menu
 
-* Context Menus are accessed by Right Clicking (Windows) or Control Clicking (Mac).
-* Example: The icon for publishing can be used to 'un-publish' a draw or a schedule.
-* Example: Clicking on an incomplete match in a draw will launch a scoring dialogue, while Context Clicking the same location offers the option to remove the match.
+* Kontextové menu je zpřístupněno pomocí kliknutí pravým tlačítkem myši / touchpadu (Windows) nebo Control kliknutím (Mac).
+* Příklad: Ikona pro zveřejňování může být použita ke zrušení zveřejnění ('un-publish') hracího plánu nebo rozpisu utkání.
+* Příklad: Kliknutí na nedokončené utkání v hracím plánu otevře okno pro zadání skóre zatímco kontextové kliknutí na stejné místo nabídne možnost odstranit utkání.
 
-## Other Uses of Context Clicking:
-* Nominating Wildcards in Event Creation
-* Swapping Player Positions in Draws
-* Determining Alternates in Draws
-* Deleting or Merging Tournaments in Calendar
-* Providing Scheduling Details and Match Start/Finish times
-* Assessing Penalties in Schedules
-* Defining Match Referees in Schedules
+## Další možnosti použití kontextového kliknutí:
+* Nominace volných karet v soutěži
+* Výměna pozice hráčů v hracím plánu
+* Určení náhradníků v harcím plánu
+* Smazání nebo spojení turnajů v kalendáři
+* Nabídka detailů pro rozpis utkání a časů začátku / konce utkání
+* Přístup k zadání trestů v rozpisu utkání
+* Zadání rozhodčího utkání v rozpisu
 
 <br>
-{% include tip.html content="Context Clicking is often the opposite of normal clicking." %}
+{% include tip.html content="Kontextové kliknutí je často opakem normálního kliknutí." %}
 
-{% include tip.html content="Context Click the Home Icon to check messages and system version." %}
+{% include tip.html content="Kontextové kliknutí na ikonku Domů vyvolá kontrolní zprávy a verzi systému." %}
 
-{% include tip.html content="Context Menus may often be dismissed by pressing the Escape Key." %}
+{% include tip.html content="Kontextové menu  může být většinou zrušeno stlačením klávesy Esc." %}

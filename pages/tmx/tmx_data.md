@@ -1,27 +1,30 @@
 ---
-title: Local and Remote Data
+title: Lokální a vzdálená data
 keywords: data management
 sidebar: ch_sidebar
 permalink: tmx_data.html
 toc: false
 ---
 
-## Local Data
+## Lokální data
 
-CourtHive/TMX makes use of [IndexedDB](https://en.wikipedia.org/wiki/Indexed_Database_API) to build a local database which includes (among other things) settings, players, rankings, tournaments, matches and points.
+CourtHive/TMX využívá [IndexedDB](https://en.wikipedia.org/wiki/Indexed_Database_API) ke stavbě lokální databáze která zahrnuje zejména nastavení, hráče, žebříčky, turnaje, utkání a body.
 
-__IndexedDB__ is part of all modern browsers, but its function can sometimes be restricted by particular browser settings, including [Private Browsing](https://en.wikipedia.org/wiki/Privacy_mode).
+__IndexedDB__ je součástí všech moderních internetových prohlížečů ale tato funkce může být někdy omezena v nastavení prohlížeče, i včetně [Private Browsing](https://en.wikipedia.org/wiki/Privacy_mode).
 
-CourtHive/TMX uses the Home Icon to indicate when there may be issues with the persistence of local data.  If a possible issue is detected, the Home Icon turns <font color='red'>Red</font>.  Data may still be saved, but it is not guaranteed, which means the [User Agent](https://en.wikipedia.org/wiki/User_agent) may in some cases delete  site-specific data.
+CourtHive/TMX používá ikonu Domů k indikaci problému s perzistencí lokálních dat.  Pokud je problém zjištěn, ikona Domů se zbarví <font color='red'>červeně</font>.  Data mohou být i tak uložena ale není to garantováno. To znamená, že [User Agent](https://en.wikipedia.org/wiki/User_agent) může
+v některých vybraných případech smazat tato data specifická pro konkrétní internetovou stránku.
 
-See [Tournament Information](tmx_tournament_information.html) for instructions on how to push/pull copies of tournaments to/from the CourtHive Server and save copies of tournaments locally. See [Local Data](tmx_data_local.html) for instructions on how to reload tournaments from your local file system.
+Viz [Informace o turnaji](tmx_tournament_information.html) pro instrukce jak odeslat/stáhnout kopie turnajů na/z CourtHive Cloud Serveru a uložit kopie turnajů lokálně.
 
-The local database can be populated in two ways:
-* Drag/Drop of JSON, XLSX, or CSV Files: See [Importing/Exporting Local Data](tmx_data_local.html)
-* Fetching Data from the Cloud: See [Uploading/Downloading Cloud Data](tmx_data_cloud.html)
+Viz [Lokální data](tmx_data_local.html) pro instrukce jak znovu nahrát turnaje z vlastního lokálního úložiště souborů.
 
-## Remote Data
+Lokální databáze může být naplněna dvěma způsoby:
+* Chyť/Pusť JSON, XLSX, nebo CSV soubory: Viz [Import a export lokálních dat](tmx_data_local.html)
+* Přivedení dat z Cloudu: Viz [Odesílání a stahování cloudových dat](tmx_data_cloud.html)
 
-CourtHive/TMX uses [Web Sockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) to communicate with a CourtHive Cloud Server (CCS).  The CCS can both manage a data store and access third party data stores, such as a database hosted on a server maintained by a national tennis federation.
+## Vzdálená data
 
-When CourtHive/TMX has been configured with a key supplied by a third party organization it knows how to synchronize its local data with the remote data provided by the third party.
+CourtHive/TMX používá [Web Sockets](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API) ke komunikaci s CourtHive Cloud Serverem (CCS).  CCS může spravovat vlastní datové úložiště a přistupovat k datovým úložištím třetích stran, jako databáze hostované na serveru spravovaném národní tenisovou asociací.
+
+Pokud byl CourtHive/TMX konfigurován s klíčem dodaným třetí stranou, tak sám rozpozná jak synchronizovat svá lokální data se vzdálenými daty poskytnutými touto třetí  stranou.

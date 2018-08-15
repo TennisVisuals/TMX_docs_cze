@@ -1,88 +1,88 @@
 ---
-title: Tournament Schedule
+title: Rozpis utkání
 keywords: tournament schedule
 sidebar: ch_sidebar
 permalink: tmx_tournament_schedule.html
 toc: true
 ---
 
-{% include important.html content="The __Scheduling Tab__ will not appear until at least one [Tournament Event](tmx_events_management.html) has been created and one [Court Location](tmx_tournament_courts.html) has been defined." %}
+{% include important.html content="Záložka __Rozpis utkání__ se neobjeví dokud alespoň jedna [turnajová soutěž](tmx_events_management.html) nebyla vytvořena a jeden turnajový [Areál](tmx_tournament_courts.html) nebyl nadefinován." %}
 
-## Action Icons
+## Akční ikony
 
-To the right of the __Day Selector__ are several "Action Icons"
+V pravé části záložky od __Výběru hracího dne__ je několik "akčních ikon"
 
-* __Match Icon:__ toggle match scheduling panel
-* __Timing Icon:__ toggle timing notes panel
-* __PDF Icon:__ generate a PDF of the schedule
+* __Ikona "Naplánovat utkání / (Ikona hráče):__ přepíná plánovací panel rozpisu utkání s nabídkou dosud nenaplánovaných utkání
+* __Ikona "OOP komentář" / Časová ikona:__ zobrazí dialogové okno pro zadání poznámek k rozpisu utkání
+* __PDF ikona:__ vytvoří PDF soubor s rozpisem utkání
 
-{% include image.html file="ch_schedule_tab.png" alt="Schedule" caption="Tournament Scheduling" %}
+{% include image.html file="ch_schedule_tab.png" alt="Rozpis utkání" caption="Turnajový rozpis utkání" %}
 
 
-## Scheduling Matches
+## Plánování utkání v rozpisu
 
-Clicking on the __Match Icon__ shows/hides the match scheduling panel.
+Kliknutí na ikonu __Naplánovat utkání__ ukáže / skryje panel s nenaplánovanými zápasy.
 
-{% include image.html file="ch_schedule_scheduling_panel.png" alt="Scheduling Panel" caption="Scheduling Panel" %}
+{% include image.html file="ch_schedule_scheduling_panel.png" alt="Plánovací panel" caption="Plánovací panel" %}
 
-### Day Selection
+### Výběr hracího dne
 
-When scheduling matches, the __Day Selector__ determines the day on which matches will be scheduled.
+Během plánování utkání použití tlačítka __Výběr hracího dne__ určí konkrétní den na který budou utkání naplánována.
 
-### Filtering Matches
+### Filtrování utkání
 
-On the __scheduling panel__ it is possible to filter matches by __Event__ and __Round__.
+Na __plánovacím panelu__ je možné filtrovat utkání podle __soutěže__ a podle __kola__.
 
-### Auto Scheduling
+### Automatické plánování
 
-The __Auto Schedule__ button begins the process of scheduling matches shown in the match list of the __scheduling panel__.
+Tlačítko __Automatické plánování__ začne proces naplánování, t.j. nasazení utkání v plánovacím panelu na dvorce.
 
-If multiple rounds of an event are being scheduled then scheduling priority must be chosen.
+Pokud jsou plánovana na dvorce utkání z více kol ze soutěže pak musí být vybrána plánovací priorita.
 
-{% include image.html file="ch_schedule_priority.png" alt="Scheduling Priority" caption="Scheduling Priority" %}
+{% include image.html file="ch_schedule_priority.png" alt="Plánovací priorita" caption="Plánovací priorita" %}
 
-__Order Prioity__ means that matches within one event will be scheduled in order from the top to the bottom, regardless of the _round_ in which they occur.
+__Priorita dle pořadí__ znamená, že utkání z jedné soutěže budou naplánována v pořadí shora dolů dle hracího plánu, bez ohledu na _kolo_ ke kterému utkání přísluší.
 
-__Round Prioity__ means that earlier rounds will be scheduled _before_ later rounds.
+__Priorita dle kola__ znamená že utkání dřívějších kol budou naplánována _před_ pozdějšími koly.
 
-### Manual Scheduling
+### Manuální plánování
 
-Matches may be added to the schedule manually in two ways:
-* Draging and Dropping matches from the match list into the desired schedule cells
-* "Pulling" matches into schedule cells by clicking on a desired cell and beginning to type a player's name
+Utkání lze přidat do rozpisu manuálně dvěma způsoby:
+* Přesunutím utkání z plánovacího panelu na vybraný dvorec
+* Kliknutím na vybraný dvorec a zadáním jména hráče
 
-#### Drag and Drop Scheduling
+#### Plánování přetažením (Chyť a Pusť)
 {% unless site.output == "pdf" %}
    <iframe width="560" height="315" src="https://www.youtube.com/embed/wr8Z4Pw9YqA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 {% endunless %}
 
-#### Pulling Matches into Cells
-{% include image.html file="ch_schedule_pulling.png" alt="Match Search" caption="Match Search" %}
+#### Stažení utkání na dvorec (buňku)
+{% include image.html file="ch_schedule_pulling.png" alt="Vyhledání utkání" caption="Vyhledání utkání" %}
 
-### Match Times
+### Plánované časy utkání
 
-Match Times for a __Schedule Row__ are added by [Context Clicking](tmx_fundamentals.html) on the Row Number Cell on the left.
+Plánované časy utkání pro __celý řádek rozpisu utkání__ lze zadat pomocí [kontextového kliknutí](tmx_fundamentals.html) na číslo řádku vlevo.
 
-{% include image.html file="ch_schedule_metadata.png" alt="Match Search" caption="Match Search" %}
+{% include image.html file="ch_schedule_metadata.png" alt="Vyhledání utkání" caption="Vyhledání utkání" %}
 
-Match Times for __individual matches__ are added by [Context Clicking](tmx_fundamentals.html) on specific cells.
+Plánované časy utkání pro __individuální utkání__ lze zadat pomocí [kontextového kliknutí](tmx_fundamentals.html) na vybranou buňku (dvorec na řádku).
 
-### Match Metadata
+### Metadata utkání
 
-[Context Click](tmx_fundamentals.html) on schedule cells to define specific metadata for each match.
+[Kontextové kliknutí](tmx_fundamentals.html) na vybrané utkání v rozpisu vyvolá možnosti zadání specifických metadat pro každé utkání.
 
-{% include image.html file="ch_schedule_match_metadata.png" alt="Match Metadata" caption="Match Metadata" %}
+{% include image.html file="ch_schedule_match_metadata.png" alt="Metadata utkání" caption="Metadata utkání" %}
 
-## Referee Notes
+## Poznámka rozhodčího
 
-The __Timing Icon__ opens a dialogue where a referee may enter notes which will appear at the bottom of PDFs and at the top of online schedules.
+Ikona __OOP komentář / Časová ikona__ otevře dialogové okno kam může rozhodčí zadat poznámku která se objeví dole v PDF rozpisu utkání a nahoře v online rozpisu utkání.
 
-{% include image.html file="ch_schedule_order_of_play.png" alt="Scheduling Notes" caption="Scheduling Notes" %}
+{% include image.html file="ch_schedule_order_of_play.png" alt="Poznámky k rozpisu" caption="Poznámky k rozpisu" %}
 
-## Scoring Matches
+## Zadávání výsledků
 
-Click on schedule cells to add scores to matches.
+Kliknutí na utkání v rozpisu otevře dialogové okno k zadání výsledku. Pokud je otevřen __plánovací panel__ tak lze vyvolat okno pro zadání výsledku [kontextovým kliknutím](tmx_fundamentals.html).
 
-[Matches are scored in the schedule in the same way they are scored in other contexts.](tmx_tournament_scoring.html#score-entry)
+[Výsledky utkání lze zadávat v rozpisu utkání stejným způsobem jako v jiných záložkách.](tmx_tournament_scoring.html#score-entry)
 
-{% include image.html file="ch_schedule_status.png" alt="Schedule Status" caption="Schedule Status" %}
+{% include image.html file="ch_schedule_status.png" alt="Stav v rozpisu" caption="Stav v rozpisu" %}

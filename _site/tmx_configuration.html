@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" Installation, Setup">
-<title>Konfigurační klíče | CourtHive Documentation</title>
+<title>Konfigurační a autorizační klíče | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Konfigurační klíče">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Konfigurační a autorizační klíče">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Konfigurační klíče</h1>
+   <h1 class="post-title-main">Konfigurační a autorizační klíče</h1>
 </div>
 
 
@@ -466,27 +466,29 @@
 
     
 
-  <figure><img class="docimage" src="images/ch_keys.png" alt="Configuration Keys" /><figcaption>Ikona klíče</figcaption></figure>
+  <figure><img class="docimage" src="images/ch_keys.png" alt="Konfigurační klíče" /><figcaption>Ikona klíče</figcaption></figure>
 
-<p>Konfigurační klíče se dodávají ve dvou variantách:</p>
+<p>Klíče se dodávají ve dvou variantách:</p>
 <ul>
-  <li><strong>Organizační klíče:</strong> poskytnuty organizacím, které validovaly CourtHive pro použití na turnajích.</li>
-  <li><strong>Autorizační klíče:</strong> jednorázoví klíče generované správci organizace</li>
+  <li><strong>Konfigurační klíče:</strong> poskytnuty organizacím, které schválili CourtHive pro použití na turnajích.</li>
+  <li><strong>Autorizační klíče:</strong> jednorázové klíče generované správcem / administrátorem organizace za účelem zveřejňování turnaje</li>
 </ul>
 
-<p>Oba typy klíčů jsou zadávány pomocí dialogu Klíče, ke kterému přistupujete kliknutím na ikonu Klíče na domovské stránce.</p>
+<p>Oba typy klíčů jsou zadávány pomocí dialogu “Klíče”, ke kterému se přistupuje kliknutím na ikonu Klíče na domovské stránce.</p>
 
 <figure><img class="docimage" src="images/ch_enter_key.png" alt="Enter Configuration Key" /><figcaption>Zadejte konfigurační klíč</figcaption></figure>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Klíč musí být zadán nebo zkopírován a vložen do vstupního pole a musí být klepnuto na tlačítko Odeslat (nebo musí být stisknuto tlačítko Enter / Zpět), aby se klíč aktivoval.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Klíč musí být zadán nebo zkopírován a vložen do vstupního pole a musí být kliknuto na tlačítko Odeslat (nebo musí být stisknuto tlačítko Enter / Zpět), aby se klíč aktivoval.</div>
 
 <div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Klávesové zkratky pro kopírování / vkládání jsou Command-C / Command-V (Mac) a Control-C / Control-V (Windows)</div>
 
-<p>Klíč může určit výchozí nastavení pro koncového uživatele, stejně jako specifická nastavení jen pro danou organizaci jako např. jak mohou být tvořeny hrací plány turnajů a jak mohou být data vyměňována s jinými systémy. Klíč může také aktivovat nebo deaktivovat funkce systému a rozlišovat role v organizaci, jako je například rozhodčí nebo správce.</p>
+<p><strong>Konfigurační klíč</strong> může změnit výchozí nastavení systému pro uživatele, omezit vybrané komponenty pro použití a kontrolovat specifická nastavení jako způsob a počty nasazených hráčů, jak jsou alokovány body pro žebříčky a jestli jsou dostupné vzdálené služby pro kalendáře turnajů a registrace, jak mohou být data synchronizovány s jinými systémy.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Pokud není konfigurační klíč “jednorázový”, je uložen jako “existující” klíč v lokální databázi. Pokud organizace změní výchozí konfiguraci nebo pokud rozhodčí potřebuje přepnout mezi dvěma různými organizacemi, mohou být uložené klíče znovu načteny.</div>
+<p><strong>Organizační klíč</strong> je specifickým typem konfiguračního klíče, jako je např. mappování jazyků. Klíč může také aktivovat nebo deaktivovat funkce systému a rozlišovat role v organizaci, jako je například rozhodčí nebo správce.</p>
 
-<h2 id="funkce-konfigurované-pomocí-klíče">Funkce konfigurované pomocí klíče</h2>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Pokud není konfigurační klíč “jednorázový”, je uložen jako “existující” klíč v lokální databázi. Pokud organizace změní výchozí konfiguraci nebo pokud rozhodčí potřebuje přepnout mezi dvěma různými organizacemi, musí být uložené klíče znovu načteny.</div>
+
+<h2 id="funkce-konfigurovatelné-pomocí-klíče">Funkce konfigurovatelné pomocí klíče</h2>
 
 <h3 id="aktivovat--deaktivovat">Aktivovat / Deaktivovat</h3>
 <ul>
@@ -509,7 +511,7 @@
   <li>Tabulky bodů</li>
   <li>Kategorie hráčů</li>
   <li>Pravidla pro nasazování hráčů</li>
-  <li>Povolit / zakázat automatické vytvoření hracích plánů</li>
+  <li>Povolení / zákaz automatického vytváření hracích plánů</li>
 </ul>
 
 <h3 id="funkce-administrátora">Funkce administrátora</h3>
@@ -539,7 +541,7 @@
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

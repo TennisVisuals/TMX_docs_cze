@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" tournament event management">
-<title>Tournament Events | CourtHive Documentation</title>
+<title>Turnajové soutěže | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Tournament Events">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Turnajové soutěže">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Tournament Events</h1>
+   <h1 class="post-title-main">Turnajové soutěže</h1>
 </div>
 
 
@@ -489,167 +489,175 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="adding-and-deleting-events">Adding and Deleting Events</h2>
+  <h2 id="přidání-a-smazání-soutěží">Přidání a smazání soutěží</h2>
 
-<figure><img class="docimage" src="images/ch_events_add.png" alt="Add New Event" /><figcaption>Add New Tournament Event</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_add.png" alt="Přidat soutěž" /><figcaption>Přidat novou turnajovou soutěž</figcaption></figure>
 
-<p>The <strong>Gender Selector</strong> makes assumptions when new events are being added:</p>
+<p>Pole výběru pohlaví <strong>Muži / Ženy</strong> předpokládá při přidání nové soutěže:</p>
 <ul>
-  <li>default to Male if only male players have been signed-in</li>
-  <li>default to Female if only female players have been signed-in</li>
-  <li>default to Female if a Male Singles event already exists, or vice-versa</li>
+  <li>výchozí “Muži” když jsou pouze muži přihlášeni</li>
+  <li>výchozí ““Ženy” když jsou pouze ženy přihlášeny</li>
+  <li>výchozí ““Ženy” když mužská soutěž dvouhry už existuje nebo naopak</li>
 </ul>
 
-<figure><img class="docimage" src="images/ch_events_unsaved.png" alt="Save New Event" /><figcaption>Save New Tournament Event</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_unsaved.png" alt="Uložit soutěž" /><figcaption>Uložit novou turnajovou soutěž</figcaption></figure>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> For each new event <strong>eligible</strong> players are filtered according to the event configuration</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Pro každou novou soutěž jsou <strong>Přihlášení</strong> hráči filtováni podle konfigurace soutěže</div>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Events must be saved before Draws can be created and Matches scheduled</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Soutěže musí být uloženy předtím než Hrací plány mohou být vytvořeny a rozpis utkání naplánován</div>
 
-<p>Events which have been saved appear in the <strong>Event List</strong> and the <strong>Save</strong> button is replaced by a <strong>Delete Button</strong>.</p>
+<p>Soutěže které byly uloženy se objeví v <strong>Seznamu soutěží</strong> a <strong>Uložit soutěž</strong> tlačítko je nahrazeno tlačítkem <strong>Smazat soutěž</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_events_saved.png" alt="Saved Events" /><figcaption>Saved Events</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_saved.png" alt="Uložené soutěže" /><figcaption>Uložené soutěže</figcaption></figure>
 
-<h2 id="approving-players">Approving Players</h2>
+<h2 id="schvalování-hráčů">Schvalování hráčů</h2>
 
-<p>Elibible players are shown with <strong>Rank Order</strong> (#).</p>
+<p>Dostupní hráči jsou uvedeni v záložce <strong>Přihlášení</strong> v pořadí podle žebříčku__ (#).</p>
 
-<figure><img class="docimage" src="images/ch_events_approving.png" alt="Approving Players" /><figcaption>Approving Players</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_approving.png" alt="Schvalování hráčů" /><figcaption>Schvalování hráčů</figcaption></figure>
 
-<p>All eligible players can be approved by clicking <strong>+</strong> in the upper right corner of the eligible players section.</p>
+<p>Všichni přihlášení hráči mohou být schváleni kliknutím na <strong>+</strong> v pravém horním rohu sekce Přihlášení hráči.</p>
 
-<p>All approved players can be removed by clicking <strong>-</strong> in the upper right corner of the approved players section.</p>
+<p>Všichni schválení hráči v sekci <strong>Prezentovaní</strong> mohou být odstraněni kliknutím na <strong>-</strong> v pravém horním rohu sekce Prezentovaní hráči.</p>
 
-<p>Player can be added individually by clicking their names or by using the search box, which in this context is restricted to players eligible for the current event.</p>
+<p>Hráč může být přidán individuálně kliknutím na jeho jméno nebo použitím vyhledávacího pole, které je zde omezeno jen na přihlášené hráče.</p>
 
-<figure><img class="docimage" src="images/ch_events_approve_search.png" alt="Search Approve" /><figcaption>Search Approve</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_approve_search.png" alt="Hledat ke schválení" /><figcaption>Hledat ke schválení</figcaption></figure>
 
-<p>Players can be approved as a <strong>Wildcard</strong> by <a href="tms_fundamentals.html">Context Clicking</a> on their name.</p>
+<p>Hráči mohou být schválení jako <strong>Volné karty</strong> pomocí <a href="tms_fundamentals.html">Kontextního kliknutí</a> na své jméno.</p>
 
-<figure><img class="docimage" src="images/ch_events_wildcard.png" alt="Approve Wildcard" /><figcaption>Approve Wildcard</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_wildcard.png" alt="Schválit volnou kartu" /><figcaption>Schválit volnou kartu</figcaption></figure>
 
-<p>Once approved, players are sorted by last name and player rank order is replaced by seeding position, if applicable, or method of entry (Q, WC, LL).</p>
+<p>Poté, co jsou hráči schváleni a přesunuti do sekce <strong>Prezentovaní</strong>, jsou tito hráči seřazeni podle příjmení and žebříček hráče je nahrazen pozicí nasazení,
+a pokud přichází v úvahu, i způsobem akceptace (Q, WC, LL).</p>
 
-<figure><img class="docimage" src="images/ch_events_approved_seeding.png" alt="Approve Wildcard" /><figcaption>Approve Wildcard</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_approved_seeding.png" alt="Schválit volnou kartu" /><figcaption>Schválit volnou kartu</figcaption></figure>
 
-<h2 id="event-list">Event List</h2>
+<h2 id="seznam-soutěží">Seznam soutěží</h2>
 
-<p>The <strong>Event List</strong> dipslays information about each event in a compact form.</p>
+<p><strong>Seznam soutěží</strong> zobrazuje informaci o každé soutěži v kompaktní formě.</p>
 
-<p>Clicking on an event opens or closes the <strong>Event Details</strong> dialogue, where it is possible to edit an event.</p>
+<p>Kliknutí na soutěž otevře nebo zavře dialog <strong>Detaily o soutěži</strong> , kde je možné editovat soutěž.</p>
 
-<figure><img class="docimage" src="images/ch_events_list.png" alt="Events List" /><figcaption>Events List</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_list.png" alt="Seznam soutěží" /><figcaption>Seznam soutěží</figcaption></figure>
 
-<p>Information displayed about each event includes Draw Size, Number of Approved Players, Total Number of Matches, Number of Scheduled Matches, Event Rank, Indoor/Outdoor, Surface, whether a Draw has been created, and whether an event has been published.</p>
+<p>Informace zobrazené o každé soutěži zahrnují: velikost hracího pole, počet schválených hráčů / dvojic, celkový počet utkání, počet naplánovaných utkání v rozpisu,
+kategorie soutěže, hala/venku, povrch, jestli byl vytvořen hrací plán, and jestli byla soutěž publikována.</p>
 
-<h2 id="scoring-format">Scoring Format</h2>
+<h2 id="formát-skóre">Formát skóre</h2>
 
-<p>The scoring format is used for all matches within an event.  If the scoring format is changed after an event has begun, then the score format is changed for all matches which have not yet been scored.</p>
+<p>Formát skóre je použit pro všechna utkání v soutěži.  Když je formát skóre změněn poté co soutěž již začala a úvodní výsledky jsou zadány, pak se formát skóre změní do budoucna jen pro ta utkání u kterých ještě nebyl výsledek zadán.</p>
 
-<figure><img class="docimage" src="images/ch_events_scoring_default.png" alt="Default Scoring" /><figcaption>Default Scoring</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_scoring_default.png" alt="Výchozí formát skóre" /><figcaption>Výchozí formát skóre</figcaption></figure>
 
-<h2 id="automated-draws">Automated Draws</h2>
+<h2 id="automatické-losování-hracího-plánu">Automatické losování hracího plánu</h2>
 
-<p>In the <strong>Event Detail</strong> dialogue for each event is a button for enabling/disabling automatic draw generation.</p>
+<p>V dialogu <strong>Detaily o soutěži</strong> je pro každou soutěž k dispozici tlačítko pro aktivaci / deaktivaci automatického losování hracího plánu.</p>
 
 <div style="display: flex; flex-wrap: wrap;">
-   <div style="padding-right: 1em;"><figure><img class="docimage" src="images/ch_events_auto_play.png" alt="Play" /><figcaption>Play</figcaption></figure>
+   <div style="padding-right: 1em;"><figure><img class="docimage" src="images/ch_events_auto_play.png" alt="Spustit" /><figcaption>Spustit</figcaption></figure>
 </div>
-   <figure><img class="docimage" src="images/ch_events_auto_pause.png" alt="Pause" /><figcaption>Pause</figcaption></figure>
+   <figure><img class="docimage" src="images/ch_events_auto_pause.png" alt="Pauza" /><figcaption>Pauza</figcaption></figure>
 
 </div>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Automated Draws can be disabled by <a href="tmx_configuration.html">Organization Keys</a> when they are not officially endorsed</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Automatické losování může být zakázáno pomocí <a href="tmx_configuration.html">Organizačního klíče</a> pokud není oficiálně schváleno</div>
 
-<h2 id="linking-events">Linking Events</h2>
+<h2 id="propojené-soutěže">Propojené soutěže</h2>
 
-<p>Events may be linked together if they have the same Gender Setting and are complementary <strong>Draw Types</strong>.</p>
+<p>Soutěže mohou být spolu propojeny pokud jsou v nastavení stejného pohlaví a <strong>Typy hracího plánu</strong> se  doplňují.</p>
 
-<p>If a Male <strong>Elimination Event</strong> exits when adding a Male <strong>Qualification Event</strong>, or vice-versa, the option to link events appears in the bottom left corner of the <strong>Event Detail</strong> dialogue.</p>
+<p>Pokud mužská <strong>Vyřazovací soutěž</strong> existuje když je přidána mužská <strong>Kvalifikační soutěž</strong>, nebo naopak, možnost propojit obě soutěže se objeví v levém spodním
+rohu dialogu <strong>Detaily o soutěži</strong>.</p>
 
-<p>For a <strong>Qualification Event</strong> there is also a selector to define the number of players who will advance to a main draw event.</p>
+<p>Pro <strong>Kvalifikační soutěž</strong> je k dispozici pole výběru počtu hráčů kteří postoupí do hlavní soutěže.</p>
 
-<figure><img class="docimage" src="images/ch_events_qualification.png" alt="Qualification Event" /><figcaption>Adding a Qualification Event</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_qualification.png" alt="Kvalifikační soutěž" /><figcaption>Přidání kvalifikační soutěže</figcaption></figure>
 
-<p>When a <strong>Qualification Event</strong> is linked to an <strong>Elimination Event</strong> then the players already in the <strong>Elimination Event</strong> disappear from the eligible players list.</p>
+<p>Kyž je <strong>Kvalifikační soutěž</strong> propojena s <strong>Vyřazovací soutěží</strong> tak hráči, kteří jsou už ve <strong>Vyřazovací soutěži</strong> zmizí ze seznamu přihlášených hráčů.</p>
 
-<figure><img class="docimage" src="images/ch_events_linked_qualification.png" alt="Linked Event" /><figcaption>Linked Qualification Event</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_linked_qualification.png" alt="Propojené soutěže" /><figcaption>Propojená kvalifikační soutěž</figcaption></figure>
 
-<p>After players are approved and the number of qualifiers has been selected (<strong>four</strong> in this example), the <strong>Event List</strong> updates the Draw Size, Number of players, and Number of Matches for the linked <strong>Elimination Event</strong>.</p>
+<p>Poté co jsou hráči schváleni a počet kvalifikantů byl vybrán (čtyři v tomto příkladu), <strong>Seznam soutěží</strong> aktualizuje velikost hracího pole, počet
+hráčů, a počet utkání pro propojenou <strong>Vyřazovací soutěž</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_events_linked_qualifiers.png" alt="Linked Qualifiers" /><figcaption>Linked Qualifiers</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_linked_qualifiers.png" alt="Propojení kvalifikanti" /><figcaption>Propojení kvalifikanti</figcaption></figure>
 
-<p>Players who qualify automatically appear as <strong>Approved</strong> players in the linked <strong>Elimination Event</strong>.</p>
+<p>Hráči, kteří se automaticky kvalifikují se objeví jako <strong>Prezentovaní</strong> hráči v propojené <strong>Vyřazovací soutěži</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_events_players_qualified.png" alt="Qualifiers" /><figcaption>Qualified Players</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_players_qualified.png" alt="Kvalifikanti" /><figcaption>Kvalifikovaní hráči</figcaption></figure>
 
-<h2 id="lucky-losers">Lucky Losers</h2>
+<h2 id="lucky-losers-Štastní-poražení">Lucky Losers (Štastní poražení)</h2>
 
-<p><strong>Lucky Losers</strong> may be added to the <strong>Approved</strong> players list by <a href="tmx_fundamentals.html">Context Clicking</a> on the <strong>Eligible</strong> heading and selecting them from the list of players that is presented.</p>
+<p><strong>Lucky Losers</strong> mohou být přidáni do seznamu <strong>Prezentovaných</strong> hráčů pomocí <a href="tmx_fundamentals.html">Kontextového kliknutí</a> na hlavičku <strong>Přihlášení</strong>
+a poté jejich výběrem ze seznamu nabídnutých hráčů.</p>
 
 <figure><img class="docimage" src="images/ch_events_lucky_losers.png" alt="Lucky Losers" /><figcaption>Lucky Losers</figcaption></figure>
 
-<h2 id="doubles-teams">Doubles Teams</h2>
+<h2 id="Čtyřhry">Čtyřhry</h2>
 
-<p>The creation of <strong>Doubles Events</strong> is almost identical to <strong>Singles Events</strong>, except that for <strong>Doubles Events</strong> doubles teams must be constructed before they can be approved.</p>
+<p>Vytváření <strong>Soutěží čtyřhry</strong> je téměř identické se <strong>Soutěží dvouhry</strong>, kromě toho že pro <strong>Soutěž čtyřhry</strong> dvojice pro čtyřhru musí být vytvořeny
+předtím než mohou být schváleny / prezentovány.</p>
 
-<p><strong>Doubles Teams</strong> are constructed simply by selecting team members <em>in order</em>.</p>
+<p><strong>Dvojice pro čtyřhru</strong> se vytvoří jednoduše vybráním jednotlivých hráčů v dvojici <em>v pořadí</em>.</p>
 
-<figure><img class="docimage" src="images/ch_events_doubles_teams.png" alt="Doubles Teams" /><figcaption>Doubles Teams</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_doubles_teams.png" alt="Dvojice pro čtyřhru" /><figcaption>Dvojice pro čtyřhru</figcaption></figure>
 
-<h3 id="combined-rankings">Combined Rankings</h3>
+<h3 id="kombinovaný-žebříček-pro-čtyřhry">Kombinovaný žebříček pro čtyřhry</h3>
 
-<p>The default configuration is for CourtHive/TMX to order teams by <em>combined rankings</em>, which means that singles rankings of team members are combined.  This option can be modified by <a href="tmx_configuration.html">Organization Keys</a> as some organizations calculate doubles rankings independently.</p>
+<p>Výchozí konfigurace v CourtHive/TMX k seřazení dvojic je podle <em>kombinovaného žebříčku</em>, což znamená, že žebříček dvouhry obou hráčů dvojice je sečten.<br />
+Toto výchozí nastavení může být změněno pomocí <a href="tmx_configuration.html">Organizačního klíče</a> jelikož některé organizace počítají žebříček pro čtyřhry jinak.</p>
 
-<p>Teams which have identical combined rankings are highlighted in <strong>yellow</strong>.</p>
+<p>Dvojice které mají stejný kombinovaný žebříček jsou vyznačeny <strong>žlutě</strong>.</p>
 
-<p><a href="tmx_fundamentals.html">Context Clicking</a> on a doubles teams presents options which include assigning a “Subrank”.</p>
+<p><a href="tmx_fundamentals.html">Kontextové kliknutí</a> na takovou dvojici pro čtyřhru vytvoří možnost zadat “pomocné pořadí”.</p>
 
-<figure><img class="docimage" src="images/ch_events_doubles_options.png" alt="Doubles Options" /><figcaption>Doubles Options</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_doubles_options.png" alt="Možnosti pro pár čtyřhry" /><figcaption>Možnosti pro pár čtyřhry</figcaption></figure>
 
-<p>“Subranking” enables teams to be differentiated for the purposes of <strong>seeding</strong>.</p>
+<p>“Pomocné pořadí” umožní, aby byly jednotlivé dvojice pro čtyřhru odlišeny z důvodu <strong>nasazení</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_events_doubles_subrank.png" alt="Doubles Subrank" /><figcaption>Doubles Subrank</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_doubles_subrank.png" alt="Pomocné pořadí" /><figcaption>Pomocné pořadí</figcaption></figure>
 
-<h3 id="approving-teams">Approving Teams</h3>
+<h3 id="schvalování-dvojic-pro-čtyřhru">Schvalování dvojic pro čtyřhru</h3>
 
-<p>Doubles Teams can be approved <em>individually</em> (including as a Wildcard) by <a href="tmx_fundamentals.html">Context Clicking</a>.</p>
+<p>Dvojice pro čtyřhru můžou být schváleny <em>individuálně</em> (včetně volných karet) pomocí <a href="tmx_fundamentals.html">Kontextového kliknutí</a>.</p>
 
-<p>Teams can also be approved <em>in bulk</em> by clicking on the <strong>+</strong> in the upper right corner of the “Teams” section.</p>
+<p>Dvojice můžou být rovněž schváleny <em>hromadně</em> pomocí kliknutí na <strong>+</strong> v pravém horním rohu sekce pro “Dvojice”.</p>
 
-<figure><img class="docimage" src="images/ch_events_doubles_approving.png" alt="Approving Teams" /><figcaption>Approving Teams</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_doubles_approving.png" alt="Schvalování dvojic" /><figcaption>Schvalování dvojic</figcaption></figure>
 
-<h3 id="removing-teams">Removing Teams</h3>
+<h3 id="odstranění-dvojic-pro-čtyřhru">Odstranění dvojic pro čtyřhru</h3>
 
-<p>Clicking on individual players in the “Eligible” section builds teams.</p>
+<p>Kliknutí na individuální hráče v sekci “Přihlášení” vytvoří dvojice pro čtyřhru.</p>
 
-<p>Clicking on Teams removes them from the “Approved” section, or returns individual players to the “Eligible” section.</p>
+<p>Kliknutí na dvojici ji odstraní ze sekce “Prezentovaní”, nebo vrátí individuální hráče do sekce “Přihlášení”.</p>
 
-<h2 id="round-robin-events">Round Robin Events</h2>
+<h2 id="skupinové-soutěže">Skupinové soutěže</h2>
 
-<p>Round Robins can either be stand-alone or linked to <strong>Elimination Events</strong>.</p>
+<p>Soutěže skupin mohou být jako samostatné nebo propojené s <strong>Vyřazovací soutěží</strong>.</p>
 <ul>
-  <li>The number of <strong>brackets</strong> is calculated automatically from the <strong>Bracket Size</strong></li>
-  <li>The sizes available in the <strong>Bracket Size</strong> selector are configured by <a href="tmx_configuration.html">Organization Keys</a></li>
-  <li>The <strong>Qualifiers</strong> selector only when a Round Robin is linked to another event</li>
-  <li>The option to link to another event only appears when appropriate events exist</li>
+  <li>Počet <strong>skupin</strong> je vypočítán automaticky podle <strong>velikosti skupiny</strong></li>
+  <li>Počty hráčů ve skupině nastavitelné v poli <strong>velikost skupiny</strong> jsou konfigurovány pomocí <a href="tmx_configuration.html">Organizačního klíče</a></li>
+  <li>Pole <strong>Kvalifikanti</strong> je k dispozici jen pokud je skupinová soutěž propojená s jinou soutěží</li>
+  <li>Volba umožňujíci propojit soutěž s jinou soutěží je objeví jen když příslušná soutěž existuje</li>
 </ul>
 
-<figure><img class="docimage" src="images/ch_events_round_robin.png" alt="Round Robin" /><figcaption>Round Robin Settings</figcaption></figure>
+<figure><img class="docimage" src="images/ch_events_round_robin.png" alt="Skupinová soutěž" /><figcaption>Nastavení soutěže skupin</figcaption></figure>
 
-<h3 id="qualifiers">Qualifiers</h3>
+<h3 id="kvalifikanti">Kvalifikanti</h3>
 
-<p>Qualifiers in each bracket are ordered by the ratio of matches, sets, games and points won.</p>
+<p>Kvalifikanti z každé skupiny jsou seřazeni podle poměru vítězných utkání, setů, gamů a bodů.</p>
 
-<p>Please see the documentation on <a href="tmx_tournament_draws.html#win-ratios"><strong>Win Ratios</strong></a> for an in-depth explanation.</p>
+<p>Podrobné vysvětlení k pořadí ve skupinách je k nalezení v dokumentaci <a href="tmx_tournament_draws.html#win-ratios"><strong>Poměr výher</strong></a>.</p>
 
-<figure><img class="docimage" src="images/ch_draws_rr_order.png" alt="Rank Order" /><figcaption>Calculated Rank Order</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_rr_order.png" alt="Pořadí" /><figcaption>Kalkulované pořadí ve skupině</figcaption></figure>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Round Robin Events default to <strong>one</strong> qualifier per bracket; this setting can <strong>only</strong> be changed in the Round Robin <strong>Event Detail</strong> dialogue.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Výchozí nastavení je  <strong>jeden</strong> kvalifikant z každé skupiny; toto nastavení může být změněno <strong>pouze</strong> v dialogu <strong>Detaily o soutěži</strong> pro skupinovou soutěž.</div>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Second (and third) qualifiers from each bracket are calculated <strong>after</strong> all brackets are complete.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Druhý (a třetí) kvalifikant z každé skupiny je určen <strong>až poté</strong> co jsou výsledky všech skupin kompletní.</div>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> If the selected number of qualifiers is not a multiple of the number of brackets, additional qualifiers from each ordered group (1st, 2nd, 3rd, etc. from each bracket) are qualified first by ranking and then by win ratio.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Pokud vybraný počet kvalifikantů není násobkem počtu skupin, dodateční hráči z každé skupiny (1., 2., 3., atd. z každé skupiny) jsou
+kvalifikování nejdříve podle žebříčku a pak podle <strong>Poměru výher</strong>.</div>
 
 
 
@@ -669,7 +677,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

@@ -1,48 +1,48 @@
 ---
-title: Managing Tournaments
+title: Správa turnajů
 keywords: Tournament Calendar Management
 sidebar: ch_sidebar
 permalink: tmx_tournaments_management.html
 toc: true
 ---
 
-## Synchronizing Tournaments
+## Synchronizace turnajů
 
-When the [Search Box](tmx_searchbox.html) is in Tournaments Mode, the number of tournaments in the calendar is displayed on the far right of the navigation bar. (See [Using the Search Box](tmx_fundamentals.html) to learn how to change the Search Box Mode).
+Je-li [vyhledávací pole](tmx_searchbox.html) v turnajovém režimu, tak je počet turnajů v kalendáři zobrazen vpravo nahoře od navigační lišty. (Viz [Používání vyhledávacího pole](tmx_fundamentals.html) k návodu jak změnit režim vyhledávání).
 
-Hovering over the Tournament Count displays a __Refresh Icon__.  If CourtHive/TMX is configured to synchronize with an organization database, tournaments may be loaded from a remote server.
+Podržením kurzoru vlevo od ikony turnaje s počtem turnajů zobrazí ikonu __Obnovení databáze__.  Pokud je CourtHive/TMX nakonfigurován k synchronizaci s externí databází organizace, turnaje mohou být načteny ze vzdáleného serveru.
 
-{% include image.html file="ch_tournaments_count.png" alt="Tournament Search" caption="Tournament Search Mode" %}
+{% include image.html file="ch_tournaments_count.png" alt="Vyhledávání turnajů" caption="Režim vyhledávání turnajů" %}
 
-Clicking the refresh icon requests new tournaments which occur *after* the last entry in the local calendar.
+Kliknutí na ikonu __Obnovení databáze__ načte nové turnaje které vznikly *po* posledním zápisu v lokálním kalendáři turnajů.
 
-["Context Clicking"](tmx_fundamentals.html) the refresh icon reloads the entire calendar from the server and adds any tournaments which may be missing from the local calendar.
+["Kontextové kliknutí"](tmx_fundamentals.html) na ikonu __Obnovení databáze__ načte celý kalendář turnajů ze serveru a přidá turnaje které chybí v lokální databázi.
 
-## Manually Adding Tournaments
+## Manuální přidání turnaje
 
-To the right of the Tournament Category Filter is an Add Tournament Icon.
+V kalendáři turnajů, napravo od filtru věkové kategorie, je ikona __Přidat turnaj__.
 
-{% include image.html file="ch_add_tournament_icon.png" alt="Add Tournament" caption="Add Tournament" %}
+{% include image.html file="ch_add_tournament_icon.png" alt="Přidat turnaj" caption="Přidat turnaj" %}
 
-Clicking the Add Tournament Icon launches an Add Tournament dialogue.  
+Kliknutí na ikonu __Přidat turnaj__ otevře dialogové okno pro zadání informací o novém turnaji.  
 
-Fields in __Yellow__ are required before a new tournament can be added.
+Pole označená __žlutě__ musí být vyplněna předtím než dojde k uložení turnaje.
 
 <div style='display: flex; flex-wrap: wrap;'>
-   {% include image.html file="ch_add_tournament.png" alt="Add Tournament" %}
-   {% include image.html file="ch_challenge.png" alt="Add Tournament" %}
+   {% include image.html file="ch_add_tournament.png" alt="Přidat turnaj" %}
+   {% include image.html file="ch_challenge.png" alt="Přidat turnaj" %}
 </div>
 
-{% include image.html file="ch_challenge_calendar.png" alt="Tournament Added" %}
+{% include image.html file="ch_challenge_calendar.png" alt="Turnaj přidán" %}
 
-{% include note.html content='In some configurations, ["Context Clicking"](tmx_fundamentals.html) the Add Tournament Icon allows the entry of a tournament ID which can pull tournament information directly from a remote server.' %}
+{% include note.html content='Pro schválené organizace, ["kontextové kliknutí"](tmx_fundamentals.html) na ikonu __Přidat turnaj__ zobrazí okno pro zadání __kódového čísla turnaje__ k načtení turnajových dat přímo ze vzdáleného zdroje.' %}
 
-## Deleting and Editing Tournaments
+## Smazání a editace turnaje
 
-["Context Click"](tmx_fundamentals.html) on any tournament for the option to either edit or delete the tournament.
+["Kontextové kliknutí"](tmx_fundamentals.html) na jakýkoli turnaj zobrazí možnosti buďto editovat nebo smazat turnaj.
 
-{% include image.html file="ch_tournament_delete.png" alt="Delete Tournament" caption="Edit or Delete a Tournament" %}
+{% include image.html file="ch_tournament_delete.png" alt="Smazat turnaj" caption="Editovat nebo smazat turnaj" %}
 
-Choosing to edit a tournament launches the same dialogue used to Add a New Tournament, with all of the values filled in.
+Výběr editace turnaje otevře stejné dialogové okno jako při přidání turnaje s možností změnit nebo doplnit zadané hodnoty.
 
-{% include note.html content='In some configurations there is the option to "Merge" tournaments, which has the effect of combining lists of registered players.' %}
+{% include note.html content='Pro schválené organizace existuje navíc volba "Spojit" turnaje, která má efekt spojení seznamu všech registrovaných hráčů do jednoho pod jeden turnaj.' %}

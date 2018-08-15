@@ -1,88 +1,88 @@
 ---
-title: How Publishing Works
+title: Jak zveřejňování funguje
 keywords: Publishing Live Scores
 sidebar: ch_sidebar
 permalink: tmx_publishing_overview.html
 toc: true
 ---
 
-## Published Content
+## Veřejný obsah
 
-There are three types of information that can be published from [CourtHive/TMX](https://courthive.com/tmx) to [CourtHive/Live](https://courthive.com/live):
-* Tournament Details (Name, Dates)
-* Tournament Schedules / Order of Play (OOP)
-* Tournament Events
+Existují tři druhy informací které mohou být zveřejňovány z [CourtHive/TMX](https://courthive.com/tmx) do [CourtHive/Live](https://courthive.com/live):
+* Turnajové detaily (název, datumy, obecné informace)
+* Turnajové plány / Rozpis utkání ("Order of Play" = OOP)
+* Turnajové soutěže (výsledky utkání, hrací plány)
 
-## Requirements for Publishing
+## Požadavky ke zveřejňování
 
-Publishing is only available once an [Organization Key](tmx_configuration.html) has been entered.  Once a valid configuration key has been entered, publishing icons will appear on Tournament Information Tabs when in __Editing Mode.__
+Zveřejnění je možné jen pokud [Organizační klíč](tmx_configuration.html) byl zadán.  Poté co byl platný konfigurační klíč zadán, ikona zveřejnění se objeví v záložce __Turnaj__ v __Editačním módu.__
 
-It is only possible to edit and publish a tournament if the CourtHive/TMX client is configured for the same Organization to which the tournament belongs.
+Turnaj je možné editovat a zveřejňovat jen pokud je CourtHive/TMX klient konfigurován pro stejnou Organizaci ke které turnaj patří.
 
-## Browser Identities
+## Identity prohlížeče
 
-Each browser (Chrome, Opera, Firefox, Safari) on every computer receives a Universal Unique Identifier (UUID).  Additionally, if you log into Chrome using different Google Accounts, then each browser account __on the same computer__ has its own UUID.
+Každý prohlížeč (Chrome, Opera, Firefox, Safari) na každém zařízení obdrží tzv. Universal Unique Identifier (UUID).  Navíc, pokud se do prohlížeče Chrome přihlásíte pomocí různých účtů Google, pak každý účet prohlížeče __ve stejném počítači / zařízení__ má svůj vlastní identifikátor UUID.
 
-{% include important.html content='An Authorization Key must be entered in the same browser identity which will be used to publish a tournament. Entering an Authorization Key in Firefox will not authorize a Chrome browser for a given tournament; and entering an Authorization Key while logged in as one user will not authorize other user accounts in the same browser.' %}
+{% include important.html content='Autorizační klíč musí být zadán ve stejné identifikaci prohlížeče která bude použita ke zveřejnění turnaje. Zadání autorizačního klíče v prohlížeči Firefox neopravňuje prohlížeč Chrome pro daný turnaj; a zadání autorizačního klíče při přihlášení jako jeden uživatel nebude autorizovat jiné uživatelské účty ve stejném prohlížeči.' %}
 
-The CourtHive Cloud Server (CCS) checks the UUID of clients when determining whether a tournament can be published as "Official" or "Unofficial".  The CCS only allows __one__ client at a time to be authorized to publish/unpublish a tournament.  
+CourtHive Cloud Server (CCS) kontroluje UUID klientů při určování zda může být turnaj zveřejněn jako "Oficiální" nebo "Neoficiální".  CCS povolí pouze __jednomu__ klientovi ve stejném čase aby mohl zveřejnit či zrušit zveřejnění turnaje.  
 
-See: [Authorization Keys](tmx_publishing_overview.html#authorization-keys).
+Viz: [Autorizační klíče](tmx_publishing_overview.html#authorization-keys).
 
-{% include tip.html content='Tournaments which have been published unofficially can be viewed on CourtHive/Live by appending "?test" to the URL for the Organization.' %}
+{% include tip.html content='Turnaje které byly zveřejněny neoficiálně mohou být zobrazeny na CourtHive/Live vložením "?test" na konec URL organizace.' %}
 
-## Publishing Icons
+## Ikony zveřejňování
 
-When publishing icons are visible, their color indicates whether something has been published, and if published, whether something is up-to-date or out-of-date.
+Když jsou ikony zveřejňování viditelné, jejich barva označuje, zda bylo něco zveřejněno a pokud ano, tak jestli jsou zveřejněné informace aktuální nebo zastaralé.
 
-{% include image.html file="ch_events_list_publishing.png" alt="Publish State" caption="Publish State" %}
+{% include image.html file="ch_events_list_publishing.png" alt="Stav zveřejnění" caption="Stav zveřejnění" %}
 
-Clicking on a __Publishing Icon__ initiates publishing.  An icon will not change color until the CourtHive Cloud Server has acknowledged that the published item has been received.  
+Kliknutí na __Ikonu zveřejnění__ spustí proces zveřejňování. Ikona nezmění barvu dokud CourtHive Cloud Server nezjistí, že zveřejňovaná položka byla přijata.  
 <br>
 
-| Color | Explanation |
+| Barva | Vysvětlení  |
 |-------|--------|
-| <img src="./images/ch_publishing_unpublished.png" alt="Publish"> | Unpublished  |
-| <img src="./images/ch_publishing_published.png" alt="Publish"> | Published, Up-to-date  |
-| <img src="./images/ch_publishing_outofdate.png" alt="Publish"> | Published, Out-of-date  |
+| <img src="./images/ch_publishing_unpublished.png" alt="Zveřejněno"> | Nezveřejněno  |
+| <img src="./images/ch_publishing_published.png" alt="Zveřejněno"> | Zveřejněno, aktuální  |
+| <img src="./images/ch_publishing_outofdate.png" alt="Zveřejněno"> | Zveřejněno, zastaralé  |
 
-In the __Events List__ clicking on a publishing icon acts like a toggle between publish/unpublish.
+V __Seznamu soutěží__ kliknutí na ikonu __Zveřejnit__ funguje jako přepínání mezi zveřejněním a zrušením zveřejnění.
 
-In the Tournament, Draws, and Schedule Tabs, click on an icon to __Publish__ and [Context Click](tmx_fundamentals.html) to __"Unpublished"__.
+Ve záložce Turnaj, Hrací plán a Rozpis utkání funguje kliknutí na ikonu __Zveřejnit__ a [Kontextové kliknutí](tmx_fundamentals.html) a pak potvrzení na __"Zrušit zveřejnění"__.
 
-### Unpublishing ALL Tournament Events
+### Zrušení zveřejnění VŠECH turnajových soutěží
+[Kontextové kliknutí](tmx_fundamentals.html) na ikonu __Zveřejnit__ v hlavičce __seznamu soutěží__ v záložce __Soutěže__ zruší zveřejnění všech turnajových soutěží.
 
-[Context Clicking](tmx_fundamentals.html) the __Publishing Icon__ in the header of the __Event List__ in the __Events Tab__ will unpublish all tournament events.
+### Zrušení zveřejnění turnaje
+[Kontextové kliknutí](tmx_fundamentals.html) na ikonu __Zveřejnit__ v záložce __Turnaj__ odstraní
+kompletně celý turnaj z [CourtHive/Live](https://courthive.com/live).
 
-### Unpublishing A Tournament
+## Autorizační klíče
+Pokud jste součástí organizace, která schválila používání CourtHive, pak může být turnaj oficiálně zveřejněn zadáním autorizačního klíče.  
 
-[Context Clicking](tmx_fundamentals.html) the publish icon on the __Tournaments Tab__ will completely remove a tournament from [CourtHive/Live](https://courthive.com/live).
+Autorizační klíče jsou __jednorázové__, což znamená, že jakmile byly zadány, nemohou být znovu použity. Pouze jeden prohlížeč na jednom počítači smí být autorizován k oficiálnímu zveřejňování turnajových informací.
 
-## Authorization Keys
-If you are part of an organization which has approved the use of CourtHive, tournaments can be officially published only after an authorization key has been entered.  
+{% include image.html file="ch_home_green.png" alt="Autorizován" caption="Autorizován" %}
 
-Authorization Keys are __single use__, meaning that once they have been entered they cannot be reused.  Only one browser on one computer may be authorized to officially publish tournaments.
+Pokud není předem příslušný turnaj ve Vašem kalendáři, zadání Autorizačního klíče ho přidá do lokální databáze.  
 
-{% include image.html file="ch_home_green.png" alt="Authorized" caption="Authorized" %}
+["Kontextové kliknutí"](tmx_fundamentals.html) na ikonu Domů zobrazí autorizační zprávu.  
 
-If a tournament is not included in your calendar, the authorization key will add the tournament.  
+{% include tip.html content="Kliknutím na autorizační zprávu přejdete přímo do turnaje." %}
 
-["Context Click"](tmx_fundamentals.html) on the Home Icon to see the authorization message.  
+## Příklady scénářů
 
-{% include tip.html content="Click on an authorization message to go directly to a tournament." %}
+Každý prohlížeč má jedinečnou identitu a zadáním jednorázového Autorizačního klíče poskytuje serveru jedinečný identifikátor prohlížeče, takže pouze tento konkrétní prohlížeč muže zveřejňovat "oficiálně".
 
-## Example Scenarios
+Prohlížeč, ve kterém je zadán Autorizační klíč, již musí být nakonfigurován pro stejnou organizaci která vytvořila turnaj.
 
-Each browser has a unique identity, and entering a single-use authorization key gives the server that browser's unique identifier, so only that specific browser can publish "officially".
+Jediný rozdíl mezi Organizačním klíčem __Admin__ a klíčem __Rozhodčí__ je, že ten s __Admin__ klíčem může generovat klíče pro autorizaci turnajů.
 
-The browser into which an authorization key is entered must already be configured for the SAME ORGANIZATION which created the tournament.
+Pokud chce administrátor vytvořit Autorizační klíč tak musí mít turnaj ve svém kalendáři a ve svém autorizovaném prohlížeči.  Pokud nemá rozhodčí turnaj ve svém kalendáři, tak bude tento turnaj přidán automaticky (ze serveru) až rozhodčí zadá Autorizační klíč.
 
-The only difference between an Organization __Admin__ key and a __Referee__ key is that someone with an __Admin__ key can generate Tournament Authorization Keys.
+Každý rozhodčí, který má Organizační klíč může vytvořit a zveřejnit svoje vlastní turnaje "Neoficiálně".  (Různé verze téhož turnaje mohou být zveřejněny  "neoficiálně" a "oficiálně").
 
-In order to generate an authorization key, an admin obviously has to have the tournament in their calendar... it has to be on the admin computer.  If the referee doesn't have the tournament in their calendar, the tournament will be added to their calendar automatically (from the server) when they enter the authorization key.
+Každý rozhodčí s Organizačním klíčem může také "Stáhnout / PULL" (cloud fetch) oficiální verzi turnaje ze serveru, ale pouze pokud celý turnaj byl "Odeslán /PUSHED" na server (šipka Nahoru v záložce Turnaj).
 
-Every Referee who has an Organization Key can create and publish their own tournaments "Unofficially".  (Different versions of the same tournament can be published "unofficially" and "officially").
-
-Any referee with an organization key can also "PULL" (cloud fetch) an official version of a tournament from the server, but only if the entire tournament has been "PUSHED" to the server (Up Arrow on the Tournaments Tab).
-
-If a referee creates their own tournament which is not in the admin calendar, then how can the admin generate an authorization key for that tournament?  The only way is for the referee to EXPORT the tournament locally, SEND the tournament to the __Admin__ (via email/message) and have the __Admin__ drag/drop import the tournament into their local calendar so that they will have the tournament ID in their system...
+Pokud rozhodčí vytvoří svůj vlastní turnaj který není na seznamu turnajů u administrátora, jakým způsobem může potom administrátor vygenerovat autorizační klíč pro daný turnaj?  
+Jediný způsob je, že rozhodčí exportuje turnaj lokálně na disk a pošle turnajový soubor administrátorovi (přes email/zprávu). Poté administrátor importuje soubor s turnajem do svého  lokálního kalendáře turnajů a vygeneruje pro rozhodčího Autorizační klíč nutný ke zveřejňování.

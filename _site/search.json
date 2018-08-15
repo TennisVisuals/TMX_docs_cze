@@ -17,6 +17,17 @@
 
 
 {
+"title": "CourtHive vize",
+"tags": "",
+"keywords": "courthive open source tennis tournament management",
+"url": "index.html",
+"summary": ""
+}
+,
+
+
+
+{
 "title": "News",
 "tags": "",
 "keywords": "news, blog, updates, release notes, announcements",
@@ -65,7 +76,7 @@
 
 
 {
-"title": "CourtHive Cloud Server",
+"title": "CourtHive Cloud Server (CCS)",
 "tags": "",
 "keywords": "courthive cloud server",
 "url": "tmx_cloud_server.html",
@@ -76,7 +87,7 @@
 
 
 {
-"title": "Konfigurační klíče",
+"title": "Konfigurační a autorizační klíče",
 "tags": "",
 "keywords": "Installation, Setup",
 "url": "tmx_configuration.html",
@@ -98,7 +109,7 @@
 
 
 {
-"title": "Local and Remote Data",
+"title": "Lokální a vzdálená data",
 "tags": "",
 "keywords": "data management",
 "url": "tmx_data.html",
@@ -109,7 +120,7 @@
 
 
 {
-"title": "Uploading/Downloading &quot;Cloud&quot; Data",
+"title": "Odesílání a stahování cloudových dat",
 "tags": "",
 "keywords": "tmx data cloud",
 "url": "tmx_data_cloud.html",
@@ -120,7 +131,7 @@
 
 
 {
-"title": "Importing and Exporting Local Data",
+"title": "Import a export lokálních dat",
 "tags": "",
 "keywords": "tmx data export",
 "url": "tmx_data_local.html",
@@ -142,7 +153,7 @@
 
 
 {
-"title": "Tournament Events",
+"title": "Turnajové soutěže",
 "tags": "",
 "keywords": "tournament event management",
 "url": "tmx_events_management.html",
@@ -153,7 +164,7 @@
 
 
 {
-"title": "Context Menus",
+"title": "Kontextové menu",
 "tags": "",
 "keywords": "fundamentals mouse keyboard",
 "url": "tmx_fundamentals.html",
@@ -175,7 +186,7 @@
 
 
 {
-"title": "CourtHive TMX",
+"title": "CourtHive/TMX",
 "tags": "",
 "keywords": "Tournament Management, Live Scores, Tennis Tournaments",
 "url": "tmx_overview.html",
@@ -186,7 +197,7 @@
 
 
 {
-"title": "Example Player Dataset",
+"title": "Příklad databáze hráčů",
 "tags": "",
 "keywords": "Example Tournament Players Database",
 "url": "tmx_players_example.html",
@@ -197,7 +208,7 @@
 
 
 {
-"title": "Managing Players",
+"title": "Správa databáze hráčů",
 "tags": "",
 "keywords": "Tournament Players Database",
 "url": "tmx_players_managing.html",
@@ -208,7 +219,7 @@
 
 
 {
-"title": "Player Rankings",
+"title": "Žebříčky hráčů",
 "tags": "",
 "keywords": "Tournament Players Rankings Database",
 "url": "tmx_players_rankings.html",
@@ -219,7 +230,7 @@
 
 
 {
-"title": "How Publishing Works",
+"title": "Jak zveřejňování funguje",
 "tags": "",
 "keywords": "Publishing Live Scores",
 "url": "tmx_publishing_overview.html",
@@ -230,7 +241,7 @@
 
 
 {
-"title": "Delegating to Mobile Devices",
+"title": "Delegování na mobilní zařízení",
 "tags": "",
 "keywords": "tmx mobile delegation",
 "url": "tmx_referee_delegation.html",
@@ -241,7 +252,7 @@
 
 
 {
-"title": "Scoring Matches on Mobile Devices",
+"title": "Zadávání výsledků na mobilních zařízeních",
 "tags": "",
 "keywords": "tmx mobile scoring",
 "url": "tmx_referee_scoring.html",
@@ -252,7 +263,7 @@
 
 
 {
-"title": "Resetting TMX",
+"title": "Resetování TMX",
 "tags": "",
 "keywords": "Versions",
 "url": "tmx_reset.html",
@@ -263,7 +274,7 @@
 
 
 {
-"title": "Using the Search Box",
+"title": "Používání vyhledávacího pole",
 "tags": "",
 "keywords": "Searching",
 "url": "tmx_searchbox.html",
@@ -274,7 +285,7 @@
 
 
 {
-"title": "Instalace CourtHive / TMX",
+"title": "Instalace CourtHive/TMX",
 "tags": "",
 "keywords": "Installation, Setup",
 "url": "tmx_setup.html",
@@ -285,7 +296,7 @@
 
 
 {
-"title": "Podpora CourtHive / TMX",
+"title": "Podpora CourtHive/TMX",
 "tags": "",
 "keywords": "Support",
 "url": "tmx_support.html",
@@ -296,7 +307,7 @@
 
 
 {
-"title": "Tournament Courts",
+"title": "Turnajové dvorce",
 "tags": "",
 "keywords": "tournament courts",
 "url": "tmx_tournament_courts.html",
@@ -307,7 +318,7 @@
 
 
 {
-"title": "Tournament Draws",
+"title": "Turnajové hrací plány",
 "tags": "",
 "keywords": "tournament draws",
 "url": "tmx_tournament_draws.html",
@@ -318,7 +329,7 @@
 
 
 {
-"title": "Tournament Information Tab",
+"title": "Turnajová data",
 "tags": "",
 "keywords": "tournament information",
 "url": "tmx_tournament_information.html",
@@ -329,7 +340,7 @@
 
 
 {
-"title": "Tournament Matches",
+"title": "Turnajová utkání",
 "tags": "",
 "keywords": "tournament matches",
 "url": "tmx_tournament_matches.html",
@@ -340,7 +351,7 @@
 
 
 {
-"title": "Getting Started with Tournaments",
+"title": "Začínáme s turnajem",
 "tags": "",
 "keywords": "tournament overview",
 "url": "tmx_tournament_overview.html",
@@ -351,7 +362,7 @@
 
 
 {
-"title": "Tournament Players Tab",
+"title": "Hráči",
 "tags": "",
 "keywords": "tournament players",
 "url": "tmx_tournament_players.html",
@@ -362,7 +373,7 @@
 
 
 {
-"title": "Tournament Points",
+"title": "Turnajové body",
 "tags": "",
 "keywords": "tournament points",
 "url": "tmx_tournament_points.html",
@@ -373,7 +384,7 @@
 
 
 {
-"title": "Tournament Schedule",
+"title": "Rozpis utkání",
 "tags": "",
 "keywords": "tournament schedule",
 "url": "tmx_tournament_schedule.html",
@@ -384,7 +395,7 @@
 
 
 {
-"title": "Scoring Matches",
+"title": "Zadávání výsledků",
 "tags": "",
 "keywords": "Scoring Matches",
 "url": "tmx_tournament_scoring.html",
@@ -395,7 +406,7 @@
 
 
 {
-"title": "Managing Tournaments",
+"title": "Správa turnajů",
 "tags": "",
 "keywords": "Tournament Calendar Management",
 "url": "tmx_tournaments_management.html",
@@ -406,7 +417,7 @@
 
 
 {
-"title": "Navigating the Calendar",
+"title": "Navigace kalendářem",
 "tags": "",
 "keywords": "Tournament Calendar Navigation",
 "url": "tmx_tournaments_navigation.html",
@@ -419,7 +430,7 @@
 {
 "title": "Verze",
 "tags": "",
-"keywords": "Verze",
+"keywords": "Version, Verze",
 "url": "tmx_versions.html",
 "summary": ""
 }

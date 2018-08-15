@@ -1,83 +1,85 @@
 ---
-title: Tournament Players Tab
+title: Hráči
 keywords: tournament players
 sidebar: ch_sidebar
 permalink: tmx_tournament_players.html
 toc: true
 ---
 
-## Introduction
+## Úvod
 
-The Players Tab is where tournament players are managed.  Registered players may be synchronized with remote servers; additional players may be added from the local dataabase or removed from the tournament; players may also be signed in or out of the tournament.
+V záložce __Hráči__ se spravují hráči přihlášení na turnaj.  Registrovaní hráči mohou být synchronizováni se vzdálenými servery; další hráči mohou být přidáni z lokální databáze nebo odstraněni z turnaje; hráči mohou být rovněž přihlášeni a odhlášeni z turnaje.
 
-{% include image.html file="ch_tournament_players.png" alt="Tournament Players" caption="Tournament Players" %}
+{% include image.html file="ch_tournament_players.png" alt="Turnajoví hráči" caption="Turnajoví hráči" %}
 
-## Synchronizing Registered Players
+Od verze 1.0 CourtHive/TMX je pouze jedna věková kategorie hráčů dostupná pro turnaj, takže výběr věkové kategorie je zafixován podle kategorie vybrané během vytvoření turnaje.
 
-[Organization Keys](tmx_configuration.html) can configure CourtHive/TMX to retrieve players registered for tournaments from remote servers.
+## Synchronizace registrovaných hráčů
 
-If an Organization Key has been entered, clicking on the __Refresh Icon__ on the far right checks the remote server for newly registered players.
+[Organizační klíč](tmx_configuration.html) může konfigurovat CourtHive/TMX aby načítal hráče registrované na turnaj ze vzdálených serverů.
 
-[Context Clicking](tmx_fundamentals.html) on the __Refresh Icon__ replaces any existing list with an up-to-date list of registered players from the server.
+Pokud byl Organizační klíč zadán, kliknutí na __Obnovit ikonu__ vpravo nahoře zkontroluje vzdálený server pro nově registrované hráče.
 
-## Adding Players from the Local Database
+[Kontextové kliknutí](tmx_fundamentals.html) na __Obnovit ikonu__ nahradí jakýkoli existující seznam aktuálním seznamem  registrovaných hráčů ze serveru.
 
-{% include image.html file="ch_search_add_player.png" alt="Add Player" caption="Add Player" %}
+## Přidání hráčú z lokální databáze
 
-If there are players in the local player database they may be added to the tournament using the [Search Box](tmx_searchbox.html).
+{% include image.html file="ch_search_add_player.png" alt="Přidat hráče" caption="Přidat hráče" %}
 
-Only players who are eligible for the Tournament Category will be found when searching in this context.
+Pokud jsou hráči v lokální databázi, mohou být do turnaje přidáni pomocí [Vyhledávacího pole](tmx_searchbox.html).
 
-{% include image.html file="ch_search_roger.png" alt="Add Player" caption="Eligible Player Search" %}
+Pouze hráči oprávnění startovat v dané věkové kategorii budou nalezeni při vyhledávání v tomto kontextu.
 
-## Modifying Rankings 
+{% include image.html file="ch_search_roger.png" alt="Přidat hráče" caption="Vyhledání oprávněných hráčů" %}
 
-Once players have been added to a tournament, a __Rankings Icon__ appears to the left of the __Refresh Icon__.  If player rankings need to be modified, click the __Rankings Icon__ to enter rankings edit mode. 
+## Změna žebříčku
 
-{% include image.html file="ch_rankings_icon.png" alt="Modify Rankings" %}
+Po přidání hráčů do turnaje se objeví __Ikona Žebříček__ vlevo od __Ikony Obnovit__.  Pokud je třeba upravit žebříček hráče, klikněte na __Ikonu Žebříček__ k přepnutí do editovacího režimu žebříčku.
 
-{% include image.html file="ch_rankings_edit.png" alt="Edit Rankings" caption="Edit Rankings" %}
+{% include image.html file="ch_rankings_icon.png" alt="Změnit žebříček" %}
 
-### Subrankings
+{% include image.html file="ch_rankings_edit.png" alt="Změnit žebříček" caption="Změnit žebříček" %}
 
-Player rankings can be modified either before or after players have been signed in.
+### Pomocný žebříček
 
-Once players have been signed in, TMX checks to see whether there are players with equivalent rankings.  If any players have equivalent rankings, an additional entry box appears next to those players' rankings where a "subranking" may be entered to differentiate such players for seeding purposes.  
+Žebříček hráče může být změněn buďto před nebo poté co byl hráč přihlášen.
 
-{% include image.html file="ch_rankings_subrank.png" alt="Subrank" %}
+Poté co byl hráč přihlášen, TMX prověří jestli jsou nějací hráči se stejným žebříčkem.  Pokud ano pak se objeví dodatečné vstupní pole vedle žebříčku těchto hráčů, kam lze zadat "pomocný žebříček" k odlišení hráčů při nasazování do hracího plánu.  
 
-## Filtering Players
+{% include image.html file="ch_rankings_subrank.png" alt="Pomocný žebříček" %}
 
-In the upper right of the __Players Tab__ there are gender filters which enable the player list to be filtered.  These filters are used when signing in players, since for many tournaments Male and Female players sign in at different times.
+## Filtrování hráčů
 
-{% include image.html file="ch_players_filtering.png" alt="Filtering" caption="Gender Filters" %}
+V pravém horním rohu záložky __Hráči__ se nachází filtry pohlaví, které umožní aby byl seznam hráčů filtrován na pouze muži / chlapci nebo ženy / dívky.  Tyto filtry se používají při prezentaci hráčů jelikož na mnoha turnajích se muži a ženy prezentují v různých časech.
 
-__Gender Filters__ also change the behavior of the __PDF Icon__ so that Sign-In sheets may be generated which are appropriate to the tournament organizer's workflow.
+{% include image.html file="ch_players_filtering.png" alt="Filtrování" caption="Filtr pohlaví" %}
 
-## Printing Sign-In Sheets
+__Filtr pohlaví__ také změní chování __PDF ikony__ tak, že seznam přihlášených hráčů může být generován podle pohlaví v souladu s pracovním postupem ředitelství turnaje.
 
-If there are players registered for a tournament, a __PDF Icon__ appears to the right of the __Category Selector__.
+## Tisk přihlašovacích seznamů
 
-{% include image.html file="ch_players_sign_in.png" alt="Sign-In" caption="Print Sign-In Sheet" %}
+Pokud jsou hráči registrováni na turnaj, zobrazí se __PDF ikona__ vpravo vedle výběru věkové kategorie.
 
-Clicking the __PDF Icon__ presents a choice of printing either a Singles or a Doubles Sign-In Sheet.  If all players have been signed in, then the default behavior is to print a doubles Sign-In Sheet.
+{% include image.html file="ch_players_sign_in.png" alt="Přihlášení" caption="Tisk přihlašovacích seznamů" %}
 
-{% include tip.html content="__Gender Filters__ should be used so that appropriate Sign-In sheets can be printed." %}
+Kliknutím na __PDF ikonu__ můžete zvolit možnost tisku přihlašovacích seznamů buďto pro dvouhru nebo pro čtyřhru.  Pokud byli všichni hráči přihlášeni, tak výchozí chování je tisk přihlašovacího seznamu pro čtyřhru.
 
-{% include note.html content="PDF Sign-In sheets are either saved or opened in a new Browser Tab, depending on the [Setting](tmx_setup.html#check-your-default-settings)." %}
+{% include tip.html content="__Filtry pohlaví__ k tisku správných přihlašovacích seznamů." %}
 
-## Sign-In and Sign-Out 
+{% include note.html content="PDF přihlašovací seznamy jsou buďto uloženy nebo otevřeny v nové záložce prohlížeče, v zavislosti na [Nastavení](tmx_setup.html#check-your-default-settings)." %}
 
-The simplest way to sign-in or sign-out players is to click on the player's name.
+## Přihlášení a odhlášení
 
-{% include tip.html content="In addition to adding new players, the [Search Box](tmx_searchbox.html) may also be used to sign in or out players who are already registered.  This is particularly useful when there are numerous players and it is difficult to find a player's name by scanning the list." %}
+Nejjednodušší způsob, jak přihlásit nebo odhlásit hráče, je kliknout na jeho jméno.
 
-{% include note.html content="Players who are approved for tournament events may not be signed out from a tournament." %}
+{% include tip.html content="Kromě přidávání nových hráčů, [Vyhledávací pole](tmx_searchbox.html) může být rovněž použito k přihlášení nebo k odhlášení hráčů kteří už jsou registrováni.  To je zejména užitečné když je v turnaji hodně hráčů a pak je obtížné najít hráče podle jména jen procházením seznamu hráčů." %}
 
-## Editing and Deleting Players
+{% include note.html content="Hráči, kterí jsou schváleni v turnajové soutěži nemohou být odhlášeni z turnaje." %}
 
-[Support for modifying player data is minimal](tmx_players_managing.html).
+## Úprava a mazání hráčů
 
-By [Context Clicking](tmx_fundamentals.html) on a player it is possible to edit a player's name or the country which they represent.
+[Podpora pro modifikání hráčských dat je minimální](tmx_players_managing.html).
 
-Players who have not been approved for any tournament events may also be deleted.
+[Kontextovým kliknutím](tmx_fundamentals.html) na hráče je možno upravovat jméno hráče a zemi kterou reprezentují.
+
+Hráči kteří nebyli schváleni pro žádnou soutěž mohou být také odstraněni.

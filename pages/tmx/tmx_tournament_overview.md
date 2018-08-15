@@ -1,37 +1,37 @@
 ---
-title: Getting Started with Tournaments
+title: Začínáme s turnajem
 keywords: tournament overview
 sidebar: ch_sidebar
 permalink: tmx_tournament_overview.html
 toc: true
 ---
 
-## Editing Tournaments
+## Editování turnajů
 
-Before a tournament may be edited it must be present in the [Tournaments Calendar.](tmx_tournaments_navigation.html) Refer to the section on [Adding Tournaments](tmx_tournaments_management.html#manually-adding-tournaments) if there are no tournaments in the calendar.
+Předtím než turnaj může být editován, tak musí existovat v [turnajovém kalendáři.](tmx_tournaments_navigation.html) Podívejte se do sekce [Přidat turnaje](tmx_tournaments_management.html#manually-adding-tournaments) jestli jsou v kalendáři nějaké turnaje.
 
-{% include image.html file="ch_challenge_calendar.png" alt="Tournament Calendar" caption="Select a tournament from the calendar" %}
+{% include image.html file="ch_challenge_calendar.png" alt="Kalendář turnajů" caption="Vyber turnaj z kalendáře" %}
 
-When a tournament is selected from the calendar a modal window displays the tournament information in read-only mode.
+Při výběru turnaje z kalendáře zobrazuje modální okno informace o turnaji pouze v režimu pro čtení.
 
-To edit a tournament you must be part of the same organization that created the tournament.  If this is the case, a __Pencil Icon__ appears in the upper right-hand corner.
+Chcete-li editovat turnaj, musíte být součástí stejné organizace, která turnaj vytvořila. Pokud tomu tak je, v pravém horním rohu se objeví __ikona tužky__.
 
-{% include image.html file="ch_challenge_view.png" alt="Add Player" caption="Tournament Information" %}
+{% include image.html file="ch_challenge_view.png" alt="Přidat hráče" caption="Turnajové informace" %}
 
-Once in __Editing Mode__ a number of other tabs and options become available, and the tournament information fields become editable.
+Jakmile jste v __editovacím režimu__, je k dispozici řada dalších záložek a možností, a pole s informacemi o turnaji se dají upravovat.
 
-{% include image.html file="ch_challenge_edit.png" alt="Add Player" caption="Tournament Editing Mode" %}
+{% include image.html file="ch_challenge_edit.png" alt="Přidat hráče" caption="Editovací režim turnaje" %}
 
-To exit __Editing Mode__, click on the __Check Mark__ in the upper right hand corner.
+Chcete-li ukončit __editovací režim__, klikněte na značku __zaškrtnutí__ v pravém horním rohu.
 
-## Downloading Tournaments
+## Stahování turnajů
 
-In the center of the tournament panel there is a __Cloud Download__ icon.  Clicking this icon will retrieve a version of the current tournament from the [CourtHive Cloud Server.](tmx_cloud_server.html)
+Uprostřed panelu turnaje je ikona __stáhnout__. Kliknutí na tuto ikonu stáhnete poslední uloženou verzi příslušného turnaje z [CourtHive Cloud Serveru.](tmx_cloud_server.html)
 
-{% include image.html file="ch_cloudfetch_notfound.png" alt="Not Found" caption="Not Found" %}
+{% include image.html file="ch_cloudfetch_notfound.png" alt="Nenalezeno" caption="Nenalezeno" %}
 
-If no version of the current tournament has been pushed to the server, an error message is shown.
+Pokud nebyla na server přenesena žádná verze aktuálního turnaje, zobrazí se chybová zpráva.
 
-{% include image.html file="ch_cloudfetch_replace_tournament.png" alt="Replace Tournament" caption="Replace Tournament" %}
+{% include image.html file="ch_cloudfetch_replace_tournament.png" alt="Nahradit turnaj" caption="Nahradit turnaj" %}
 
-The [Tournament Information](tmx_tournament_information.html) section describes how to push copies of a tournament to the  [CourtHive Cloud Server.](tmx_cloud_server.html)
+Sekce [Turnajová data](tmx_tournament_information.html) popisuje jak odeslat kopii turnaje na [CourtHive Cloud Server.](tmx_cloud_server.html)

@@ -1,94 +1,94 @@
 ---
-title: Scoring Matches
+title: Zadávání výsledků
 keywords: Scoring Matches
 sidebar: ch_sidebar
 permalink: tmx_tournament_scoring.html
 toc: true
 ---
 
-Once draws have been completed they become available for scoring.
+Jakmile je hrací plán vytvořen tak je možno zadávat výsledky jednotlivých utkání.
 
-Scores can be entered directly into Draws and Brackets, on the [Matches Tab](tmx_tournament_matches.html), or in the [Schedule](tmx_tournament_schedule.html).
+Výsledky mohou být zadávány přímo do hracích plánů a skupin, v záložce [Seznam utkání](tmx_tournament_matches.html) nebo v [Rozpisu utkání](tmx_tournament_schedule.html).
 
-## Elimination Draws
+## Eliminační hrací plány
 
-When Elimination Draws are complete, the matches which may be scored are highlighed.
+Po vytvoření eliminačního hracího plánu jsou utkání, u kterých může být zadán výsledek, zvýrazněna.
 
-{% include image.html file="ch_scoring_elimination_positions.png" alt="Highlighed Matches" caption="Highlighed Matches" %}
+{% include image.html file="ch_scoring_elimination_positions.png" alt="Zvýrazněná utkání" caption="Zvýrazněná utkání" %}
 
-## Round Robin Brackets
+## Skupinové hrací plány
 
-Positions which may be scored are highlighed in blue when the mouse hovers over them.
+Pozice, kam můžou být zadány výsledky jsou zvýrazněny _modře_ pokud se nad nimi pohybuje kurzorem.
 
-Positions which are invalid for scoring because of __Byes__ are colored light yellow.
+Pozice, kam výsledek nemůže být zadán kvůli volnému kolu (Byes), jsou zbarveny světle žlutě.
 
-{% include image.html file="ch_scoring_rr_positions.png" alt="Highlighed Matches" caption="Highlighed Matches" %}
+{% include image.html file="ch_scoring_rr_positions.png" alt="Zvýrazněná utkání" caption="Zvýrazněná utkání" %}
 
-## Score Entry
+## Zápis výsledku
 
-The method of score entry is the same for all events.
+Metoda zápisu výsledku je stejná pro všechny soutěže.
 
-Active selectors are __white__ and are used to enter the number of games won by each player.
+Activní buňky výběru skóre jsou __bílé__ a slouží k zápisu počtu her ke každému hráči.
 
-{% include image.html file="ch_scoring_entry.png" alt="Score Entry" caption="Score Entry" %}
+{% include image.html file="ch_scoring_entry.png" alt="Zápis výsledku" caption="Zápis výsledku" %}
 
-### Scoring Format
-To change scoring for an single match, click the icon in the upper right hand corner to toggle __Scoring Configuration__.
+### Formát skóre
+Ke změně formátu výsledku pro jednotlivá utkání je třeba kliknout na ikonu v pravém horním rohu okna pro zadávání výsledků a změnit __formát skóre__.
 
-{% include image.html file="ch_scoring_configuration.png" alt="Scoring Configuration" caption="Scoring Configuration" %}
+{% include image.html file="ch_scoring_configuration.png" alt="Formát skóre" caption="Formát skóre" %}
 
-### Auto Completion
+### Automatické dokončování
 
-Only a single value needs to be provided for each set, the lower number of __Games Won__.
+Pro každý set je třeba zadat pouze jednu hodnotu, a to nižší počet her u hráče který set prohrál.
 
-{% include image.html file="ch_scoring_games.png" alt="Scoring Games" caption="Scoring Games" %}
+{% include image.html file="ch_scoring_games.png" alt="Zadávání počtu her" caption="Zadávání počtu her" %}
 
-The complementary value is calculated automatically and scoring advances to the next set, if the match is incomplete.
+Systém automaticky doplní druhý počet her které vyhrál druhý hráč a skóre se automaticky posune k zadání dalšího setu pokud není zápis výsledku ukončen.
 
-{% include image.html file="ch_scoring_first_set.png" alt="First Set Score" caption="First Set Complete" %}
+{% include image.html file="ch_scoring_first_set.png" alt="Skóre 1.setu" caption="Skóre 1.setu" %}
 
-### Modifying Set Scores
+### Změna skóre v setu
 
-If the score for a set needs to be modified, clicking on either of the players' scores takes the focus back to that set.
+Pokud je třeba změnit výsledek v setu, kliknutí na skóre v setu u příslušného hráče znovu zobrazí okno pro výběr hodnoty / počtu her v tomto setu.
 
-{% include image.html file="ch_scoring_edit_first_set.png" alt="Modify Set Score" caption="Modify Set Score" %}
+{% include image.html file="ch_scoring_edit_first_set.png" alt="Změna skóre v setu" caption="Změna skóre v setu" %}
 
-### Incomplete Matches, Retirements, Walkovers and Defaults
+### Nedokončená utkání, vzdání, skreče, postup bez boje a diskvalifikace
 
-Clicking on the green __dash__ "-" to the right of the set scores presents options for completing the match scoring by Retirement, Walkover, or Default, as well as the option to mark a match as Interrupted or "Live".
+Kliknutí na zelenou __pomlčku__ "-" vpravo zobrazí volby pro zápis výsledku nedokončeného utkání jako je skreč, vzdání (Retirement), postup bez boje (Walkover) nebo diskvalifikace (Default), tak jako volbu označit utkání jako __přerušené (Interrupted)__ nebo __živé (Live)__.
 
-{% include image.html file="ch_scoring_options.png" alt="Scoring Options" caption="Scoring Options" %}
+{% include image.html file="ch_scoring_options.png" alt="Volby skóre" caption="Volby skóre" %}
 
-### Accepting Match Scores
+### Akceptace výsledku utkání
 
-When scoring is complete the __"Accept"__ button sumbmits the score.
+Až je zápis výsledku ukončen, tak se kliknutím na tlačítko __"Akceptovat"__ výsledek uloží.
 
-{% include image.html file="ch_scoring_live.png" alt="Accept Scoring" caption="Accept Scoring" %}
+{% include image.html file="ch_scoring_live.png" alt="Akceptace skóre" caption="Akceptace skóre" %}
 
-### Editing Match Scores
+### Editace výsledku
 
-Match scores may be edited by clicking on __existing scores__.
+Výsledek utkání může být editován kliknutím na __existující skóre__.
 
-{% include image.html file="ch_scoring_incomplete.png" alt="Edit Score" caption="Edit Score" %}
+{% include image.html file="ch_scoring_incomplete.png" alt="Editace skóre" caption="Editace skóre" %}
 
-When a match has been completed, scoring for subsequent matches is enabled.
+Jakmile je výsledek utkání zadán, tak je umožněn zápis skóre pro následující utkání (pokud jsou oba hráči známi).
 
-{% include image.html file="ch_scoring_complete.png" alt="Scoring Complete" caption="Scoring Complete" %}
+{% include image.html file="ch_scoring_complete.png" alt="Skóre dokončeno" caption="Skóre dokončeno" %}
 
-### Removing Matches
+### Odstranění utkání
 
-Match results can be removed from a Draw or Bracket by [Context Clicking](tmx_fundamentals.html).
+Výsledek utkání může být odstraněn z hracího plánu pomocí [kontextového  kliknutí](tmx_fundamentals.html).
 
-Match results are also removed when scoring is _cleared_ in the scoring dialogue.
+Výsledek utkání je také odstraněn když je skóre _vyčištěno_ v okně pro zadávání výsledků.
 
-{% include image.html file="ch_scoring_remove.png" alt="Remove Match" caption="Remove Match" %}
+{% include image.html file="ch_scoring_remove.png" alt="Odstranit utkání" caption="Odstranit utkání" %}
 
-### Tiebreak Scores
+### Výsledek tie-breaku
 
-Entry of tiebreak scores is similar to entering set scores except that an entry field is used instead of a selector.
+Zápis výsledku tie-breaku je podobný jako zadání výsledku v setu jen s tím rozdílem, že do vstupního pole musí být manuálně zadán výsledek tie-breaku místo výběru hodnoty (stačí zadat nižší počet bodů u hráče který tie-break prohrál).
 
-{% include image.html file="ch_scoring_tiebreak.png" alt="Tiebreak Score" caption="Tiebreak Score" %}
+{% include image.html file="ch_scoring_tiebreak.png" alt="Skóre tie-breaku" caption="Skóre tie-breaku" %}
 
-{% include important.html content='Since entry fields are used for tiebreak scores the __Enter/Return__ key _must_ be pressed to complete scoring.' %}
+{% include important.html content='Jelikož jsou použita vstupní pole pro zadání výsledku tie-breaku, tak stisk klávesy __Enter/Return__ _je nutný_ k dokončení zápisu skóre.' %}
 
-{% include image.html file="ch_scoring_winner.png" alt="Match Winner" caption="Match Winner" %}
+{% include image.html file="ch_scoring_winner.png" alt="Vítěz utkání" caption="Vítěz utkání" %}

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" tournament information">
-<title>Tournament Information Tab | CourtHive Documentation</title>
+<title>Turnajová data | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Tournament Information Tab">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Turnajová data">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Tournament Information Tab</h1>
+   <h1 class="post-title-main">Turnajová data</h1>
 </div>
 
 
@@ -489,39 +489,39 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="introduction">Introduction</h2>
+  <h2 id="Úvod">Úvod</h2>
 
-<p>Tournament Information is used primarily when printing/saving PDF Sign-in Sheets, Event Draws, and Tournament Schedules.</p>
+<p>Informace o turnaji se primárně používají při tisku / ukládání PDF seznamu přihlášených hráčů, soutěžních hracích plánů a turnajových rozpisů utkání.</p>
 
-<p>Tournament <strong>Start</strong> and <strong>End</strong> dates determine the days on which events may be scheduled.</p>
+<p>Datumy <strong>začátku</strong> a <strong>konce</strong> turnaje určí dny kdy mohou být soutěže v rámci turnaje naplánovány.</p>
 
-<figure><img class="docimage" src="images/ch_challenge_edit.png" alt="Add Player" /><figcaption>Tournament Editing Mode</figcaption></figure>
+<figure><img class="docimage" src="images/ch_challenge_edit.png" alt="Přidat hráče" /><figcaption>Editovací režim turnaje</figcaption></figure>
 
-<h2 id="saving-tournament-data">Saving Tournament Data</h2>
+<h2 id="uložení-turnajových-dat">Uložení turnajových dat</h2>
 
-<p>Tournament data is automatically saved locally as changes are made.  There are two options for backing up tournament data and sharing tournaments with others.</p>
+<p>Turnajová data se při změnách automaticky ukládají do lokálního úložiště v prohlížeči.  Jsou dva způsoby jak zálohovat turnajová data a jak sdílet tato data s ostatními.</p>
 
-<figure><img class="docimage" src="images/ch_tournaments_save.png" alt="Save Tournament" /><figcaption>Save Options</figcaption></figure>
+<figure><img class="docimage" src="images/ch_tournaments_save.png" alt="Uložit turnaj" /><figcaption>Možnosti uložení</figcaption></figure>
 
-<p>The <strong>UP</strong> arrow pushes the <strong>Tournament Record</strong> to the <a href="tmx_cloud_server.html">CourtHive Cloud Server</a> from which it may be retrieved by any other user who has the tournament in their calendar.</p>
+<p>Šipka <strong>Nahoru</strong> exportuje / odesílá <strong>turnajová data</strong> na <a href="tmx_cloud_server.html">CourtHive Cloud Server</a> z kterého mohou být následně stažena jakýmkoli jiným uživatelem který má turnaj ve svém kalendáři.</p>
 
-<p>The <strong>DOWN</strong> arrow exports the <strong>Tournament Record</strong> in JSON format to the local file system.  This file may be imported into any CourtHive/TMX client by drag/dropping it into the Import/Expoert target area.</p>
+<p>Šipka <strong>Dolů</strong> importuje / stahuje <strong>turnajová data</strong> v JSON formátu do lokálního úložiště na disku. Tento soubor může být importován do CourtHive/TMX pomocí přetažení do Import/Export cílové zóny.</p>
 
-<figure><img class="docimage" src="images/ch_tournaments_save_state.png" alt="Save State" /><figcaption>Save State</figcaption></figure>
+<figure><img class="docimage" src="images/ch_tournaments_save_state.png" alt="Stav zálohování" /><figcaption>Stav zálohování</figcaption></figure>
 
-<p>The “Push” and “Export” icons change color to indicate whether changes have been made to the the local copy of the tournament since the tournament was last pushed or exported.</p>
+<p>“Export / Push” a “Import / Pull” ikony mění barvu tak aby signalizovala jestli byly nějaké změny provedeny v lokální kopii turnaje od doby kdy byl turnaj naposledy odeslán či stažen.</p>
 
-<p><strong>Yellow</strong> indicates “Out of Date” and <strong>Green</strong> indicates “Up to Date”.</p>
+<p><strong>Žlutá</strong> signalizuje “Neaktuální” a <strong>zelená</strong> označuje “aktuální”.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> When Tournament Events are completed, Tournament Records are automatically “pushed” to the server.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Když jsou turnajové soutěže dokončeny, turnajová data jsou automaticky odeslána na server.</div>
 
-<h2 id="tournament-notes">Tournament Notes</h2>
+<h2 id="turnajové-poznámky">Turnajové poznámky</h2>
 
-<p>Tournament Notes are only applicable when <a href="tmx_publishing_overview.html">Publishing</a> is enabled.</p>
+<p>Turnajové poznámky lze použít pouze pokud je <a href="tmx_publishing_overview.html">zveřejňování</a> povoleno.</p>
 
-<figure><img class="docimage" src="images/ch_tournament_notes_edit.png" alt="Notes" /><figcaption>Editing Tournament Notes</figcaption></figure>
+<figure><img class="docimage" src="images/ch_tournament_notes_edit.png" alt="Poznámky" /><figcaption>Editace turnajových poznámek</figcaption></figure>
 
-<p>Tournament notes are “sanitized” to prevent <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS Attacks</a>; this means that only a subset of HTML tags are allowed.</p>
+<p>Turnajové poznámky jsou “dezinfikovány”, aby se zabránilo <a href="https://en.wikipedia.org/wiki/Cross-site_scripting">XSS útokům</a>; to znamená, že pouze podskupina HTML kódů je povolena.</p>
 
 
     <div class="tags">
@@ -540,7 +540,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" Tournament Calendar Management">
-<title>Managing Tournaments | CourtHive Documentation</title>
+<title>Správa turnajů | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Managing Tournaments">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Správa turnajů">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Managing Tournaments</h1>
+   <h1 class="post-title-main">Správa turnajů</h1>
 </div>
 
 
@@ -489,48 +489,48 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="synchronizing-tournaments">Synchronizing Tournaments</h2>
+  <h2 id="synchronizace-turnajů">Synchronizace turnajů</h2>
 
-<p>When the <a href="tmx_searchbox.html">Search Box</a> is in Tournaments Mode, the number of tournaments in the calendar is displayed on the far right of the navigation bar. (See <a href="tmx_fundamentals.html">Using the Search Box</a> to learn how to change the Search Box Mode).</p>
+<p>Je-li <a href="tmx_searchbox.html">vyhledávací pole</a> v turnajovém režimu, tak je počet turnajů v kalendáři zobrazen vpravo nahoře od navigační lišty. (Viz <a href="tmx_fundamentals.html">Používání vyhledávacího pole</a> k návodu jak změnit režim vyhledávání).</p>
 
-<p>Hovering over the Tournament Count displays a <strong>Refresh Icon</strong>.  If CourtHive/TMX is configured to synchronize with an organization database, tournaments may be loaded from a remote server.</p>
+<p>Podržením kurzoru vlevo od ikony turnaje s počtem turnajů zobrazí ikonu <strong>Obnovení databáze</strong>.  Pokud je CourtHive/TMX nakonfigurován k synchronizaci s externí databází organizace, turnaje mohou být načteny ze vzdáleného serveru.</p>
 
-<figure><img class="docimage" src="images/ch_tournaments_count.png" alt="Tournament Search" /><figcaption>Tournament Search Mode</figcaption></figure>
+<figure><img class="docimage" src="images/ch_tournaments_count.png" alt="Vyhledávání turnajů" /><figcaption>Režim vyhledávání turnajů</figcaption></figure>
 
-<p>Clicking the refresh icon requests new tournaments which occur <em>after</em> the last entry in the local calendar.</p>
+<p>Kliknutí na ikonu <strong>Obnovení databáze</strong> načte nové turnaje které vznikly <em>po</em> posledním zápisu v lokálním kalendáři turnajů.</p>
 
-<p><a href="tmx_fundamentals.html">“Context Clicking”</a> the refresh icon reloads the entire calendar from the server and adds any tournaments which may be missing from the local calendar.</p>
+<p><a href="tmx_fundamentals.html">“Kontextové kliknutí”</a> na ikonu <strong>Obnovení databáze</strong> načte celý kalendář turnajů ze serveru a přidá turnaje které chybí v lokální databázi.</p>
 
-<h2 id="manually-adding-tournaments">Manually Adding Tournaments</h2>
+<h2 id="manuální-přidání-turnaje">Manuální přidání turnaje</h2>
 
-<p>To the right of the Tournament Category Filter is an Add Tournament Icon.</p>
+<p>V kalendáři turnajů, napravo od filtru věkové kategorie, je ikona <strong>Přidat turnaj</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_add_tournament_icon.png" alt="Add Tournament" /><figcaption>Add Tournament</figcaption></figure>
+<figure><img class="docimage" src="images/ch_add_tournament_icon.png" alt="Přidat turnaj" /><figcaption>Přidat turnaj</figcaption></figure>
 
-<p>Clicking the Add Tournament Icon launches an Add Tournament dialogue.</p>
+<p>Kliknutí na ikonu <strong>Přidat turnaj</strong> otevře dialogové okno pro zadání informací o novém turnaji.</p>
 
-<p>Fields in <strong>Yellow</strong> are required before a new tournament can be added.</p>
+<p>Pole označená <strong>žlutě</strong> musí být vyplněna předtím než dojde k uložení turnaje.</p>
 
 <div style="display: flex; flex-wrap: wrap;">
-   <figure><img class="docimage" src="images/ch_add_tournament.png" alt="Add Tournament" /></figure>
+   <figure><img class="docimage" src="images/ch_add_tournament.png" alt="Přidat turnaj" /></figure>
 
-   <figure><img class="docimage" src="images/ch_challenge.png" alt="Add Tournament" /></figure>
+   <figure><img class="docimage" src="images/ch_challenge.png" alt="Přidat turnaj" /></figure>
 
 </div>
 
-<figure><img class="docimage" src="images/ch_challenge_calendar.png" alt="Tournament Added" /></figure>
+<figure><img class="docimage" src="images/ch_challenge_calendar.png" alt="Turnaj přidán" /></figure>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> In some configurations, <a href="tmx_fundamentals.html">“Context Clicking”</a> the Add Tournament Icon allows the entry of a tournament ID which can pull tournament information directly from a remote server.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Pro schválené organizace, <a href="tmx_fundamentals.html">“kontextové kliknutí”</a> na ikonu <strong>Přidat turnaj</strong> zobrazí okno pro zadání <strong>kódového čísla turnaje</strong> k načtení turnajových dat přímo ze vzdáleného zdroje.</div>
 
-<h2 id="deleting-and-editing-tournaments">Deleting and Editing Tournaments</h2>
+<h2 id="smazání-a-editace-turnaje">Smazání a editace turnaje</h2>
 
-<p><a href="tmx_fundamentals.html">“Context Click”</a> on any tournament for the option to either edit or delete the tournament.</p>
+<p><a href="tmx_fundamentals.html">“Kontextové kliknutí”</a> na jakýkoli turnaj zobrazí možnosti buďto editovat nebo smazat turnaj.</p>
 
-<figure><img class="docimage" src="images/ch_tournament_delete.png" alt="Delete Tournament" /><figcaption>Edit or Delete a Tournament</figcaption></figure>
+<figure><img class="docimage" src="images/ch_tournament_delete.png" alt="Smazat turnaj" /><figcaption>Editovat nebo smazat turnaj</figcaption></figure>
 
-<p>Choosing to edit a tournament launches the same dialogue used to Add a New Tournament, with all of the values filled in.</p>
+<p>Výběr editace turnaje otevře stejné dialogové okno jako při přidání turnaje s možností změnit nebo doplnit zadané hodnoty.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> In some configurations there is the option to “Merge” tournaments, which has the effect of combining lists of registered players.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Pro schválené organizace existuje navíc volba “Spojit” turnaje, která má efekt spojení seznamu všech registrovaných hráčů do jednoho pod jeden turnaj.</div>
 
 
 
@@ -550,7 +550,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

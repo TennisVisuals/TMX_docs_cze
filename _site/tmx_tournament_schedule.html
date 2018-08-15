@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" tournament schedule">
-<title>Tournament Schedule | CourtHive Documentation</title>
+<title>Rozpis utkání | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Tournament Schedule">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Rozpis utkání">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Tournament Schedule</h1>
+   <h1 class="post-title-main">Rozpis utkání</h1>
 </div>
 
 
@@ -489,88 +489,88 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> The <strong>Scheduling Tab</strong> will not appear until at least one <a href="tmx_events_management.html">Tournament Event</a> has been created and one <a href="tmx_tournament_courts.html">Court Location</a> has been defined.</div>
+  <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Záložka <strong>Rozpis utkání</strong> se neobjeví dokud alespoň jedna <a href="tmx_events_management.html">turnajová soutěž</a> nebyla vytvořena a jeden turnajový <a href="tmx_tournament_courts.html">Areál</a> nebyl nadefinován.</div>
 
-<h2 id="action-icons">Action Icons</h2>
+<h2 id="akční-ikony">Akční ikony</h2>
 
-<p>To the right of the <strong>Day Selector</strong> are several “Action Icons”</p>
+<p>V pravé části záložky od <strong>Výběru hracího dne</strong> je několik “akčních ikon”</p>
 
 <ul>
-  <li><strong>Match Icon:</strong> toggle match scheduling panel</li>
-  <li><strong>Timing Icon:</strong> toggle timing notes panel</li>
-  <li><strong>PDF Icon:</strong> generate a PDF of the schedule</li>
+  <li><strong>Ikona “Naplánovat utkání / (Ikona hráče):</strong> přepíná plánovací panel rozpisu utkání s nabídkou dosud nenaplánovaných utkání</li>
+  <li><strong>Ikona “OOP komentář” / Časová ikona:</strong> zobrazí dialogové okno pro zadání poznámek k rozpisu utkání</li>
+  <li><strong>PDF ikona:</strong> vytvoří PDF soubor s rozpisem utkání</li>
 </ul>
 
-<figure><img class="docimage" src="images/ch_schedule_tab.png" alt="Schedule" /><figcaption>Tournament Scheduling</figcaption></figure>
+<figure><img class="docimage" src="images/ch_schedule_tab.png" alt="Rozpis utkání" /><figcaption>Turnajový rozpis utkání</figcaption></figure>
 
-<h2 id="scheduling-matches">Scheduling Matches</h2>
+<h2 id="plánování-utkání-v-rozpisu">Plánování utkání v rozpisu</h2>
 
-<p>Clicking on the <strong>Match Icon</strong> shows/hides the match scheduling panel.</p>
+<p>Kliknutí na ikonu <strong>Naplánovat utkání</strong> ukáže / skryje panel s nenaplánovanými zápasy.</p>
 
-<figure><img class="docimage" src="images/ch_schedule_scheduling_panel.png" alt="Scheduling Panel" /><figcaption>Scheduling Panel</figcaption></figure>
+<figure><img class="docimage" src="images/ch_schedule_scheduling_panel.png" alt="Plánovací panel" /><figcaption>Plánovací panel</figcaption></figure>
 
-<h3 id="day-selection">Day Selection</h3>
+<h3 id="výběr-hracího-dne">Výběr hracího dne</h3>
 
-<p>When scheduling matches, the <strong>Day Selector</strong> determines the day on which matches will be scheduled.</p>
+<p>Během plánování utkání použití tlačítka <strong>Výběr hracího dne</strong> určí konkrétní den na který budou utkání naplánována.</p>
 
-<h3 id="filtering-matches">Filtering Matches</h3>
+<h3 id="filtrování-utkání">Filtrování utkání</h3>
 
-<p>On the <strong>scheduling panel</strong> it is possible to filter matches by <strong>Event</strong> and <strong>Round</strong>.</p>
+<p>Na <strong>plánovacím panelu</strong> je možné filtrovat utkání podle <strong>soutěže</strong> a podle <strong>kola</strong>.</p>
 
-<h3 id="auto-scheduling">Auto Scheduling</h3>
+<h3 id="automatické-plánování">Automatické plánování</h3>
 
-<p>The <strong>Auto Schedule</strong> button begins the process of scheduling matches shown in the match list of the <strong>scheduling panel</strong>.</p>
+<p>Tlačítko <strong>Automatické plánování</strong> začne proces naplánování, t.j. nasazení utkání v plánovacím panelu na dvorce.</p>
 
-<p>If multiple rounds of an event are being scheduled then scheduling priority must be chosen.</p>
+<p>Pokud jsou plánovana na dvorce utkání z více kol ze soutěže pak musí být vybrána plánovací priorita.</p>
 
-<figure><img class="docimage" src="images/ch_schedule_priority.png" alt="Scheduling Priority" /><figcaption>Scheduling Priority</figcaption></figure>
+<figure><img class="docimage" src="images/ch_schedule_priority.png" alt="Plánovací priorita" /><figcaption>Plánovací priorita</figcaption></figure>
 
-<p><strong>Order Prioity</strong> means that matches within one event will be scheduled in order from the top to the bottom, regardless of the <em>round</em> in which they occur.</p>
+<p><strong>Priorita dle pořadí</strong> znamená, že utkání z jedné soutěže budou naplánována v pořadí shora dolů dle hracího plánu, bez ohledu na <em>kolo</em> ke kterému utkání přísluší.</p>
 
-<p><strong>Round Prioity</strong> means that earlier rounds will be scheduled <em>before</em> later rounds.</p>
+<p><strong>Priorita dle kola</strong> znamená že utkání dřívějších kol budou naplánována <em>před</em> pozdějšími koly.</p>
 
-<h3 id="manual-scheduling">Manual Scheduling</h3>
+<h3 id="manuální-plánování">Manuální plánování</h3>
 
-<p>Matches may be added to the schedule manually in two ways:</p>
+<p>Utkání lze přidat do rozpisu manuálně dvěma způsoby:</p>
 <ul>
-  <li>Draging and Dropping matches from the match list into the desired schedule cells</li>
-  <li>“Pulling” matches into schedule cells by clicking on a desired cell and beginning to type a player’s name</li>
+  <li>Přesunutím utkání z plánovacího panelu na vybraný dvorec</li>
+  <li>Kliknutím na vybraný dvorec a zadáním jména hráče</li>
 </ul>
 
-<h4 id="drag-and-drop-scheduling">Drag and Drop Scheduling</h4>
+<h4 id="plánování-přetažením-chyť-a-pusť">Plánování přetažením (Chyť a Pusť)</h4>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wr8Z4Pw9YqA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
 
-<h4 id="pulling-matches-into-cells">Pulling Matches into Cells</h4>
-<figure><img class="docimage" src="images/ch_schedule_pulling.png" alt="Match Search" /><figcaption>Match Search</figcaption></figure>
+<h4 id="stažení-utkání-na-dvorec-buňku">Stažení utkání na dvorec (buňku)</h4>
+<figure><img class="docimage" src="images/ch_schedule_pulling.png" alt="Vyhledání utkání" /><figcaption>Vyhledání utkání</figcaption></figure>
 
-<h3 id="match-times">Match Times</h3>
+<h3 id="plánované-časy-utkání">Plánované časy utkání</h3>
 
-<p>Match Times for a <strong>Schedule Row</strong> are added by <a href="tmx_fundamentals.html">Context Clicking</a> on the Row Number Cell on the left.</p>
+<p>Plánované časy utkání pro <strong>celý řádek rozpisu utkání</strong> lze zadat pomocí <a href="tmx_fundamentals.html">kontextového kliknutí</a> na číslo řádku vlevo.</p>
 
-<figure><img class="docimage" src="images/ch_schedule_metadata.png" alt="Match Search" /><figcaption>Match Search</figcaption></figure>
+<figure><img class="docimage" src="images/ch_schedule_metadata.png" alt="Vyhledání utkání" /><figcaption>Vyhledání utkání</figcaption></figure>
 
-<p>Match Times for <strong>individual matches</strong> are added by <a href="tmx_fundamentals.html">Context Clicking</a> on specific cells.</p>
+<p>Plánované časy utkání pro <strong>individuální utkání</strong> lze zadat pomocí <a href="tmx_fundamentals.html">kontextového kliknutí</a> na vybranou buňku (dvorec na řádku).</p>
 
-<h3 id="match-metadata">Match Metadata</h3>
+<h3 id="metadata-utkání">Metadata utkání</h3>
 
-<p><a href="tmx_fundamentals.html">Context Click</a> on schedule cells to define specific metadata for each match.</p>
+<p><a href="tmx_fundamentals.html">Kontextové kliknutí</a> na vybrané utkání v rozpisu vyvolá možnosti zadání specifických metadat pro každé utkání.</p>
 
-<figure><img class="docimage" src="images/ch_schedule_match_metadata.png" alt="Match Metadata" /><figcaption>Match Metadata</figcaption></figure>
+<figure><img class="docimage" src="images/ch_schedule_match_metadata.png" alt="Metadata utkání" /><figcaption>Metadata utkání</figcaption></figure>
 
-<h2 id="referee-notes">Referee Notes</h2>
+<h2 id="poznámka-rozhodčího">Poznámka rozhodčího</h2>
 
-<p>The <strong>Timing Icon</strong> opens a dialogue where a referee may enter notes which will appear at the bottom of PDFs and at the top of online schedules.</p>
+<p>Ikona <strong>OOP komentář / Časová ikona</strong> otevře dialogové okno kam může rozhodčí zadat poznámku která se objeví dole v PDF rozpisu utkání a nahoře v online rozpisu utkání.</p>
 
-<figure><img class="docimage" src="images/ch_schedule_order_of_play.png" alt="Scheduling Notes" /><figcaption>Scheduling Notes</figcaption></figure>
+<figure><img class="docimage" src="images/ch_schedule_order_of_play.png" alt="Poznámky k rozpisu" /><figcaption>Poznámky k rozpisu</figcaption></figure>
 
-<h2 id="scoring-matches">Scoring Matches</h2>
+<h2 id="zadávání-výsledků">Zadávání výsledků</h2>
 
-<p>Click on schedule cells to add scores to matches.</p>
+<p>Kliknutí na utkání v rozpisu otevře dialogové okno k zadání výsledku. Pokud je otevřen <strong>plánovací panel</strong> tak lze vyvolat okno pro zadání výsledku <a href="tmx_fundamentals.html">kontextovým kliknutím</a>.</p>
 
-<p><a href="tmx_tournament_scoring.html#score-entry">Matches are scored in the schedule in the same way they are scored in other contexts.</a></p>
+<p><a href="tmx_tournament_scoring.html#score-entry">Výsledky utkání lze zadávat v rozpisu utkání stejným způsobem jako v jiných záložkách.</a></p>
 
-<figure><img class="docimage" src="images/ch_schedule_status.png" alt="Schedule Status" /><figcaption>Schedule Status</figcaption></figure>
+<figure><img class="docimage" src="images/ch_schedule_status.png" alt="Stav v rozpisu" /><figcaption>Stav v rozpisu</figcaption></figure>
 
 
 
@@ -590,7 +590,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

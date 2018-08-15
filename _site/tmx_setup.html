@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" Installation, Setup">
-<title>Instalace CourtHive / TMX | CourtHive Documentation</title>
+<title>Instalace CourtHive/TMX | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Instalace CourtHive / TMX">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Instalace CourtHive/TMX">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Instalace CourtHive / TMX</h1>
+   <h1 class="post-title-main">Instalace CourtHive/TMX</h1>
 </div>
 
 
@@ -466,21 +466,21 @@
 
     
 
-  <h2 id="nakonfigurujte-prohlížeč">Nakonfigurujte prohlížeč</h2>
+  <h2 id="konfigurace-prohlížeče">Konfigurace prohlížeče</h2>
 
-<p>CourtHive / TMX je implementována jako <a href="https://en.wikipedia.org/wiki/Progressive_Web_Apps" target="_ blank">progresivní webová aplikace</a>, což znamená, že po prvním otevření ve vašem prohlížeči může být spuštěna i po odpojení internetu … za předpokladu, že Váš prohlížeč podporuje <a href="https://caniuse.com/#feat=serviceworkers">Service Workers</a>.</p>
+<p>CourtHive/TMX je implementován jako <a href="https://en.wikipedia.org/wiki/Progressive_Web_Apps">progresivní webová aplikace</a>, což znamená, že po prvním otevření ve Vašem prohlížeči může být spuštěna i po odpojení internetu, za předpokladu, že Váš prohlížeč podporuje <a href="https://caniuse.com/#feat=serviceworkers">Service Workers</a>.</p>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Vytvořte záložku pro <a href="https://CourtHive.com/tmx">CourtHive.com/tmx</a>, abyste spustili aplikaci, když jste offline.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Vytvořte záložku pro <a href="https://CourtHive.com/tmx">CourtHive.com/TMX</a>, abyste mohli spustit aplikaci, když jste offline.</div>
 
-<p>SNěkteré prohlížeče, jako například Firefox, zakážou Service Workers pokud nejsou povoleny soubory cookies. Chcete-li používat všechny funkce CourtHive / TMX, měli byste povolit soubory cookies (i když CourtHive / TMX nevyužívá cookies).</p>
+<p>Některé prohlížeče, jako například Firefox, zakážou Service Workers, pokud nejsou povoleny soubory cookies. Chcete-li používat všechny funkce CourtHive/TMX, měli byste povolit soubory cookies (i když CourtHive/TMX nevyužívá cookies).</p>
 
 <div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Pro plnou offline podporu povolte cookies pro Courthive.com</div>
 
-<h2 id="zkontrolujte-výchozí-nastavení">Zkontrolujte výchozí nastavení</h2>
+<h2 id="kontrola-výchozího-nastavení">Kontrola výchozího nastavení</h2>
 
-<p>Na domovské obrazovce klikněte na ikonu nastavení a nakonfigurujte své předvolby. Pokud jste obdrželi <a href="tmx_configuration.html">konfigurační klíč</a>, mohly být některé konfigurace pro vás nakonfigurovány a nemusí být dostupné (například Loga organizace).</p>
+<p>Na domovské stránce klikněte na ikonu Nastavení a nakonfigurujte své předvolby. Pokud jste obdrželi <a href="tmx_configuration.html">Konfigurační klíč</a>, mohla být některá nastavení už nakonfigurována a nemusí být dostupná (například Loga organizace).</p>
 
-<figure><img class="docimage" src="images/ch_settings_icon.png" alt="Settings" /><figcaption>Settings</figcaption></figure>
+<figure><img class="docimage" src="images/ch_settings_icon.png" alt="Nastavení" /><figcaption>Nastavení</figcaption></figure>
 
 <table>
   <thead>
@@ -502,6 +502,11 @@
       <td>Nastaví první týdenní den od pondělí místo neděle</td>
     </tr>
     <tr>
+      <td>Obecné nastavení</td>
+      <td>Odkazy na dokumentaci</td>
+      <td>Zobrazí v příslušných záložkách odkazy na dokumentaci</td>
+    </tr>
+    <tr>
       <td>Vyhledávání</td>
       <td>Příjmení, jméno</td>
       <td>Při zadávání jmen se vrací výchozí pořadí</td>
@@ -513,37 +518,72 @@
     </tr>
     <tr>
       <td>Hrací plány</td>
-      <td>Compressed Draw Formats</td>
-      <td>Whether to allow 12, 24, 48 draw sizes</td>
+      <td>Komprimovaný formát hracího plánu</td>
+      <td>Zda-li povolit komprimované hrací pole pro 12, 24 a 48 hráčů</td>
     </tr>
     <tr>
       <td>Hrací plány</td>
-      <td>Automatic Bye Placement</td>
-      <td>De-select if you want to place Byes manually</td>
+      <td>Automatické přidělení volných kol (byes)</td>
+      <td>Neoznačovat pokud mají být vybrána umístění volných kol (byes) manuálně</td>
     </tr>
     <tr>
       <td>Hrací plány</td>
-      <td>Fixed Bye Order</td>
-      <td>Do not place byes strictly by seeding</td>
+      <td>Fixní distribuce volných kol (byes)</td>
+      <td>Volná kola fixně na řádky místo podle nasazení hráčů</td>
     </tr>
     <tr>
       <td>Hrací plány</td>
-      <td>LL from All Qualifying Rounds</td>
-      <td>Include losers from all rounds on LL sign up sheet</td>
+      <td>Automaticky separovat hráče podle zemí</td>
+      <td>Při automatickém losování jsou hráči ze stejných zemí odděleni</td>
     </tr>
     <tr>
       <td>Hrací plány</td>
-      <td>Court Details</td>
-      <td>Display scheduled court in draw</td>
+      <td>Automaticky separovat hráče podle klubů</td>
+      <td>Při automatickém losování jsou hráči ze stejných klubů odděleni</td>
     </tr>
     <tr>
       <td>Hrací plány</td>
-      <td>Matches Before Count</td>
-      <td>Display # of prior matches  in draw</td>
+      <td>Lucky Losers ze všech kvalifikačních kol</td>
+      <td>Zahrnout Lucky Losers ze všech kol na seznam dostupných Lucky Losers</td>
+    </tr>
+    <tr>
+      <td>Hrací plány</td>
+      <td>Kvalifikaci navázat na soutěž útěchy</td>
+      <td>Poražení z kvalifikace se mohou zúčastnit soutěže útěchy</td>
+    </tr>
+    <tr>
+      <td>Hrací plány</td>
+      <td>Hráči v soutěži útěchy ze všech kol hlavní soutěže</td>
+      <td>Všichni poražení ze všech kol hlavní soutěže se mohou zúčastnit soutěže útěchy</td>
+    </tr>
+    <tr>
+      <td>Hrací plány</td>
+      <td>Nasazovat hráče v soutěži útěchy</td>
+      <td>V soutěži útěchy nasazovat hráče podle žebříčku</td>
+    </tr>
+    <tr>
+      <td>Hrací plány</td>
+      <td>Zobrazit vlajky zemí</td>
+      <td>Zobrazí vlajku země u každého hráče v hracím plánu</td>
+    </tr>
+    <tr>
+      <td>Hrací plány</td>
+      <td>Číslo kurtu a pořadí utkání viditelné v hracím plánu</td>
+      <td>Zobrazí číslo kurtu a pořadí utkání na kurtu v hracím plánu</td>
+    </tr>
+    <tr>
+      <td>Hrací plány</td>
+      <td>Počet předchozích utkání na dvorci</td>
+      <td>Zobrazí počet předchozích utkání na kurtu v hracím plánu</td>
+    </tr>
+    <tr>
+      <td>Hrací plány</td>
+      <td>Zobrazit datum utkání v eliminačním hracím plánu</td>
+      <td>Zobrazí i datum utkání v eliminačním hracím plánu</td>
     </tr>
     <tr>
       <td>Zveřejňování</td>
-      <td>Vyžádovat potvrzení zveřejnění</td>
+      <td>Vyžadovat potvrzení zveřejnění</td>
       <td>Ke zveřejnění nedojde bez potvrzení</td>
     </tr>
     <tr>
@@ -552,19 +592,24 @@
       <td>Okamžité zveřejnění</td>
     </tr>
     <tr>
+      <td>Zveřejňování</td>
+      <td>Zveřejnit hrací plán živě v průběhu losování</td>
+      <td>Živě v průběhu losování ukazovat zaplňování pozic na hracím plánu</td>
+    </tr>
+    <tr>
       <td>Tisk</td>
       <td>Uložit PDFs</td>
-      <td>Uložit okamžitě namísto otevření na nové záložce</td>
+      <td>Uložit okamžitě do vybrané složky namísto otevření na nové záložce prohlížeče</td>
     </tr>
     <tr>
       <td>Rozpis utkání</td>
-      <td>Výsledky utkání v pořadí dle hracího plánu</td>
-      <td>Pokud zatrženo tak skóre z pohledu vítěze</td>
+      <td>Výsledky utkání zobrazit vždy z pohledu vítěze</td>
+      <td>Pokud zatrženo tak je skóre vždy zobrazeno z pohledu vítěze bez ohledu na to který hráč je uveden v rozpisu utkání jako první</td>
     </tr>
     <tr>
       <td>Rozpis utkání</td>
-      <td>Skončená utkání vyhledávat v rozpisu</td>
-      <td>Zobrazí skončené zápasy ve vyhledávání</td>
+      <td>Ukončená utkání vyhledávat v rozpisu</td>
+      <td>Zobrazí ukončené zápasy ve vyhledávání</td>
     </tr>
   </tbody>
 </table>
@@ -586,7 +631,7 @@
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

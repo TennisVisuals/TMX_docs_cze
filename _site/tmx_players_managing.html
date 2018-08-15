@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" Tournament Players Database">
-<title>Managing Players | CourtHive Documentation</title>
+<title>Správa databáze hráčů | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Managing Players">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Správa databáze hráčů">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Managing Players</h1>
+   <h1 class="post-title-main">Správa databáze hráčů</h1>
 </div>
 
 
@@ -466,69 +466,74 @@
 
     
 
-  <p>Support for management of the local player database in the first release of CourtHive/TMX is minimal.</p>
+  <p>Podpora správy lokální databáze hráčů v prvním vydání CourtHive/TMX je minimální.</p>
 
-<p>In normal use by organizations which have configured TMX to connect with existing tournament registration systems, the local player database exists primarily to facilitate the addition of players who sign in on site.</p>
+<p>Při běžném používání organizacemi které nakonfigurovaly TMX k propojení se svými existujícími systému pro registraci hráčů na turnaje, se lokální databáze hráčů
+využívá primárně k usnadnění přidání hráčú kteří se přihlásili dodatečně na místě k účasti.</p>
 
-<p>For individuals or clubs to construct tournaments independent of external tournament registration systems, using the local player database means that player information only needs to be entered once.</p>
+<p>Pro jednotlivce nebo kluby, kdo pořádají turnaje nezávisle na externím turnajovém registračním systému, použití lokální databáze hráčů znamená,
+že informace o hráčích je třeba zadat pouze jednou.</p>
 
-<p>At present there is no ability to edit players which are imported, the assumption being that player data is maintained externally and imported only to facilitate tournament creation.  Version 2.x will integrate more closely with third party components which manage player data.</p>
+<p>V současnosti není možno editovat hráče kteří byli importováni. Předpokládá se, že data hráčů jsou spravována externě a importována pouze za účelem usnadnění
+zadávání hráčů pro vytvářené turnaje.  Verze 2.x se bude více integrovat s komponenty třetích stran které spravují data hráčů.</p>
 
-<h2 id="adding-players">Adding Players</h2>
+<h2 id="přidání-hráčů">Přidání hráčů</h2>
 
-<p>Players can be added three ways to the local CourtHive/TMX database.</p>
+<p>Hráči mohou být přidáni třemi způsoby do lokální CourtHive/TMX databáze.</p>
 
-<h3 id="remote-database-sync">Remote Database Sync</h3>
+<h3 id="vzdálená-synchronizace-databáze">Vzdálená synchronizace databáze</h3>
 
-<p>If CourtHive/TMX is has been configured by an <a href="tmx_configuration.html">Organization Key</a> then the player database may be loaded by hovering the mouse over the <strong>Player Count</strong> icon in the upper right corner and clicking on the Refresh icon that appears to the left.</p>
+<p>Pokud je CourtHive/TMX nakonfigurován <a href="tmx_configuration.html">Organizačním klíčem</a> pak může být databáze hráčů načtena umístěním kurzoru myši vlevo vedle ikony <strong>Počet hráčů</strong> v pravém horním rohu, poté kontextovým kliknutím k zobrazení dialogu a potvrzením obnovení databáze (nebo přímým normálním kliknutím vlevo vedle ikony pro počet hráčů).</p>
 
-<figure><img class="docimage" src="images/ch_players_refresh.png" alt="Players" /><figcaption>Refresh Players</figcaption></figure>
+<figure><img class="docimage" src="images/ch_players_refresh.png" alt="Hráči" /><figcaption>Obnovit databázi</figcaption></figure>
 
-<p>After successfully loading the player database the <strong>Player Count</strong> will change to reflect the number of players in the database.</p>
+<p>Po úspěšném načtení databáze hráčů se <strong>počet hráčů</strong> změní tak, aby odrážel skutečný počet hráčů v lokální databázi.</p>
 
-<h3 id="dragdrop-import">Drag/Drop Import</h3>
+<h3 id="chyťpusť-import">Chyť/Pusť Import</h3>
 
-<p>For bulk loading of players when there is no remotely accesible player database, a <strong>Spreadsheet Template</strong> has been provided.</p>
+<p>Pro hromadné načtení databáze hráčů tam kde není k dispozici vzdáleně přístupná databáze byla vytvořena <strong>Tabulková šablona</strong>.</p>
 
-<p>This teamplate, once populated, can be loaded from the file system, or dragged and “dropped” on the import target area, which is accessible by clicking on the <strong>Import/Export</strong> icon from the Home Page.</p>
+<p>Tato šablona, jakmile je naplněna daty s hráči, může být načtena ze souborového systému, nebo “chycena” a “puštěna” (Drag &amp; Drop) v oblasti pro import dat,
+jenž je přístupná kliknutím na <strong>Import/Export</strong> ikonu z domovské stránky.</p>
 
-<p>The <strong>Spreadsheet Template</strong> can be downloaded from the <strong>Import/Export</strong> screen by clicking on the Spreadsheet Icon.</p>
+<p><strong>Tabulkovou šablonu</strong> lze stáhnout z <strong>Import/Export</strong> stránky kliknutím na ikonu tabulky.</p>
 
 <div style="display: flex; flex-wrap: wrap;">
 <div style="padding-right: 1em;"><figure><img class="docimage" src="images/ch_import_export.png" alt="Import" /><figcaption>Import/Export</figcaption></figure>
 </div>
-<figure><img class="docimage" src="images/ch_import_template.png" alt="Import Template" /><figcaption>Template</figcaption></figure>
+<figure><img class="docimage" src="images/ch_import_template.png" alt="Import šablony" /><figcaption>Šablona</figcaption></figure>
 
 </div>
 
-<p>There are four tabs in the  <strong>Spreadsheet Template.</strong>  The “CourtHive” tab is blank, but must be present for the system to recognize the spreadsheet.  The other three tabs are optional and can be deleted depending on what type of data is being imported. For players it is important that Player IDs are unique.</p>
+<p>V <strong>Tabulkové šabloně</strong> jsou 4 listy. “CourtHive” list je prázdný, ale musí být vložen do tabulky aby systém soubor rozeznal. Ostatní 3 listy jsou volitelné
+a mohou být smazány v závislosti na tom jaký typ dat je importován. Pro hráče je důležité aby hráčovo ID bylo unikátní.</p>
 
-<h3 id="manual-entry">Manual Entry</h3>
+<h3 id="manuální-vložení">Manuální vložení</h3>
 
-<p>A local player database can be constructed, or an existing database augmented, by entering players one at a time.</p>
+<p>Lokální databáze hráčů může být vytvořena nebo existující databáze rozšířena tím, že lze každého hráče zadat jednotlivě.</p>
 
-<p>The <strong>Add Player</strong> icon is accessible from the Home Page by clicking on the <strong>Players Icon.</strong></p>
+<p>Ikona <strong>Přidat hráče</strong> je dostupná z domovské stránky kliknutím na ikonu <strong>Hráči.</strong></p>
 
 <div style="display: flex; flex-wrap: wrap;">
-   <div style="padding-right: 1em;"> <figure><img class="docimage" src="images/ch_players_icon.png" alt="Players" /><figcaption>Players Icon</figcaption></figure>
+   <div style="padding-right: 1em;"> <figure><img class="docimage" src="images/ch_players_icon.png" alt="Hráči" /><figcaption>Ikona hráči</figcaption></figure>
 </div>
-   <figure><img class="docimage" src="images/ch_players_add_icon.png" alt="Add Player" /><figcaption>Add Player</figcaption></figure>
+   <figure><img class="docimage" src="images/ch_players_add_icon.png" alt="Přidat hráče" /><figcaption>Přidat hráče</figcaption></figure>
 
 </div>
 
-<p>Only the fields in <strong>Yellow</strong> are required.</p>
+<p>Pouze vyplnění polí označených <strong>žlutě</strong> je požadováno.</p>
 
-<figure><img class="docimage" src="images/ch_players_add_form.png" alt="Player Information" /><figcaption>Basic Player Information</figcaption></figure>
+<figure><img class="docimage" src="images/ch_players_add_form.png" alt="Informace o hráči" /><figcaption>Základní informace o hráči</figcaption></figure>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Players can also be manually created while adding players to a tournament, if a player is searched for and not found.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Hráči mohou být také manuálně zadáni při přidávání hráčů do turnaje, pokud hráč není během vyhledávání nalezen.</div>
 
-<h3 id="tournament-results">Tournament Results</h3>
+<h3 id="turnajové-výsledky">Turnajové výsledky</h3>
 
-<p>When tournaments and matches are added to the local database, player tournament results become available.</p>
+<p>Když jsou turnaje a utkání přidány do lokální databáze, turnajové výsledky se stanou dostupnými v systému.</p>
 
-<figure><img class="docimage" src="images/ch_players_ladder.png" alt="Tournament Results" /><figcaption>Tournament Results</figcaption></figure>
+<figure><img class="docimage" src="images/ch_players_ladder.png" alt="Turnajové výsledky" /><figcaption>Turnajové výsledky</figcaption></figure>
 
-<p>The “Ladder” visualization of Tournament Results includes surface (color), category (shape), final round (position), and tournament rank (size).</p>
+<p>Žebříková (“Ladder”) vizualizace turnajových výsledků zahrnuje povrch (barvu), kategorii, finalní kolo (pozici) and kategorii turnaje.</p>
 
 
     <div class="tags">
@@ -547,7 +552,7 @@
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

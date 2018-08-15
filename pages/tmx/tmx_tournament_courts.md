@@ -1,27 +1,27 @@
 ---
-title: Tournament Courts
+title: Turnajové dvorce
 keywords: tournament courts
 sidebar: ch_sidebar
 permalink: tmx_tournament_courts.html
 toc: false
 ---
 
-Before any [Scheduling](tmx_tournament_schedule.html) can occur, __Court Locations__ must be defined. This is a fairly simple process.
+Předtím, než je možno začít sestavovat [Rozpis utkání](tmx_tournament_schedule.html), informace o __areálu__ a __dvorcích__ musí být zadány. Jde o poměrně jednoduchý proces.
 
-Fields in __Yellow__ are required.  The table below describes the attributes of each Court Location.
+Vyplnění polí označených __žlutě__ je povinné.  Níže uvedená tabulka popisuje vlastnosti každého pole při zadávání turnajových areálů.
 
-{% include image.html file="ch_courts_tab.png" alt="Add Location" caption="Add Court Location" %}
+{% include image.html file="ch_courts_tab.png" alt="Přidat areál" caption="Přidat areál" %}
 
-| Field | Definition |
+| Pole | Definice |
 |-------|--------|
-| Abbr. | The court abbreviation is used at the top of schedule columns  |
-| Name  | Not currently used |
-| Address | Not currently used |
-| Courts | The number of courts at this location |
-| Court IDs | (Optional) A comma separated list of court identifiers |
+| Zkratka | Zkratka dvorce je použita nahoře v hlavičce sloupců v rozpisu utkání  |
+| Název  | Není v současnosti používáno |
+| Adresa | Není v současnosti používáno |
+| Počet dvorců | Počet dvorců v tomto areálu |
+| Kurt ID | (Volitelné) Seznam identifikátorů oddělený čárkami |
 
-{% include tip.html content="Court IDs can be used to change the order of courts on the Schedule." %}
+{% include tip.html content="Kurt ID může být použito ke změně pořadí dvorců v rozpisu utkání." %}
 
-{% include image.html file="ch_courts_defined.png" alt="Location Added" caption="Court Location Added" %}
+{% include image.html file="ch_courts_defined.png" alt="Areál přidán" caption="Areál přidán" %}
 
-{% include note.html content="The __Schedule Tab__ will appear after at least one court location is added." %}
+{% include note.html content="Záložka __Rozpis utkání__ se objeví poté co je alespoň jeden areál zadán." %}

@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" Tournament Players Rankings Database">
-<title>Player Rankings | CourtHive Documentation</title>
+<title>Žebříčky hráčů | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Player Rankings">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Žebříčky hráčů">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Player Rankings</h1>
+   <h1 class="post-title-main">Žebříčky hráčů</h1>
 </div>
 
 
@@ -466,37 +466,38 @@
 
     
 
-  <h3 id="points-tables">Points Tables</h3>
+  <h3 id="tabulky-bodů">Tabulky bodů</h3>
 
-<p>Player Rankings are available when <a href="tmx_configuration.html">Organization Keys</a> include <strong>Points Tables</strong>.</p>
+<p>Žebříčky hráčů jsou dostupné když <a href="tmx_configuration.html">Organizační klíč</a> obsahuje <strong>Tabulky bodů</strong>.</p>
 
-<h3 id="generating">Generating</h3>
+<h3 id="sestavování-žebříčků">Sestavování žebříčků</h3>
 
-<p>Generating Ranking Lists is a two step process</p>
+<p>Sestavování žebříčků je dvoustupňový proces</p>
 <ul>
-  <li>Calculate Ranking Points for all players for a selected date</li>
-  <li>Generate Ranking List for a selected date</li>
+  <li>výpočet bodů do žebříčku pro všechny hráče k vybranému datu</li>
+  <li>sestavování žebříčku hráčů k vybranému datu</li>
 </ul>
 
 <div style="display: flex; flex-wrap: wrap;">
-   <div style="padding-right: 1em;"> <figure><img class="docimage" src="images/ch_rankings_calculate.png" alt="Calculate" /><figcaption>Calculate</figcaption></figure>
+   <div style="padding-right: 1em;"> <figure><img class="docimage" src="images/ch_rankings_calculate.png" alt="Vypočítat" /><figcaption>Vypočítat</figcaption></figure>
 </div>
-   <figure><img class="docimage" src="images/ch_rankings_generate.png" alt="Generate" /><figcaption>Generate</figcaption></figure>
+   <figure><img class="docimage" src="images/ch_rankings_generate.png" alt="Sestavovat" /><figcaption>Sestavovat</figcaption></figure>
 
 </div>
 
-<h3 id="rank-lists">Rank Lists</h3>
-<p>Rank Lists are generated for all Player Categories which have been defined by an <a href="tmx_configuration.html">Organization Key</a> and are exportable in multiple formats including PDF, CSV, JSON and XLSX.</p>
+<h3 id="Žebříčky">Žebříčky</h3>
+<p>Žebříčky jsou sestavovány pro všechny hráčské kategorie které byly definovány v <a href="tmx_configuration.html">Organizačním klíči</a> a lze je exportovat do
+mnoha formátů včetně PDF, CSV, JSON and XLSX.</p>
 
-<figure><img class="docimage" src="images/ch_rankings_lists.png" alt="Rank Lists" /><figcaption>Rank Lists</figcaption></figure>
+<figure><img class="docimage" src="images/ch_rankings_lists.png" alt="Žebříčky" /><figcaption>Žebříčky</figcaption></figure>
 
-<h3 id="rankings-charts">Rankings Charts</h3>
+<h3 id="Žebříčkové-grafy">Žebříčkové grafy</h3>
 
-<p>After Rank Lists have been generated, Rankings Charts are available for all players.</p>
+<p>Po sestavení žebříčků jsou k dispozici i žebříčkové grafy pro všechny hráče.</p>
 
-<p>Datapoints represent each date chosen for Rank List generation.</p>
+<p>Body k jednotlivým datům představují každé vybrané datum pro generovaný žebříček.</p>
 
-<figure><img class="docimage" src="images/ch_rankings_chart.png" alt="Rankings Chart" /><figcaption>Rankings Chart</figcaption></figure>
+<figure><img class="docimage" src="images/ch_rankings_chart.png" alt="ˇŽebříčkové grafy" /><figcaption>Žebříčkové grafy</figcaption></figure>
 
 
 
@@ -516,7 +517,7 @@
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

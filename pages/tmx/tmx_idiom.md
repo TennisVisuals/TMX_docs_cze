@@ -14,6 +14,6 @@ Kliknutím na vlajku / volbu jazyka se zobrazí seznam dostupných jazyků (nej�
 
 {% include image.html file="ch_idioms.png" alt="Idioms" caption="Zvolte jazyk" %}
 
-Mapování jazyků CourtHive / TMX je spravováno jako tabulky Google. Nové jazyky lze přidávat okamžitě. Rodilému mluvčímu je umožněn přístup k listu Google pro každý jazyk kde si může zvolit vhodné překlady slov a frází.
+Mapování jazyků CourtHive/TMX je spravováno jako tabulky Google. Nové jazyky lze přidávat okamžitě. Rodilému mluvčímu je umožněn přístup k listu Google pro každý jazyk kde si může zvolit vhodné překlady slov a frází.
 
-Chcete-li přidat mapování jazyka do služby CourtHive / TMX, kontaktujte prosím <support@courthive.com>.
+Chcete-li přidat mapování jazyka do služby CourtHive/TMX, kontaktujte prosím <support@courthive.com>.

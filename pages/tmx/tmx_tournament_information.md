@@ -1,41 +1,41 @@
 ---
-title: Tournament Information Tab
+title: Turnajová data
 keywords: tournament information
 sidebar: ch_sidebar
 permalink: tmx_tournament_information.html
 toc: true
 ---
 
-## Introduction
+## Úvod
 
-Tournament Information is used primarily when printing/saving PDF Sign-in Sheets, Event Draws, and Tournament Schedules.  
+Informace o turnaji se primárně používají při tisku / ukládání PDF seznamu přihlášených hráčů, soutěžních hracích plánů a turnajových rozpisů utkání.  
 
-Tournament __Start__ and __End__ dates determine the days on which events may be scheduled.
+Datumy __začátku__ a __konce__ turnaje určí dny kdy mohou být soutěže v rámci turnaje naplánovány.
 
-{% include image.html file="ch_challenge_edit.png" alt="Add Player" caption="Tournament Editing Mode" %}
+{% include image.html file="ch_challenge_edit.png" alt="Přidat hráče" caption="Editovací režim turnaje" %}
 
-## Saving Tournament Data
+## Uložení turnajových dat
 
-Tournament data is automatically saved locally as changes are made.  There are two options for backing up tournament data and sharing tournaments with others.
+Turnajová data se při změnách automaticky ukládají do lokálního úložiště v prohlížeči.  Jsou dva způsoby jak zálohovat turnajová data a jak sdílet tato data s ostatními.
 
-{% include image.html file="ch_tournaments_save.png" alt="Save Tournament" caption="Save Options" %}
+{% include image.html file="ch_tournaments_save.png" alt="Uložit turnaj" caption="Možnosti uložení" %}
 
-The __UP__ arrow pushes the __Tournament Record__ to the [CourtHive Cloud Server](tmx_cloud_server.html) from which it may be retrieved by any other user who has the tournament in their calendar.
+Šipka __Nahoru__ exportuje / odesílá __turnajová data__ na [CourtHive Cloud Server](tmx_cloud_server.html) z kterého mohou být následně stažena jakýmkoli jiným uživatelem který má turnaj ve svém kalendáři.
 
-The __DOWN__ arrow exports the __Tournament Record__ in JSON format to the local file system.  This file may be imported into any CourtHive/TMX client by drag/dropping it into the Import/Expoert target area.
+Šipka __Dolů__ importuje / stahuje __turnajová data__ v JSON formátu do lokálního úložiště na disku. Tento soubor může být importován do CourtHive/TMX pomocí přetažení do Import/Export cílové zóny.
 
-{% include image.html file="ch_tournaments_save_state.png" alt="Save State" caption="Save State" %}
+{% include image.html file="ch_tournaments_save_state.png" alt="Stav zálohování" caption="Stav zálohování" %}
 
-The "Push" and "Export" icons change color to indicate whether changes have been made to the the local copy of the tournament since the tournament was last pushed or exported. 
+"Export / Push" a "Import / Pull" ikony mění barvu tak aby signalizovala jestli byly nějaké změny provedeny v lokální kopii turnaje od doby kdy byl turnaj naposledy odeslán či stažen.
 
-__Yellow__ indicates "Out of Date" and __Green__ indicates "Up to Date".
+__Žlutá__ signalizuje "Neaktuální" a __zelená__ označuje "aktuální".
 
-{% include note.html content='When Tournament Events are completed, Tournament Records are automatically "pushed" to the server.' %}
+{% include note.html content='Když jsou turnajové soutěže dokončeny, turnajová data jsou automaticky odeslána na server.' %}
 
-## Tournament Notes
+## Turnajové poznámky
 
-Tournament Notes are only applicable when [Publishing](tmx_publishing_overview.html) is enabled.
+Turnajové poznámky lze použít pouze pokud je [zveřejňování](tmx_publishing_overview.html) povoleno.
 
-{% include image.html file="ch_tournament_notes_edit.png" alt="Notes" caption="Editing Tournament Notes" %}
+{% include image.html file="ch_tournament_notes_edit.png" alt="Poznámky" caption="Editace turnajových poznámek" %}
 
-Tournament notes are "sanitized" to prevent [XSS Attacks](https://en.wikipedia.org/wiki/Cross-site_scripting); this means that only a subset of HTML tags are allowed.
+Turnajové poznámky jsou "dezinfikovány", aby se zabránilo [XSS útokům](https://en.wikipedia.org/wiki/Cross-site_scripting); to znamená, že pouze podskupina HTML kódů je povolena.

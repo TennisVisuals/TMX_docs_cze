@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" Searching">
-<title>Using the Search Box | CourtHive Documentation</title>
+<title>Používání vyhledávacího pole | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Using the Search Box">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Používání vyhledávacího pole">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Using the Search Box</h1>
+   <h1 class="post-title-main">Používání vyhledávacího pole</h1>
 </div>
 
 
@@ -489,40 +489,40 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <p>The CourtHive/TMX search box can be used to search for Players, Tournaments, or Clubs.</p>
+  <p>CourtHive/TMX vyhledávací pole může být použito k vyhledání hráčů, turnajů a klubů.</p>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> If diacritics are <strong>not</strong> enabled in <a href="tmx_setup.html">settings</a> settings then use, for example, ‘S’ instead of ‘Š’.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Pokud diakritika <strong>není</strong> zapnuta v <a href="tmx_setup.html">Nastavení</a> pak použijte např.’S’ místo ‘Š’.</div>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> To change the Search Mode, click on the Magnifying Glass in the Search Box.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Chcete-li změnit režim vyhledávání, klikněte na ‘zvětšovací lupu’ ve vyhledávacím poli.</div>
 
-<p>The icon to the right of the search box is dependent on the mode of the search box and displays the number of Players, Tournaments, or Clubs that have been saved to the local database.</p>
+<p>Ikona napravo od vyhledávacího pole závisí na zapnutém režimu vyhledávání a zobrazuje počet hráčů, turnajů a klubů uložených v lokální databázi.</p>
 
-<figure><img class="docimage" src="images/ch_search_players.png" alt="Player Search" /><figcaption>Player Search Mode</figcaption></figure>
+<figure><img class="docimage" src="images/ch_search_players.png" alt="Vyhledávat hráče" /><figcaption>Vyhledávat hráče</figcaption></figure>
 
-<p>The default behavior of the search box is to find players, and the default search order is First Name / Last Name.  You can change the search order by Right or Control Clicking in the search box.</p>
+<p>Výchozím nastavením vyhledávacího pole je vyhledávání hráčů a výchozím nastavením pořadí vyhledávání je Jméno / Příjmení.  Pořadí vyhledávání lze změnit kontextovým kliknutím ve vyhledávacím poli.</p>
 
-<figure><img class="docimage" src="images/ch_search_order.png" alt="Search Order" /><figcaption>Right or Control Click to change Search Order</figcaption></figure>
+<figure><img class="docimage" src="images/ch_search_order.png" alt="Pořadí vyhledávání" /><figcaption>Kontextové kliknutí ke změně pořadí vyhledávání</figcaption></figure>
 
-<p>When editing a tournament the search box can change its behavior.  During Player Sign-In it is used to Add players who are not previously registered, or to Sign-In (and Sign-out) registered players.  When creating events, the search box is used to Approve players and to build doubles teams.</p>
+<p>Při editaci turnaje může vyhledávací pole změnit své chování. Během fáze přihlašování hráčů se používá k přidání hráčů kteří nebyli předtím registrováni nebo k přihlášení (a odhlášení) registrovaných hráčů. Při vytváření soutěží se vyhledávací pole využívá ke schvalování hráčů a k vytváření dvojic pro čtyřhru.</p>
 
-<p>More information about these search box behaviors can be found in the corresponding sections of the documentation.</p>
+<p>Další informace o chování vyhledávacího pole mohou být nalezeny v odpovídajících sekcích této dokumentace.</p>
 
-<h2 id="search-mode">Search Mode</h2>
+<h2 id="režim-vyhledávaní">Režim vyhledávaní</h2>
 
-<p>Clicking on the Magnifying Glass in the search box changes the search mode.</p>
+<p>Kliknutím na vyhledávací lupu ve vyhledávacím poli se změní režim vyhledávání.</p>
 
-<figure><img class="docimage" src="images/ch_search_tournaments.png" alt="Tournament Search" /><figcaption>Tournament Search Mode</figcaption></figure>
+<figure><img class="docimage" src="images/ch_search_tournaments.png" alt="Vyhledat turnaj" /><figcaption>Režim vyhledání turnaje</figcaption></figure>
 
-<h2 id="context-sensitive-search">Context Sensitive Search</h2>
+<h2 id="kontextové-sensitivní-vyhledávání">Kontextové sensitivní vyhledávání</h2>
 
-<p>The Search Box behavior will change while performing certain operations.</p>
+<p>Chování vyhledávacího pole se během některých operací mění.</p>
 
 <ul>
-  <li>When <strong>Adding</strong> players to a tournament, only players valid for a chosen age category will be found</li>
-  <li>When <strong>Approving</strong> players for Tournament Events, only players eligilble for an event will be found</li>
+  <li>Při <strong>přidávání</strong> hráčů do turnaje budou vyhledáni pouze hráči pro danou věkovou kategorii</li>
+  <li>Při <strong>schvalování</strong> hráčů pro turnajovou soutěž pouze hráči přihlášení do soutěže budou vyhledáni</li>
 </ul>
 
-<figure><img class="docimage" src="images/ch_search_add_player.png" alt="Add Player" /><figcaption>Add Player</figcaption></figure>
+<figure><img class="docimage" src="images/ch_search_add_player.png" alt="Přidat hráče" /><figcaption>Přidat hráče</figcaption></figure>
 
 
 
@@ -542,7 +542,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

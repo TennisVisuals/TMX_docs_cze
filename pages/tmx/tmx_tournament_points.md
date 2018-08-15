@@ -1,11 +1,11 @@
 ---
-title: Tournament Points
+title: Turnajové body
 keywords: tournament points
 sidebar: ch_sidebar
 permalink: tmx_tournament_points.html
 toc: false
 ---
 
-{% include important.html content="The __Points Tab__ will not appear until at least one [Tournament Match](tmx_events_management.html) has been completed." %}
+{% include important.html content="Záložka __Body__ se neobjeví dokud alespoň jeden výsledek [Turnajového utkání](tmx_events_management.html) nebyl zadán." %}
 
-{% include note.html content="The __Points Tab__ will not appear unless an [Organization Key](tmx_configuration.html) has defined a __Points Table__." %}
+{% include note.html content="Záložka __Body__ se také neobjeví pokud [Organizační klíč](tmx_configuration.html) nemá definovánou __Tabulku bodů__." %}

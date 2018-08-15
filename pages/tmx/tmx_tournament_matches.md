@@ -1,17 +1,17 @@
 ---
-title: Tournament Matches
+title: Turnajová utkání
 keywords: tournament matches
 sidebar: ch_sidebar
 permalink: tmx_tournament_matches.html
 toc: false
 ---
 
-{% include important.html content="The __Matches Tab__ will not appear until at least one [Tournament Event](tmx_events_management.html) has been created." %}
+{% include important.html content="Záložka __Seznam utkání__ se neobjeví dokud alespoň jedna [turnajová soutěž](tmx_events_management.html) nebyla vytvořena." %}
 
-{% include image.html file="ch_matches_tab.png" alt="Matches" caption="Tournament Matches" %}
+{% include image.html file="ch_matches_tab.png" alt="Utkání" caption="Turnajová utkání" %}
 
-## Filtering Matches
+## Filtrování utkání
 
-In the upper right of the __Matches Tab__ there are gender filters which enable matches to be filtered.
+V pravém horním rohu záložky __Seznam utkání__ je filtr pohlaví který umožňuje filtrování utkání.
 
-{% include image.html file="ch_players_filtering.png" alt="Filtering" caption="Gender Filters" %}
+{% include image.html file="ch_players_filtering.png" alt="Filtrování" caption="Filtr pohlaví" %}

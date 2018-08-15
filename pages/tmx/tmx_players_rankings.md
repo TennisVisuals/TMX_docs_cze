@@ -1,35 +1,36 @@
 ---
-title: Player Rankings
+title: Žebříčky hráčů
 keywords: Tournament Players Rankings Database
 sidebar: ch_sidebar
 permalink: tmx_players_rankings.html
 toc: false
 ---
 
-### Points Tables
+### Tabulky bodů
 
-Player Rankings are available when [Organization Keys](tmx_configuration.html) include __Points Tables__.
+Žebříčky hráčů jsou dostupné když [Organizační klíč](tmx_configuration.html) obsahuje __Tabulky bodů__.
 
-### Generating
+### Sestavování žebříčků
 
-Generating Ranking Lists is a two step process
-* Calculate Ranking Points for all players for a selected date
-* Generate Ranking List for a selected date
+Sestavování žebříčků je dvoustupňový proces
+* výpočet bodů do žebříčku pro všechny hráče k vybranému datu
+* sestavování žebříčku hráčů k vybranému datu
 
 <div style='display: flex; flex-wrap: wrap;'>
-   <div style='padding-right: 1em;'> {% include image.html file="ch_rankings_calculate.png" alt="Calculate" caption="Calculate" %}</div>
-   {% include image.html file="ch_rankings_generate.png" alt="Generate" caption="Generate" %}
+   <div style='padding-right: 1em;'> {% include image.html file="ch_rankings_calculate.png" alt="Vypočítat" caption="Vypočítat" %}</div>
+   {% include image.html file="ch_rankings_generate.png" alt="Sestavovat" caption="Sestavovat" %}
 </div>
 
-### Rank Lists
-Rank Lists are generated for all Player Categories which have been defined by an [Organization Key](tmx_configuration.html) and are exportable in multiple formats including PDF, CSV, JSON and XLSX.
+### Žebříčky
+Žebříčky jsou sestavovány pro všechny hráčské kategorie které byly definovány v [Organizačním klíči](tmx_configuration.html) a lze je exportovat do
+mnoha formátů včetně PDF, CSV, JSON and XLSX.
 
-{% include image.html file="ch_rankings_lists.png" alt="Rank Lists" caption="Rank Lists" %}
+{% include image.html file="ch_rankings_lists.png" alt="Žebříčky" caption="Žebříčky" %}
 
-### Rankings Charts
+### Žebříčkové grafy
 
-After Rank Lists have been generated, Rankings Charts are available for all players.
+Po sestavení žebříčků jsou k dispozici i žebříčkové grafy pro všechny hráče.
 
-Datapoints represent each date chosen for Rank List generation.
+Body k jednotlivým datům představují každé vybrané datum pro generovaný žebříček.
 
-{% include image.html file="ch_rankings_chart.png" alt="Rankings Chart" caption="Rankings Chart" %}
+{% include image.html file="ch_rankings_chart.png" alt="ˇŽebříčkové grafy" caption="Žebříčkové grafy" %}

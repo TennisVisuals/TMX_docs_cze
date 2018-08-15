@@ -1,31 +1,33 @@
 ---
-title: Example Player Dataset
+title: Příklad databáze hráčů
 keywords: Example Tournament Players Database
 sidebar: ch_sidebar
 permalink: tmx_players_example.html
 toc: false
 ---
 
-## ATP/WTA Player Database
+## ATP/WTA databáze hráčů
 
-CourtHive can be enabled to connect to an example player database by entering "atpwta" in the [Configuration Key](tmx_configuration.html) dialogue and pressing the __Submit__ button.
+Aplikaci CourtHive/TMX může být povoleno připojení k ukázkové databázi hráčů zadáním "atpwta" v dialogu pro [Konfigurační klíč](tmx_configuration.html)
+a stiskem klávesy __Odeslat__.
 
-{% include image.html file="ch_key_atpwta.png" alt="ATP/WTA" caption="Configuration Key" %}
+{% include image.html file="ch_key_atpwta.png" alt="ATP/WTA" caption="Konfigurační klíč" %}
 
-Nothing visible will happen when this key is entered, the system will only be configured with the apprpriate parameters for connecting to a remote database.
+Nic viditelného se nestane když je tento klíč odelán, system bude pouze nakonfigurován s příslušnými parametry pro připojení ke vzdálené databázi.
 
-To load the exmaple database, hover the mouse over the __Player Count__ icon in the upper right corner and click on the __Refresh__ icon that appears to the left.
+Chcete-li načíst ukázkovou databázi hráčů, umístěte kurzor myši vlevo vedle ikony __Hráči__ v pravém horním rohu a klikněte na __OK__ tlačítko v dialogu __Obnovit seznam__.
 
-{% include image.html file="ch_players_refresh.png" alt="Players" caption="Refresh Database" %}
+{% include image.html file="ch_players_refresh.png" alt="Hráči" caption="Obnovit databázi" %}
 
-Once the local database has been populated from the remote server, the __Player Count__ will change to reflect the number of players loaded.
+Po načtení lokální datatáze hráčů ze vzdáleného serveru se __Počet hráčů__ změní tak, aby odrážel skutečný počet načtených hráčů.
 
-{% include image.html file="ch_players_loaded.png" alt="Players" caption="Players Loaded" %}
+{% include image.html file="ch_players_loaded.png" alt="Hráči" caption="Načtení hráči" %}
 
-It will now be possible to use the [Search Box](tmx_searchbox.html) to search for players.
+Poté bude možné používat [Vyhledávací pole](tmx_searchbox.html) k vyhledání vybraných hráčů.
 
-{% include image.html file="ch_players_nadal.png" alt="Search" caption="Player Search" %}
+{% include image.html file="ch_players_nadal.png" alt="Vyhledat" caption="Vyhledat hráče" %}
 
-By default there is no player data other than birth year and country represented.  After a player has been included in Tournament Events and Match Results have been entered, Match Data will be presented.  Ranking Data will be available after rank lists have been generated from Tournament Results.
+Ve výchozím nastavení nejsou žádné jiné údaje o hráčích než rok narození a země kterou reprezentují. Poté, co je hráč zařazen do turnajové soutěže a výsledek jeho
+utkání zadán, budou zobrazena zápasová data příslušného hráče.  Žebříčková data budou dostupná po vygenerování žebříčků podle turnajových výsledků.
 
-{% include image.html file="ch_players_nadal_data.png" alt="Search" caption="Player Data" %}
+{% include image.html file="ch_players_nadal_data.png" alt="Vyhledat" caption="Data hráče" %}

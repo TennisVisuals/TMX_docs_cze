@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="">
 <meta name="keywords" content=" tournament draws">
-<title>Tournament Draws | CourtHive Documentation</title>
+<title>Turnajové hrací plány | CourtHive Documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,7 +136,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="Tournament Draws">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Turnajové hrací plány">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -449,7 +449,7 @@
         <!-- Content Column -->
         <div class="col-md-9" id="tg-sb-content">
             <div class="post-header">
-   <h1 class="post-title-main">Tournament Draws</h1>
+   <h1 class="post-title-main">Turnajové hrací plány</h1>
 </div>
 
 
@@ -489,121 +489,121 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h2 id="action-icons">Action Icons</h2>
+  <h2 id="akční-ikony">Akční ikony</h2>
 
-<p>To the right of the <strong>Event Selector</strong> are several “Action Icons”</p>
+<p>V záložce <strong>Hrací plány</strong> napravo od <strong>výběru soutěže</strong> je několik “akčních ikon”:</p>
 
-<figure><img class="docimage" src="images/ch_draws_tab.png" alt="Draws" /><figcaption>Tournament Draws Tab</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_tab.png" alt="Hrací plány" /><figcaption>Záložka hrací plány</figcaption></figure>
 
 <ul>
-  <li><strong>Recycle Icon:</strong> regenerate the currently selected draw</li>
-  <li><strong>Player Icon:</strong> identify player representatives who witness draw creation</li>
-  <li><strong>PDF Icon:</strong> generate a PDF of the Player Draw Order, Completed Draw, or Lucky Loser Sign up sheet</li>
+  <li><strong>Ikona Vyčistit hrací plán:</strong> znovu obnoví (resetuje) vybraný hrací plán</li>
+  <li><strong>Ikona Zástupci hráčů:</strong> identifikuje zástupce hráčů, kteří byli přítomni losování</li>
+  <li><strong>Ikona PDF:</strong> vytvoří PDF soubor s hracím plánem a pořadím hráčů, kompletním hracím plánem a Lucky Loser přihláškami</li>
 </ul>
 
-<h3 id="reganerating-draws">Reganerating Draws</h3>
+<h3 id="opětovné-vytvoření-hracího-plánu">Opětovné vytvoření hracího plánu</h3>
 
-<p>If for any reason a draw needs to be started from scratch, the <strong>Recycyle Icon</strong> will reset the draw to it’s initial state.</p>
+<p>Pokud je z nějakého důvodu třeba vytvořit hrací plán od samého začátku, ikona <strong>Vyčistit hrací plán</strong> obnoví hrací plán do počátečního stavu.</p>
 
-<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> The <strong>Recycle Icon</strong> is not available if any match results has been entered.</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Ikona <strong>Vyčistit hrací plán</strong> není k dispozici pokud byl zadán alespoň jeden výsledek utkání.</div>
 
-<h3 id="player-representatives">Player Representatives</h3>
+<h3 id="zástupci-hráčů">Zástupci hráčů</h3>
 
-<p>The <strong>PLayer Icon</strong> launches a dialogue for identifying players who witness draw creation.</p>
+<p>Ikona <strong>Zástupci hráčů</strong> spustí dialogové okno kam je možno zadat maximálně dva hráče kteří byli přítomni losování hracího plánu.</p>
 
-<figure><img class="docimage" src="images/ch_draws_player_representatives.png" alt="Representatives" /><figcaption>Player Representatives</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_player_representatives.png" alt="Zástupci hráčů" /><figcaption>Zástupci hráčů</figcaption></figure>
 
-<p>Player representatives will appear at the bottom of PDF printouts of each draw.</p>
+<p>Zástupcí hráčů se objeví dole na PDF výtisku příslušného hracího plánu.</p>
 
-<h3 id="player-draw-order">Player Draw Order</h3>
+<h3 id="pořadí-hráčů-pro-hrací-plán">Pořadí hráčů pro hrací plán</h3>
 
-<p>If a draw has not been completed (all players placed), then the <strong>PDF Icon</strong> generates a PDF of the <strong>player draw order</strong>, which is a table of players orderd by their ranking.</p>
+<p>Pokud nebyl hrací plán ještě dokončen (všichni hráči umístěni), pak <strong>PDF ikona</strong> vytvoří PDF soubor s <strong>pořadím hráčů pro hrací plán</strong>, což je tabulka hráčů seřazených podle jejich žebříčku.</p>
 
-<p>This list is used for <a href="tmx_tournament_draws.html#manual-draw-creation">Manual Draw Creation</a> and will not be generated if draw generation is <a href="tmx_events_management.html#automated-draws">Automated</a>.</p>
+<p>Tato tabulka hráčů se použije k <a href="tmx_tournament_draws.html#manual-draw-creation">manuální tvorbě hracího plánu</a> a nebude vytvořena když je hrací plán sestaven  <a href="tmx_events_management.html#automated-draws">automaticky</a>.</p>
 
-<figure><img class="docimage" src="images/ch_draws_draw_order.png" alt="Draw Order" /><figcaption>Draw Order</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_draw_order.png" alt="Pořadí hráčů" /><figcaption>Pořadí hráčů pro hrací plán</figcaption></figure>
 
-<h2 id="elimination-draws">Elimination Draws</h2>
+<h2 id="vyřazovací-hrací-plány">Vyřazovací hrací plány</h2>
 
-<p>If draw generation is <a href="tmx_events_management.html#automated-draws">Automated</a> then all players are placed automatically and draws are ready for <a href="tmx_tournament_scoring.html">Scoring</a>.</p>
+<p>Když je hrací plán vytvářen <a href="tmx_events_management.html#automated-draws">automaticky</a>, pak jsou všichni hráči umístěni na řádky hracího plánu bez manuálního zásahu automaticky a hrací plán je připraven k zadávání <a href="tmx_tournament_scoring.html">výsledků</a>.</p>
 
-<figure><img class="docimage" src="images/ch_draws_main.png" alt="Main Draw" /><figcaption>Automated Draw</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_main.png" alt="Hlavní hrací plán" /><figcaption>Automaticky vytvořený hrací plán</figcaption></figure>
 
-<h3 id="swapping-positions-alternates-lucky-losers">Swapping Positions, Alternates, Lucky Losers</h3>
+<h3 id="výměna-pozic-náhradníci-lucky-losers-Šťastní-poražení">Výměna pozic, náhradníci, Lucky Losers (Šťastní Poražení)</h3>
 
-<p>Once a draw is complete, <a href="tmx_fundamentals.html">Context Clicking</a> on a player presents available options.</p>
+<p>Jakmile je hrací plán vytvořen, <a href="tmx_fundamentals.html">kontextové kliknutí</a> na hráče vyvolá okno s nabídkou dostupných možností.</p>
 
-<figure><img class="docimage" src="images/ch_draws_player_options.png" alt="Options" /><figcaption>Player Options</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_player_options.png" alt="Možnosti" /><figcaption>Hráčské možnosti</figcaption></figure>
 
-<p>If a <strong>seeded player</strong> is swapped with an <strong>unseeded player</strong>, or replaced by an <strong>alternate</strong> or <strong>lucky loser</strong> then seeding information is removed.</p>
+<p>Je-li <strong>nasazený hráč</strong> vyměněn v hracím plánu s <strong>nenasazeným hráčem</strong>, nebo nahrazen <strong>náhradníkem</strong> či <strong>Lucky Loserem</strong>, pak je informace o nasazení hráče odstraněna.</p>
 
-<figure><img class="docimage" src="images/ch_draws_player_replacement.png" alt="Replacement" /><figcaption>Player Replacement</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_player_replacement.png" alt="Nahrazení" /><figcaption>Nahrazení hráče</figcaption></figure>
 
-<h3 id="manual-draw-creation">Manual Draw Creation</h3>
+<h3 id="manuální-vytvoření-hracího-plánu">Manuální vytvoření hracího plánu</h3>
 
-<p>When draws are created manually, the 1st and 2nd seed are always placed automatically.</p>
+<p>I když je hrací plán tvořen manuálně, tak 1. a 2. nasazený hráč je vždy umístěn do hracího plánu automaticky.</p>
 
-<p>Other seeded players are placed in “Seed Groups”.  The 3rd and 4th players are together in a seed group.  The next group, if applicable, would be seeds 5, 6, 7 and 8.</p>
+<p>Ostatní nasazení hráči jsou umísťování v “nasazovacích skupinách”.  Třetí a čtvrtý nasazení jsou společně v jedné nasazovací skupině. Další nasazovací skupina, pokud je třeba, by byla z nasazených hráčů č.5, 6, 7 and 8 atd.</p>
 
-<p>Players may be placed in three ways:</p>
+<p>Hráči mohou být na hrací plán umísťování třemi způsoby:</p>
 <ul>
-  <li>Enterng a player’s <strong>Draw Order</strong></li>
-  <li>Searching for a player by name</li>
-  <li>Selecting from a list of available players</li>
+  <li>zadáním <strong>pořadí hráče pro hrací plán</strong></li>
+  <li>vyhledáním hráče podle jména</li>
+  <li>vybráním hráče ze seznamu dostupných hráčů</li>
 </ul>
 
-<figure><img class="docimage" src="images/ch_draws_player_selection.png" alt="Player Selection" /><figcaption>Player Selection</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_player_selection.png" alt="Výběr hráče" /><figcaption>Výběr hráče</figcaption></figure>
 
-<p>The first two options are available when <strong>Clicking</strong> on a valid draw position:</p>
+<p>První dvě volby jsou dostupné kliknutím na příslušnou pozici v hracím plánu:</p>
 
-<p><a href="tmx_fundamentals.html">Context Clicking</a> on a valid draw position allows placement by selecting from a list of available players:</p>
+<p><a href="tmx_fundamentals.html">Kontextové kliknutí</a> na příslušnou pozici hracího plánu vyvolá seznam dostupných hráčů a umožní jejich umístění v hracím plánu:</p>
 
-<figure><img class="docimage" src="images/ch_draws_player_selection_context.png" alt="Seed Selection" /><figcaption>Manual Seed Selection</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_player_selection_context.png" alt="Výběr nasazeného hráče" /><figcaption>Manuální výběr nasazeného hráče</figcaption></figure>
 
-<h3 id="removing-players">Removing Players</h3>
+<h3 id="odstranění-hráčů">Odstranění hráčů</h3>
 
-<figure><img class="docimage" src="images/ch_draws_manual_remove.png" alt="Remove Player" /><figcaption>Remove Player</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_manual_remove.png" alt="Odstranit hráče" /><figcaption>Odstranit hráče</figcaption></figure>
 
-<p>Player are removed by <a href="tmx_fundamentals.html">Context Clicking</a> on their name.</p>
+<p>Hráči mohou být odstraněni pomocí <a href="tmx_fundamentals.html">kontextového kliknutí</a> na své jméno.</p>
 
-<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Once a draw is complete players can only swapped or replaced by alternates or lucky losers.</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> Jakmile je hrací plán vytvořen a všichni hráči jsou umístěni pak mohou být hráči jen vyměněni nebo nahrazeni náhradníky či  Lucky Losers.</div>
 
-<h2 id="round-robin-brackets">Round Robin Brackets</h2>
+<h2 id="skupinový-hrací-plán">Skupinový hrací plán</h2>
 
-<p>If draw generation is <a href="tmx_events_management.html#automated-draws">Automated</a> then all players are placed automatically and draws are ready for <a href="tmx_tournament_scoring.html">Scoring</a>.</p>
+<p>Je-li hrací plán vytvořen <a href="tmx_events_management.html#automated-draws">automaticky</a>, pak jsou všichni hráči umístěni na řádky hracího plánu systémem bez manuálního zásahu a hrací plán je připraven k zadávání <a href="tmx_tournament_scoring.html">výsledků</a>.</p>
 
-<figure><img class="docimage" src="images/ch_draws_rr_automated.png" alt="Automatic Draw" /><figcaption>Automatic Draw Generation</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_rr_automated.png" alt="Automatický hrací plán" /><figcaption>Vytvoření hracího plánu automaticky</figcaption></figure>
 
-<h3 id="manual-player-placement">Manual Player Placement</h3>
+<h3 id="manuální-umístění-hráčů">Manuální umístění hráčů</h3>
 
-<p>When Round Robins are created manually, players are placed in the same way that they are <a href="tmx_tournament_draws.html#manual-draw-creation">placed in other draws</a>, by clicking or <a href="tmx_fundamentals.html">Context Clicking</a> on valid draw positions.</p>
+<p>Jsou-li skupiny vytvářeny manuálně, pak jsou hráči umísťováni stejným způsobem jako v <a href="tmx_tournament_draws.html#manual-draw-creation">jiných hracích plánech</a>, pomocí normálního kliknutí nebo <a href="tmx_fundamentals.html">kontextového kliknutí</a> na příslušnou pozici v hracím plánu.</p>
 
-<p>By default, two players are seeded for each bracket.  This is a setting which can be altered by <a href="tmx_configuration.html">Configuration Keys</a>.</p>
+<p>Ve výchozím nastavení jsou v každé skupině dva nasazení hráči.  Toto nastavení může být změněno pomocí <a href="tmx_configuration.html">konfiguračního klíče</a>.</p>
 
-<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> In Round Robin brackets, valid draw positions are highlighted when the mouse is hovering over a bracket.</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-check-square-o"></i> <b>Tip:</b> Ve skupinovém hracím plánu jsou platné pozice na hracím plánu zvýrazněny když se kurzor myši umístí nad skupinou.</div>
 
-<figure><img class="docimage" src="images/ch_draws_rr_player_placement.png" alt="Place Player" /><figcaption>Valid Draw Position</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_rr_player_placement.png" alt="Umístit hráče" /><figcaption>Platná pozice hracího plánu</figcaption></figure>
 
-<p><a href="tmx_fundamentals.html">Context Clicking</a> is also used to remove players and replace them with alternates, when available.</p>
+<p><a href="tmx_fundamentals.html">Kontextové kliknutí</a> může byt také použito k odstranění hráče a jeho nahrazením dostupným náhradníkem.</p>
 
-<figure><img class="docimage" src="images/ch_draws_rr_player_options.png" alt="Player Options" /><figcaption>Player Options</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_rr_player_options.png" alt="Volby hráče" /><figcaption>Volby hráče</figcaption></figure>
 
-<h3 id="win-ratios">Win Ratios</h3>
+<h3 id="poměr-výher">Poměr výher</h3>
 
-<p>When <a href="tmx_tournament_scoring.html">scoring</a> is complete, the <strong>Order (#)</strong> column is highlighted if players have equivalent <strong>Win Ratios</strong>.</p>
+<p>Až když jsou <a href="tmx_tournament_scoring.html">výsledky</a> kompletní, tak je sloupec s <strong>pořadím ve skupině (#)</strong> označen pokud mají hráči stejný <strong>poměr výher</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_draws_rr_sub_order.png" alt="Sub Order" /><figcaption>Round Robin Sub Order</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_rr_sub_order.png" alt="POmocné pořadí" /><figcaption>Pomocné pořadí ve skupině</figcaption></figure>
 
-<p><a href="tmx_fundamentals.html">Context Click</a> on cells in the <strong>+/-</strong> column to view a player’s <strong>Win Ratios</strong>.</p>
+<p><a href="tmx_fundamentals.html">Kontextové kliknutí</a> na buňky v <strong>+/-</strong> sloupci zobrazí hráčův <strong>poměr výher</strong>.</p>
 
-<figure><img class="docimage" src="images/ch_draws_rr_ratios.png" alt="Win Ratios" /><figcaption>Win Ratios</figcaption></figure>
+<figure><img class="docimage" src="images/ch_draws_rr_ratios.png" alt="Poměr výher" /><figcaption>Poměr výher</figcaption></figure>
 
-<p><a href="tmx_fundamentals.html">Context Click</a> on a highlighted cell to assign a “Sub Order”, which is used to determine the order in which players will be qualified from the bracket.</p>
+<p><a href="tmx_fundamentals.html">Kontextové kliknutí</a> na označenou buňku nastaví “pomocné pořadí”, které je použito pro určení pořadí ve skupině a případný postup ze skupiny do dalších utkání v turnaji.</p>
 
 <div style="display: flex; flex-wrap: wrap;">
-   <div style="padding-right: 1em;"><figure><img class="docimage" src="images/ch_draws_rr_sub_order_selection.png" alt="Sub Order" /><figcaption>Sub Order Selection</figcaption></figure>
+   <div style="padding-right: 1em;"><figure><img class="docimage" src="images/ch_draws_rr_sub_order_selection.png" alt="Pomocné pořadí" /><figcaption>Výběr pomocného pořadí</figcaption></figure>
 </div>
-   <figure><img class="docimage" src="images/ch_draws_rr_sub_order_defined.png" alt="Sub Order Defined" /><figcaption>Sub Order Defined</figcaption></figure>
+   <figure><img class="docimage" src="images/ch_draws_rr_sub_order_defined.png" alt="Definice pomocného pořadí" /><figcaption>Definice pomocného pořadí</figcaption></figure>
 
 </div>
 
@@ -624,7 +624,7 @@ $('#toc').on('click', 'a', function() {
                 <div class="col-lg-12 footer">
                   <img src="images/ch_logo.png" alt="CourtHive"/><br />
                &copy;2018 CourtHive. All rights reserved. <br />
- Site last generated: Aug 3, 2018 <br />
+ Site last generated: Aug 15, 2018 <br />
                 </div>
             </div>
 </footer>

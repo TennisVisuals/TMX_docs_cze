@@ -1,165 +1,171 @@
 ---
-title: Tournament Events
+title: Turnajové soutěže
 keywords: tournament event management
 sidebar: ch_sidebar
 permalink: tmx_events_management.html
 toc: true
 ---
 
-## Adding and Deleting Events
+## Přidání a smazání soutěží
 
-{% include image.html file="ch_events_add.png" alt="Add New Event" caption="Add New Tournament Event" %}
+{% include image.html file="ch_events_add.png" alt="Přidat soutěž" caption="Přidat novou turnajovou soutěž" %}
 
-The __Gender Selector__ makes assumptions when new events are being added:
-* default to Male if only male players have been signed-in
-* default to Female if only female players have been signed-in
-* default to Female if a Male Singles event already exists, or vice-versa
+Pole výběru pohlaví __Muži / Ženy__ předpokládá při přidání nové soutěže:
+* výchozí "Muži" když jsou pouze muži přihlášeni
+* výchozí ""Ženy" když jsou pouze ženy přihlášeny
+* výchozí ""Ženy" když mužská soutěž dvouhry už existuje nebo naopak
 
-{% include image.html file="ch_events_unsaved.png" alt="Save New Event" caption="Save New Tournament Event" %}
+{% include image.html file="ch_events_unsaved.png" alt="Uložit soutěž" caption="Uložit novou turnajovou soutěž" %}
 
-{% include note.html content="For each new event __eligible__ players are filtered according to the event configuration" %}
+{% include note.html content="Pro každou novou soutěž jsou __Přihlášení__ hráči filtováni podle konfigurace soutěže" %}
 
-{% include important.html content="Events must be saved before Draws can be created and Matches scheduled" %}
+{% include important.html content="Soutěže musí být uloženy předtím než Hrací plány mohou být vytvořeny a rozpis utkání naplánován" %}
 
-Events which have been saved appear in the __Event List__ and the __Save__ button is replaced by a __Delete Button__.
+Soutěže které byly uloženy se objeví v __Seznamu soutěží__ a __Uložit soutěž__ tlačítko je nahrazeno tlačítkem __Smazat soutěž__.
 
-{% include image.html file="ch_events_saved.png" alt="Saved Events" caption="Saved Events" %}
+{% include image.html file="ch_events_saved.png" alt="Uložené soutěže" caption="Uložené soutěže" %}
 
-## Approving Players
+## Schvalování hráčů
 
-Elibible players are shown with __Rank Order__ (#).
+Dostupní hráči jsou uvedeni v záložce __Přihlášení__ v pořadí podle žebříčku__ (#).
 
-{% include image.html file="ch_events_approving.png" alt="Approving Players" caption="Approving Players" %}
+{% include image.html file="ch_events_approving.png" alt="Schvalování hráčů" caption="Schvalování hráčů" %}
 
-All eligible players can be approved by clicking __+__ in the upper right corner of the eligible players section.
+Všichni přihlášení hráči mohou být schváleni kliknutím na __+__ v pravém horním rohu sekce Přihlášení hráči.
 
-All approved players can be removed by clicking __-__ in the upper right corner of the approved players section.
+Všichni schválení hráči v sekci __Prezentovaní__ mohou být odstraněni kliknutím na __-__ v pravém horním rohu sekce Prezentovaní hráči.
 
-Player can be added individually by clicking their names or by using the search box, which in this context is restricted to players eligible for the current event.
+Hráč může být přidán individuálně kliknutím na jeho jméno nebo použitím vyhledávacího pole, které je zde omezeno jen na přihlášené hráče.
 
-{% include image.html file="ch_events_approve_search.png" alt="Search Approve" caption="Search Approve" %}
+{% include image.html file="ch_events_approve_search.png" alt="Hledat ke schválení" caption="Hledat ke schválení" %}
 
-Players can be approved as a __Wildcard__ by [Context Clicking](tms_fundamentals.html) on their name.
+Hráči mohou být schválení jako __Volné karty__ pomocí [Kontextního kliknutí](tms_fundamentals.html) na své jméno.
 
-{% include image.html file="ch_events_wildcard.png" alt="Approve Wildcard" caption="Approve Wildcard" %}
+{% include image.html file="ch_events_wildcard.png" alt="Schválit volnou kartu" caption="Schválit volnou kartu" %}
 
-Once approved, players are sorted by last name and player rank order is replaced by seeding position, if applicable, or method of entry (Q, WC, LL).
+Poté, co jsou hráči schváleni a přesunuti do sekce __Prezentovaní__, jsou tito hráči seřazeni podle příjmení and žebříček hráče je nahrazen pozicí nasazení,
+a pokud přichází v úvahu, i způsobem akceptace (Q, WC, LL).
 
-{% include image.html file="ch_events_approved_seeding.png" alt="Approve Wildcard" caption="Approve Wildcard" %}
+{% include image.html file="ch_events_approved_seeding.png" alt="Schválit volnou kartu" caption="Schválit volnou kartu" %}
 
-## Event List
+## Seznam soutěží
 
-The __Event List__ dipslays information about each event in a compact form.
+__Seznam soutěží__ zobrazuje informaci o každé soutěži v kompaktní formě.
 
-Clicking on an event opens or closes the __Event Details__ dialogue, where it is possible to edit an event.
+Kliknutí na soutěž otevře nebo zavře dialog __Detaily o soutěži__ , kde je možné editovat soutěž.
 
-{% include image.html file="ch_events_list.png" alt="Events List" caption="Events List" %}
+{% include image.html file="ch_events_list.png" alt="Seznam soutěží" caption="Seznam soutěží" %}
 
-Information displayed about each event includes Draw Size, Number of Approved Players, Total Number of Matches, Number of Scheduled Matches, Event Rank, Indoor/Outdoor, Surface, whether a Draw has been created, and whether an event has been published.
+Informace zobrazené o každé soutěži zahrnují: velikost hracího pole, počet schválených hráčů / dvojic, celkový počet utkání, počet naplánovaných utkání v rozpisu,
+kategorie soutěže, hala/venku, povrch, jestli byl vytvořen hrací plán, and jestli byla soutěž publikována.
 
-## Scoring Format
+## Formát skóre
 
-The scoring format is used for all matches within an event.  If the scoring format is changed after an event has begun, then the score format is changed for all matches which have not yet been scored.
+Formát skóre je použit pro všechna utkání v soutěži.  Když je formát skóre změněn poté co soutěž již začala a úvodní výsledky jsou zadány, pak se formát skóre změní do budoucna jen pro ta utkání u kterých ještě nebyl výsledek zadán.
 
-{% include image.html file="ch_events_scoring_default.png" alt="Default Scoring" caption="Default Scoring" %}
+{% include image.html file="ch_events_scoring_default.png" alt="Výchozí formát skóre" caption="Výchozí formát skóre" %}
 
-## Automated Draws
+## Automatické losování hracího plánu
 
-In the __Event Detail__ dialogue for each event is a button for enabling/disabling automatic draw generation.
+V dialogu __Detaily o soutěži__ je pro každou soutěž k dispozici tlačítko pro aktivaci / deaktivaci automatického losování hracího plánu.
 
 <div style='display: flex; flex-wrap: wrap;'>
-   <div style='padding-right: 1em;'>{% include image.html file="ch_events_auto_play.png" alt="Play" caption="Play" %}</div>
-   {% include image.html file="ch_events_auto_pause.png" alt="Pause" caption="Pause" %}
+   <div style='padding-right: 1em;'>{% include image.html file="ch_events_auto_play.png" alt="Spustit" caption="Spustit" %}</div>
+   {% include image.html file="ch_events_auto_pause.png" alt="Pauza" caption="Pauza" %}
 </div>
 
-{% include note.html content='Automated Draws can be disabled by [Organization Keys](tmx_configuration.html) when they are not officially endorsed' %}
+{% include note.html content='Automatické losování může být zakázáno pomocí [Organizačního klíče](tmx_configuration.html) pokud není oficiálně schváleno' %}
 
-## Linking Events
+## Propojené soutěže
 
-Events may be linked together if they have the same Gender Setting and are complementary __Draw Types__.
+Soutěže mohou být spolu propojeny pokud jsou v nastavení stejného pohlaví a __Typy hracího plánu__ se  doplňují.
 
-If a Male __Elimination Event__ exits when adding a Male __Qualification Event__, or vice-versa, the option to link events appears in the bottom left corner of the __Event Detail__ dialogue.
+Pokud mužská __Vyřazovací soutěž__ existuje když je přidána mužská __Kvalifikační soutěž__, nebo naopak, možnost propojit obě soutěže se objeví v levém spodním
+rohu dialogu __Detaily o soutěži__.
 
-For a __Qualification Event__ there is also a selector to define the number of players who will advance to a main draw event.
+Pro __Kvalifikační soutěž__ je k dispozici pole výběru počtu hráčů kteří postoupí do hlavní soutěže.
 
-{% include image.html file="ch_events_qualification.png" alt="Qualification Event" caption="Adding a Qualification Event" %}
+{% include image.html file="ch_events_qualification.png" alt="Kvalifikační soutěž" caption="Přidání kvalifikační soutěže" %}
 
-When a __Qualification Event__ is linked to an __Elimination Event__ then the players already in the __Elimination Event__ disappear from the eligible players list.
+Kyž je __Kvalifikační soutěž__ propojena s __Vyřazovací soutěží__ tak hráči, kteří jsou už ve __Vyřazovací soutěži__ zmizí ze seznamu přihlášených hráčů.
 
-{% include image.html file="ch_events_linked_qualification.png" alt="Linked Event" caption="Linked Qualification Event" %}
+{% include image.html file="ch_events_linked_qualification.png" alt="Propojené soutěže" caption="Propojená kvalifikační soutěž" %}
 
-After players are approved and the number of qualifiers has been selected (__four__ in this example), the __Event List__ updates the Draw Size, Number of players, and Number of Matches for the linked __Elimination Event__.
+Poté co jsou hráči schváleni a počet kvalifikantů byl vybrán (čtyři v tomto příkladu), __Seznam soutěží__ aktualizuje velikost hracího pole, počet
+hráčů, a počet utkání pro propojenou __Vyřazovací soutěž__.
 
-{% include image.html file="ch_events_linked_qualifiers.png" alt="Linked Qualifiers" caption="Linked Qualifiers" %}
+{% include image.html file="ch_events_linked_qualifiers.png" alt="Propojení kvalifikanti" caption="Propojení kvalifikanti" %}
 
-Players who qualify automatically appear as __Approved__ players in the linked __Elimination Event__.
+Hráči, kteří se automaticky kvalifikují se objeví jako __Prezentovaní__ hráči v propojené __Vyřazovací soutěži__.
 
-{% include image.html file="ch_events_players_qualified.png" alt="Qualifiers" caption="Qualified Players" %}
+{% include image.html file="ch_events_players_qualified.png" alt="Kvalifikanti" caption="Kvalifikovaní hráči" %}
 
-## Lucky Losers
+## Lucky Losers (Štastní poražení)
 
-__Lucky Losers__ may be added to the __Approved__ players list by [Context Clicking](tmx_fundamentals.html) on the __Eligible__ heading and selecting them from the list of players that is presented.
+__Lucky Losers__ mohou být přidáni do seznamu __Prezentovaných__ hráčů pomocí [Kontextového kliknutí](tmx_fundamentals.html) na hlavičku __Přihlášení__
+a poté jejich výběrem ze seznamu nabídnutých hráčů.
 
 {% include image.html file="ch_events_lucky_losers.png" alt="Lucky Losers" caption="Lucky Losers" %}
 
-## Doubles Teams
+## Čtyřhry
 
-The creation of __Doubles Events__ is almost identical to __Singles Events__, except that for __Doubles Events__ doubles teams must be constructed before they can be approved.
+Vytváření __Soutěží čtyřhry__ je téměř identické se __Soutěží dvouhry__, kromě toho že pro __Soutěž čtyřhry__ dvojice pro čtyřhru musí být vytvořeny
+předtím než mohou být schváleny / prezentovány.
 
-__Doubles Teams__ are constructed simply by selecting team members _in order_.
+__Dvojice pro čtyřhru__ se vytvoří jednoduše vybráním jednotlivých hráčů v dvojici _v pořadí_.
 
-{% include image.html file="ch_events_doubles_teams.png" alt="Doubles Teams" caption="Doubles Teams" %}
+{% include image.html file="ch_events_doubles_teams.png" alt="Dvojice pro čtyřhru" caption="Dvojice pro čtyřhru" %}
 
-### Combined Rankings
+### Kombinovaný žebříček pro čtyřhry
 
-The default configuration is for CourtHive/TMX to order teams by _combined rankings_, which means that singles rankings of team members are combined.  This option can be modified by [Organization Keys](tmx_configuration.html) as some organizations calculate doubles rankings independently.
+Výchozí konfigurace v CourtHive/TMX k seřazení dvojic je podle _kombinovaného žebříčku_, což znamená, že žebříček dvouhry obou hráčů dvojice je sečten.  
+Toto výchozí nastavení může být změněno pomocí [Organizačního klíče](tmx_configuration.html) jelikož některé organizace počítají žebříček pro čtyřhry jinak.
 
-Teams which have identical combined rankings are highlighted in __yellow__.
+Dvojice které mají stejný kombinovaný žebříček jsou vyznačeny __žlutě__.
 
-[Context Clicking](tmx_fundamentals.html) on a doubles teams presents options which include assigning a "Subrank".
+[Kontextové kliknutí](tmx_fundamentals.html) na takovou dvojici pro čtyřhru vytvoří možnost zadat "pomocné pořadí".
 
-{% include image.html file="ch_events_doubles_options.png" alt="Doubles Options" caption="Doubles Options" %}
+{% include image.html file="ch_events_doubles_options.png" alt="Možnosti pro pár čtyřhry" caption="Možnosti pro pár čtyřhry" %}
 
-"Subranking" enables teams to be differentiated for the purposes of __seeding__.
+"Pomocné pořadí" umožní, aby byly jednotlivé dvojice pro čtyřhru odlišeny z důvodu __nasazení__.
 
-{% include image.html file="ch_events_doubles_subrank.png" alt="Doubles Subrank" caption="Doubles Subrank" %}
+{% include image.html file="ch_events_doubles_subrank.png" alt="Pomocné pořadí" caption="Pomocné pořadí" %}
 
-### Approving Teams
+### Schvalování dvojic pro čtyřhru
 
-Doubles Teams can be approved _individually_ (including as a Wildcard) by [Context Clicking](tmx_fundamentals.html).
+Dvojice pro čtyřhru můžou být schváleny _individuálně_ (včetně volných karet) pomocí [Kontextového kliknutí](tmx_fundamentals.html).
 
-Teams can also be approved _in bulk_ by clicking on the __+__ in the upper right corner of the "Teams" section.
+Dvojice můžou být rovněž schváleny _hromadně_ pomocí kliknutí na __+__ v pravém horním rohu sekce pro "Dvojice".
 
-{% include image.html file="ch_events_doubles_approving.png" alt="Approving Teams" caption="Approving Teams" %}
+{% include image.html file="ch_events_doubles_approving.png" alt="Schvalování dvojic" caption="Schvalování dvojic" %}
 
-### Removing Teams
+### Odstranění dvojic pro čtyřhru
 
-Clicking on individual players in the "Eligible" section builds teams.
+Kliknutí na individuální hráče v sekci "Přihlášení" vytvoří dvojice pro čtyřhru.
 
-Clicking on Teams removes them from the "Approved" section, or returns individual players to the "Eligible" section.
+Kliknutí na dvojici ji odstraní ze sekce "Prezentovaní", nebo vrátí individuální hráče do sekce "Přihlášení".
 
-## Round Robin Events
+## Skupinové soutěže
 
-Round Robins can either be stand-alone or linked to __Elimination Events__. 
-* The number of __brackets__ is calculated automatically from the __Bracket Size__
-* The sizes available in the __Bracket Size__ selector are configured by [Organization Keys](tmx_configuration.html)
-* The __Qualifiers__ selector only when a Round Robin is linked to another event
-* The option to link to another event only appears when appropriate events exist
+Soutěže skupin mohou být jako samostatné nebo propojené s __Vyřazovací soutěží__.
+* Počet __skupin__ je vypočítán automaticky podle __velikosti skupiny__
+* Počty hráčů ve skupině nastavitelné v poli __velikost skupiny__ jsou konfigurovány pomocí [Organizačního klíče](tmx_configuration.html)
+* Pole __Kvalifikanti__ je k dispozici jen pokud je skupinová soutěž propojená s jinou soutěží
+* Volba umožňujíci propojit soutěž s jinou soutěží je objeví jen když příslušná soutěž existuje
 
-{% include image.html file="ch_events_round_robin.png" alt="Round Robin" caption="Round Robin Settings" %}
+{% include image.html file="ch_events_round_robin.png" alt="Skupinová soutěž" caption="Nastavení soutěže skupin" %}
 
-### Qualifiers
+### Kvalifikanti
 
-Qualifiers in each bracket are ordered by the ratio of matches, sets, games and points won.
+Kvalifikanti z každé skupiny jsou seřazeni podle poměru vítězných utkání, setů, gamů a bodů.
 
-Please see the documentation on [__Win Ratios__](tmx_tournament_draws.html#win-ratios) for an in-depth explanation.
+Podrobné vysvětlení k pořadí ve skupinách je k nalezení v dokumentaci [__Poměr výher__](tmx_tournament_draws.html#win-ratios).
 
-{% include image.html file="ch_draws_rr_order.png" alt="Rank Order" caption="Calculated Rank Order" %}
+{% include image.html file="ch_draws_rr_order.png" alt="Pořadí" caption="Kalkulované pořadí ve skupině" %}
 
-{% include tip.html content="Round Robin Events default to __one__ qualifier per bracket; this setting can __only__ be changed in the Round Robin __Event Detail__ dialogue." %}
+{% include tip.html content="Výchozí nastavení je  __jeden__ kvalifikant z každé skupiny; toto nastavení může být změněno __pouze__ v dialogu __Detaily o soutěži__ pro skupinovou soutěž." %}
 
-{% include important.html content="Second (and third) qualifiers from each bracket are calculated __after__ all brackets are complete." %}
+{% include important.html content="Druhý (a třetí) kvalifikant z každé skupiny je určen __až poté__ co jsou výsledky všech skupin kompletní." %}
 
-{% include note.html content="If the selected number of qualifiers is not a multiple of the number of brackets, additional qualifiers from each ordered group (1st, 2nd, 3rd, etc. from each bracket) are qualified first by ranking and then by win ratio." %}
-
-
+{% include note.html content="Pokud vybraný počet kvalifikantů není násobkem počtu skupin, dodateční hráči z každé skupiny (1., 2., 3., atd. z každé skupiny) jsou
+kvalifikování nejdříve podle žebříčku a pak podle __Poměru výher__." %}

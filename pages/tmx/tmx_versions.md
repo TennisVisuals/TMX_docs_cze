@@ -1,6 +1,6 @@
 ---
 title: Verze
-keywords: Verze
+keywords: Version, Verze
 sidebar: ch_sidebar
 permalink: tmx_versions.html
 toc: true
@@ -8,7 +8,7 @@ toc: true
 ## Cyklus uvolňování nových verzí
 * CourtHive / TMX je v neustálém vývoji s častým vydáváním nových verzí.  
 * Aktuální "stabilní" verze je vždy k dispozici na adrese [https://CourtHive.com/tmx](https://CourtHive.com/tmx).  
-* Pokud organizace hostuje verzi služby CourtHive / TMX, může tato organizace definovat cyklus uvolňování nových verzí.
+* Pokud organizace hostuje verzi služby CourtHive / TMX, může tato organizace sama definovat cyklus uvolňování nových verzí.
 
 ## Vysvětlení čísla verze
 Číslo verze následuje tento vzor:  _Major.minor.added.changed.fixed_
@@ -22,7 +22,7 @@ Pokud váš prohlížeč podporuje [Service Workers](https://caniuse.com/#feat=s
 
 {% include image.html file="ch_home_yellow.png" alt="Update" caption="Zpráva o aktualizaci" %}
 
-[Kontext kliknutím](tmx_fundamentals.html) na ikonu Domů zobrazíte aktualizační zprávu. Je-li k dispozici nová verze, Service Workers po aktualizaci začne aktualizovat lokální mezipaměť.
+[Kontextovým kliknutím](tmx_fundamentals.html) na ikonu Domů zobrazíte aktualizační zprávu. Je-li k dispozici nová verze, Service Workers po aktualizaci začnou aktualizovat lokální mezipaměť.
 
 {% include image.html file="ch_new_version.png" alt="Update" caption="Aktualizace k dispozici" %}
 

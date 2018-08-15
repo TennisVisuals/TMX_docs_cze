@@ -1,25 +1,25 @@
 ---
-title: Navigating the Calendar
+title: Navigace kalendářem
 keywords: Tournament Calendar Navigation
 sidebar: ch_sidebar
 permalink: tmx_tournaments_navigation.html
 toc: false
 ---
 
-The Tournament Calendar is displayed by clicking the Tournament Icon on the home screen.  If the Search Box is in Tournaments Mode, clicking the Tournament Count also displays the Tournament Calendar.
+Turnajový kalendář je zobrazen kliknutím na ikonu __Turnaj__ na hlavní stránce.  Pokud je vyhledávací pole v turnajovém režimu, kliknutí na počet turnajů rovněž otevře kalendář turnajů.
 
-{% include image.html file="ch_tournament_calendar.png" alt="Tournament Calendar" caption="Tournament Calendar" %}
+{% include image.html file="ch_tournament_calendar.png" alt="Turnajový kalendář" caption="Turnajový kalendář" %}
 
-Tournaments which have not yet started or which are active are depicted in <font color='blue'>Blue</font>, while tournaments which have completed are <font color='gray'>Gray</font>. __Bold__ indicates that a tournament record has been downloaded from the CourtHive server.
+Turnaje, které ještě nebyly zahájeny nebo které jsou aktivní, jsou zobrazeny <font color='blue'>modře</font>, zatímco turnaje které jsou skončeny, jsou zobrazeny <font color='gray'>šedě</font>. __Tučně__ jsou označeny turnaje které byly načteny z CourtHive serveru.
 
-Tournaments can be filtered by __date__ or __category__.  By default, the calendar displays tournaments from the current day through the end of the current month.  Any changes made to the calendar filters are retained until the browser is reloaded.
+Turnaje mohou být filtrovány podle __datumu__ nebo __věkové kategorie__.  Výchozí zobrazení kalendáře je od současného dne do konce měsíce.  Jakékoli změny filtru kalendáře turnajů jsou uchovány až do přístího načtení v prohlížeči.
 
-## Defining a Date Range
+## Definice rozsahu datumů
 
-Click on the __From:__ or __To:__ dates to launch the [Pikaday Datepicker](https://github.com/dbushell/Pikaday).
+Kliknutí na __Od:__ or __Do:__ data otevře dialogové okno kalendáře, tzv. [Pikaday Datepicker](https://github.com/dbushell/Pikaday).
 
-{% include image.html file="ch_tournament_dates.png" alt="Date Range" caption="Calendar Date Range" %}
+{% include image.html file="ch_tournament_dates.png" alt="Rozsah datumů" caption="Rozsah datumů" %}
 
-The datepicker supports arrow-key navigation.  Dates may also be entered in the input box using YYYY-MM-DD format.
+Dialogové okno výběru datumu podporuje navigaci klávesami šipek.  Datumy mohou být také zadány do vstupního užitím RRRR-MM-DD formátu.
 
-{% include tip.html content="Quickly modify __month__ or __year__ by clicking and selecting from drop down menus." %}
+{% include tip.html content="Rychle změnit __měsíc__ nebo __rok__ je možno kliknutím a výběrem z  rozbalovacího menu." %}
