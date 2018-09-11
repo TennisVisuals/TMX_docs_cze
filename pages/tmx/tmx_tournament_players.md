@@ -66,7 +66,7 @@ Kliknutím na __PDF ikonu__ můžete zvolit možnost tisku přihlašovacích sez
 
 {% include tip.html content="__Filtry pohlaví__ k tisku správných přihlašovacích seznamů." %}
 
-{% include note.html content="PDF přihlašovací seznamy jsou buďto uloženy nebo otevřeny v nové záložce prohlížeče, v zavislosti na [Nastavení](tmx_setup.html#check-your-default-settings)." %}
+{% include note.html content="PDF přihlašovací seznamy jsou buďto uloženy nebo otevřeny v nové záložce prohlížeče, v závislosti na [Nastavení](tmx_setup.html#check-your-default-settings)." %}
 
 ## Přihlášení a odhlášení
 

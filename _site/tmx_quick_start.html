@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" Example Tutorial Quick Start">
+<title>TMX Rychlý manuál | CourtHive Documentation</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/boxshadowproperties.css">
+<!-- most color styles are extracted out to here -->
+<link rel="stylesheet" href="css/theme-black.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Anchor.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="TMX_docs_cze" href="http://localhost:4000/feed.xml">
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $("#tg-sb-link").click(function() {
+                $("#tg-sb-sidebar").toggle();
+                $("#tg-sb-content").toggleClass('col-md-9');
+                $("#tg-sb-content").toggleClass('col-md-12');
+                $("#tg-sb-icon").toggleClass('fa-toggle-on');
+                $("#tg-sb-icon").toggleClass('fa-toggle-off');
+            });
+        });
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-home fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> CourtHive Documentation</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- toggle sidebar button -->
+                <li><a id="tg-sb-link" href="#"><i id="tg-sb-icon" class="fa fa-toggle-on"></i> Nav</a></li>
+                <!-- entries without drop-downs appear here -->
+
+
+
+
+                
+                
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <!--comment out this block if you want to hide search-->
+                <li>
+                    <!--start search-->
+                    <div id="search-demo-container">
+                        <input type="text" id="search-input" placeholder="search...">
+                        <ul id="results-container"></ul>
+                    </div>
+                    <script src="js/jekyll-search.js" type="text/javascript"></script>
+                    <script type="text/javascript">
+                            SimpleJekyllSearch.init({
+                                searchInput: document.getElementById('search-input'),
+                                resultsContainer: document.getElementById('results-container'),
+                                dataSource: 'search.json',
+                                searchResultTemplate: '<li><a href="{url}" title="TMX Rychlý manuál">{title}</a></li>',
+                    noResultsText: 'No results found.',
+                            limit: 10,
+                            fuzzy: true,
+                    })
+                    </script>
+                    <!--end search-->
+                </li>
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+  <div id="main">
+    <!-- Content Row -->
+    <div class="row">
+        
+        
+            <!-- Sidebar Column -->
+            <div class="col-md-3" id="tg-sb-sidebar">
+                
+
+<ul id="mysidebar" class="nav">
+  <li class="sidebarTitle">CourtHive TMX 1.0</li>
+  
+  
+  
+  <li>
+      <a href="#">Přehled</a>
+      <ul>
+          
+          
+          
+          <li><a href="index.html">Vize</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_overview.html">Funkce</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_demos.html">Demonstrační videa</a></li>
+          
+          
+          
+          
+          
+          
+          <li class="active"><a href="tmx_quick_start.html">Rychlý manuál</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_support.html">Podpora</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Instalace</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_setup.html">Nastavení</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_idiom.html">Výběr jazyka</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_configuration.html">Konfigurační klíče</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_versions.html">Verze</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Základy</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_fundamentals.html">Kontextové menu</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_searchbox.html">Používání vyhledávacího pole</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_data.html">Lokální a vzdálená data</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_reset.html">Resetování TMX</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Databáze hráčů</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_players_managing.html">Správa databáze hráčů</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_players_rankings.html">Žebříčky hráčů</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_players_example.html">Příklad datového souboru s hráči</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Kalendář turnajů</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_tournaments_navigation.html">Navigace kalendářem</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournaments_management.html">Správa turnajů</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Editace turnajů</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_tournament_overview.html">Začínáme s turnajem</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_information.html">Informace o turnaji</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_players.html">Hráči</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_courts.html">Kurty</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_events_management.html">Soutěže</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_draws.html">Hrací plány</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_scoring.html">Výsledky</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_matches.html">Seznam utkání</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_schedule.html">Rozpisy utkání</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_tournament_points.html">Body</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+  
+  <li>
+      <a href="#">Zveřejňování</a>
+      <ul>
+          
+          
+          
+          <li><a href="tmx_publishing_overview.html">Jak zveřejňování funguje</a></li>
+          
+          
+          
+          
+          
+          
+          <li><a href="tmx_courthive_live.html">CourtHive/Live</a></li>
+          
+          
+          
+          
+      </ul>
+   </li>
+     
+      
+      
+      <!-- if you aren't using the accordion, uncomment this block:
+         <p class="external">
+             <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
+         </p>
+         -->
+</ul>
+
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+            </div>
+            
+        
+
+        <!-- Content Column -->
+        <div class="col-md-9" id="tg-sb-content">
+            <div class="post-header">
+   <h1 class="post-title-main">TMX Rychlý manuál</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    
+
+
+    
+
+
+    
+
+  <h2 id="overview">Overview</h2>
+
+<p>Účelem tohoto rychlého manuálu je pomoci s použitím TMX pro co nejrychlejší vytvoření hracích plánů prvního turnaje.</p>
+
+<p>Tento rychlý manuál obsahuje následující:</p>
+<ul>
+  <li>zadání konfiguračního klíče umožňujícího načtení hráčů na žebříčku</li>
+  <li>vytvoření turnaje</li>
+  <li>přidání hráčů do turnaje</li>
+  <li>přihlášení přidaných (registrovaných) hráčů pro turnaj</li>
+  <li>vytvoření turnajových soutěží</li>
+  <li>prezentace (schválení) hráčů pro příslušnou turnajovou soutěž</li>
+  <li>vytvoření hracího plánu pro turnajovou soutěž</li>
+</ul>
+
+<h2 id="demonstrační-video">Demonstrační video</h2>
+
+<p>Toto video zachycuje všechny kroky popsané v TMX Rychlém manuálu.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6wkHX5HzVSk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe>
+
+<h2 id="zadání-konfiguračního-klíče">Zadání konfiguračního klíče</h2>
+
+<p>CourtHive/TMX může být konfigurován k importu ATP/WTA/ITF hráčů přímo do turnaje.</p>
+
+<p>Na domovské stránce přejděte na pole zadání klíče kliknutím na ikonu Klíče.</p>
+
+<figure><img class="docimage" src="images/ch_keys.png" alt="Klíče" /><figcaption>Klíče</figcaption></figure>
+
+<p>Zadejte klíč “players” do dialogového okna <a href="tmx_configuration.html">Konfigurační klíč</a> klikněte na <strong>Odeslat</strong>.</p>
+
+<figure><img class="docimage" src="images/ch_key_players.png" alt="ATP/WTA" /><figcaption>Konfigurační klíč</figcaption></figure>
+
+<p>Nic viditelného se nestane když je klíč odeslán ale systém je tímto nakonfigurován příslušnými parametry pro načtení žebříčku hráčů podle kategorií.</p>
+
+<h2 id="vytvoření-turnaje">Vytvoření turnaje</h2>
+
+<p>Na domovské stránce přejděte do kalendáře turnajů kliknutím na ikonu Turnaje</p>
+
+<figure><img class="docimage" src="images/ch_tournaments.png" alt="Tournaments" /><figcaption>Tournaments</figcaption></figure>
+
+<p><strong>Turnajový kalendář</strong> zobrazí turnaje v rámci vybraného časového období, případně omezené věkovou kategorií.</p>
+
+<p>Napravo od filtru věkové kategorie je ikonka <strong>Přidat turnaj</strong>.</p>
+
+<figure><img class="docimage" src="images/ch_add_tournament_icon.png" alt="Turnajové filtry" /><figcaption>Turnajové filtry</figcaption></figure>
+
+<p>Kliknutí na ikonu <strong>Přidat turnaj</strong> otevře okno pro zadání informací o novém turnaji.</p>
+
+<p>Pole označené <strong><em>žlutě</em></strong> jsou povinné aby turnaj mohl být přidán.</p>
+
+<div style="display: flex; flex-wrap: wrap;">
+   <figure><img class="docimage" src="images/ch_add_tournament.png" alt="Přidat turnaj" /></figure>
+
+   <figure><img class="docimage" src="images/ch_challenge.png" alt="Přidat turnaj" /></figure>
+
+</div>
+
+<div class="alert alert-warning" role="alert"><i class="fa fa-warning"></i> <b>Důležité:</b> V tomto příkladu přidáme hráče <strong><em>bez data narození</em></strong>, takže není třeba omezení žádnou věkovou kategorií</div>
+
+<figure><img class="docimage" src="images/ch_challenge_calendar.png" alt="Turnaj přidán" /></figure>
+
+<h2 id="editace-turnaje">Editace turnaje</h2>
+
+<p>Kliknutí na turnaj v kalendáři turnajů nejdříve otevře záložku Turnaj (= přehled o turnaji).  Všimněte si, že v pravém horním rohu je <strong>ikonka tužky</strong>.</p>
+
+<figure><img class="docimage" src="images/ch_challenge_modal.png" alt="Turnaj" /><figcaption>Turnaj</figcaption></figure>
+
+<p>Kliknutím na <strong>ikonu tužky</strong> přejdete do <strong><em>editovacího režimu</em></strong>.</p>
+
+<figure><img class="docimage" src="images/ch_editing_mode.png" alt="Editovací režim" /><figcaption>Další záložky se objeví v editovacím režimu</figcaption></figure>
+
+<h2 id="přidat-hráče">Přidat hráče</h2>
+
+<p>V záložce <strong>Hráči</strong> lze přidat hráče do turnaje kteří jsou pak prezentováni když dorazí do dějiště turnaje.</p>
+
+<figure><img class="docimage" src="images/ch_players_tab.png" alt="Hráči" /><figcaption>Turnajoví hráči</figcaption></figure>
+
+<p>Vzhledem k tomu, že CourtHive/TMX byl nakonfigurován k načtení <em>hráčů na žebříčku</em> z různých zdrojů, kliknutím na ikonu <strong>Obnovit</strong> úplně vpravo zobrazí volby dostupné pro import hráčů.</p>
+
+<figure><img class="docimage" src="images/ch_player_import.png" alt="Player Import" /><figcaption>Vyber hráče k importu</figcaption></figure>
+
+<p>ATP, WTA, and ITF ikonky importují hráče podle žebříčků jejich příslušných organizací.  Ikona “Načíst hráče / Load Players” umožní importovat tabulku s hráči ve formátu <strong>Excel XLSX</strong>.  Lze použít <a href="tmx_players_managing.html#dragdrop-import">TMX šablona</a> nebo UTR hodnocení které může být generováno <a href="https://app.myutr.com/players/ratingslist" target="_ blank">zde… pokud máte účet</a>.</p>
+
+<p>Pro ilustraci v tomto manuálu, klikněte na <strong>ATP</strong> volbu.</p>
+
+<figure><img class="docimage" src="images/ch_atp_players.png" alt="ATP Players" /><figcaption>Žebříček ATP hráčů</figcaption></figure>
+
+<h2 id="přihlášení-hráčů">Přihlášení hráčů</h2>
+
+<p>Předtím, než mohou být hráči přidání do turnajové soutěže, tak musí být přihlášeni v záložce <strong>Hráči</strong>. To lze provést dvěma způsoby: Použitím vyhledávacího pole v horní části obrazovky, nebo <strong>kliknutím</strong> na jméno hráče.</p>
+
+<p>Pro účely tohoto manuálnu, jednoduše klikněte postupně na prvních 8 hráčů pro přihlášení do turnajové soutěže.</p>
+
+<div class="alert alert-info" role="alert"><i class="fa fa-info-circle"></i> <b>Poznámka:</b> Přihlášení hráči se objeví <strong>dole</strong> pod registrovanými, dosud nepřihlášenými hráči.</div>
+
+<figure><img class="docimage" src="images/ch_atp_players_signed_in.png" alt="Signed In" /><figcaption>Přihlášení hráči</figcaption></figure>
+
+<h2 id="přidání-soutěže">Přidání soutěže</h2>
+
+<p>Nyní se můžete přepnout do záložky <strong>Soutěže</strong> kliknutím na záložku.</p>
+
+<p>Přidejte svoji první soutěž kliknutím na ikonu <strong>Přidat soutěž</strong>.  Uvidíte 8 hráčů v sekci <strong><em>Přihlášení</em></strong> pro soutěž, pokud vyhovují kritériím nastaveným na  <em>pohlaví</em> and <em>věkovou kategorii</em>.</p>
+
+<figure><img class="docimage" src="images/ch_quick_start_event.png" alt="Turnajová soutěž" /><figcaption>Přidání nové soutěže do turnaje</figcaption></figure>
+
+<p>Hráči mohou být <strong>schváleni</strong> (přesunuti do sekce <strong>Prezentovaní</strong>) pro soutěž celkem <em>čtyřmi</em> způsoby:</p>
+<ul>
+  <li>kliknutím na jméno hráče</li>
+  <li>kontextovým kliknutím na jméno hráče k prezentaci hráče jako <em>volná karta</em> (wildcard)</li>
+  <li>kliknutím na <strong>+</strong> ikonu na pravé straně sekce <strong>Přihlášení</strong> (ke schválení všech hráčů)</li>
+  <li>vyhledáním hráče ve vyhledávacím poli (<strong><em>pouze poté co byla turnajová soutěž uložena</em></strong>)</li>
+</ul>
+
+<p>Jakmile jste schválili všech 8 hráčů, klikněte na <strong>Uložit soutěž</strong> a pak na ikonu <strong>Automatický los</strong>.</p>
+
+<div style="display: flex; flex-wrap: wrap;">
+   <div style="padding-right: 1em;">
+        <figure><img class="docimage" src="images/ch_events_auto_play.png" alt="Play" /></figure>
+
+   </div>
+   <div style="padding-bottom: 1em;">
+        <figure><img class="docimage" src="images/ch_events_auto_pause.png" alt="Pause" /></figure>
+
+   </div>
+</div>
+
+<p>Jakmile je soutěž uložena, objeví se záložka <strong>Hrací plány</strong>.</p>
+
+<p>Pokud jste stiskli tlačítko <strong>Automatický los</strong>, pak se také objeví záložka <strong>Utkání</strong>.</p>
+
+<figure><img class="docimage" src="images/ch_quick_start_auto_event.png" alt="Turnajová soutěž" /><figcaption>Soutěž uložena, Automatický los</figcaption></figure>
+
+<h2 id="prohlížení-hracího-plánu">Prohlížení hracího plánu</h2>
+
+<p>Nyní můžete přejít do záložky <strong>Hrací plány</strong>.</p>
+
+<figure><img class="docimage" src="images/ch_quick_start_draw.png" alt="Event Draw" /><figcaption>Eliminační hrací plán</figcaption></figure>
+
+<p>Teď jste připravení <a href="tmx_tournament_scoring.html">Zadat výsledky</a> a vytisknout PDF hrací plány.</p>
+
+<p>Můžete vytvořit libovolné množství soutěží v rámci turnaje: vyřazovací hrací plán, skupiny, kompas hrací plán, rozložené vstupní hrací plány, čtyřhry atd.</p>
+
+<p>Můžete také propojit kvalifikační hrací plán s hlavní soutěží a se soutěží útěchy a sledovat postupy hráčů do jednotlivých soutěží.</p>
+
+<p>Rovněž můžete přidat do turnaje WTA nebo ITF hráče a vytvořit ženské nebo smíšené soutěže.</p>
+
+<p><strong><em>Have Fun!</em></strong></p>
+
+
+    <div class="tags">
+        
+    </div>
+
+
+
+
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+                  <img src="images/ch_logo.png" alt="CourtHive"/><br />
+               &copy;2018 CourtHive. All rights reserved. <br />
+ Site last generated: Sep 7, 2018 <br />
+                </div>
+            </div>
+</footer>
+
+
+        </div>
+    <!-- /.row -->
+</div>
+<!-- /.container -->
+</div>
+<!-- /#main -->
+    </div>
+
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-65756694-3','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+</html>

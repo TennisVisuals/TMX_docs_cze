@@ -13,7 +13,7 @@ a stiskem klávesy __Odeslat__.
 
 {% include image.html file="ch_key_atpwta.png" alt="ATP/WTA" caption="Konfigurační klíč" %}
 
-Nic viditelného se nestane když je tento klíč odelán, system bude pouze nakonfigurován s příslušnými parametry pro připojení ke vzdálené databázi.
+Nic viditelného se nestane když je tento klíč odeslán, systém bude pouze nakonfigurován s příslušnými parametry pro připojení ke vzdálené databázi.
 
 Chcete-li načíst ukázkovou databázi hráčů, umístěte kurzor myši vlevo vedle ikony __Hráči__ v pravém horním rohu a klikněte na __OK__ tlačítko v dialogu __Obnovit seznam__.
 

@@ -6,7 +6,7 @@
 
 
 {
-"title": "CourtHive Vision",
+"title": "CourtHive vize",
 "tags": "",
 "keywords": "courthive open source tennis tournament management",
 "url": "index.html",
@@ -17,7 +17,7 @@
 
 
 {
-"title": "CourtHive vize",
+"title": "CourtHive Vision",
 "tags": "",
 "keywords": "courthive open source tennis tournament management",
 "url": "index.html",
@@ -234,6 +234,17 @@
 "tags": "",
 "keywords": "Publishing Live Scores",
 "url": "tmx_publishing_overview.html",
+"summary": ""
+}
+,
+
+
+
+{
+"title": "TMX Rychlý manuál",
+"tags": "",
+"keywords": "Example Tutorial Quick Start",
+"url": "tmx_quick_start.html",
 "summary": ""
 }
 ,

@@ -168,6 +168,12 @@
   
   
   <url>
+    <loc>http://localhost:4000/tmx_quick_start.html</loc>
+  </url>
+  
+  
+  
+  <url>
     <loc>http://localhost:4000/tmx_referee_delegation.html</loc>
   </url>
   

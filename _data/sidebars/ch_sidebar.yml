@@ -21,6 +21,10 @@ entries:
       url: /tmx_demos.html
       output: web
 
+    - title: Rychlý manuál
+      url: /tmx_quick_start.html
+      output: web
+
     - title: Podpora
       url: /tmx_support.html
       output: web

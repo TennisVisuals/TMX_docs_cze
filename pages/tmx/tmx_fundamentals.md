@@ -14,7 +14,7 @@ toc: false
 ## Další možnosti použití kontextového kliknutí:
 * Nominace volných karet v soutěži
 * Výměna pozice hráčů v hracím plánu
-* Určení náhradníků v harcím plánu
+* Určení náhradníků v hracím plánu
 * Smazání nebo spojení turnajů v kalendáři
 * Nabídka detailů pro rozpis utkání a časů začátku / konce utkání
 * Přístup k zadání trestů v rozpisu utkání
