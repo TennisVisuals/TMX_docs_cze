@@ -24,7 +24,7 @@ Významné části projektů CourtHive jsou nyní nebo brzy budou k dispozici na
 
 TMX je navržen tak, aby fungoval samostatně nebo se integroval s existujícími systémy registrace hráčů, turnajů a žebříčků.
 
-##Oči na dvorci
+## Oči na dvorci
 
 Součástí vize ekosystému CourtHive je, že každý, kdo je přítomen na tenisové události, může nějakým způsobem přispět k posílení zážitku z turnaje.
 
